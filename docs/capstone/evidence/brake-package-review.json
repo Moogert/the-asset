@@ -1,0 +1,55 @@
+{
+  "base_parts_before_contingency_usd": [
+    1672,
+    2755
+  ],
+  "parts_with_contingency_usd": [
+    2090,
+    3444
+  ],
+  "parts_and_labor_with_contingency_usd": [
+    3090,
+    5319
+  ],
+  "conditional_work_excluded": true,
+  "prices_checked": "2026-10-27 supplier observations; rear allowances added 2026-10-28",
+  "verified_files_sha256": {
+    "configs/porsche-brake-conversion.json": "95fd295e8b3c0c92ad6b30c07739a4b40eba1bc9c6aaaadfa9af401262402b39",
+    "docs/capstone/BRAKES.md": "27d23c13f080a08297773e2d06bd91fe839e1b7f8d3a2b6453fb23c6e98aedbb",
+    "docs/capstone/references/legacy-brembo-guide.md": "5a43b327c9ea6cea2144eb2695969cb879dea90eacfcc43d4804fd120ba5b47f"
+  },
+  "updated": "2026-10-28",
+  "historical_front_only_totals_retained_above": true,
+  "current_complete_conversion_budgets_usd": {
+    "rear_parts": {
+      "before_contingency": [
+        995,
+        1860
+      ],
+      "with_25_percent_contingency": [
+        1244,
+        2325
+      ]
+    },
+    "all_parts": {
+      "before_contingency": [
+        2667,
+        4615
+      ],
+      "with_25_percent_contingency": [
+        3334,
+        5769
+      ]
+    },
+    "all_parts_and_labor": {
+      "before_contingency": [
+        3867,
+        6915
+      ],
+      "with_25_percent_contingency": [
+        4834,
+        8644
+      ]
+    }
+  }
+}

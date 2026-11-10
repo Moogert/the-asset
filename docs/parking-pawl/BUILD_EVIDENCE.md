@@ -1,4 +1,4 @@
-# Compile evidence — 10 November 2026
+# Compile evidence â€” 10 November 2026
 
 | Target | Result | Flash | Static RAM |
 |---|---|---:|---:|
@@ -17,4 +17,7 @@ The initial full builds reported unused-parameter warnings in Arduino's upstream
 These are compile/size results only. There was no flashing, actuator motion,
 oscilloscope capture, loaded test or vehicle acceptance. Stack margin, runtime
 timing, protection coverage and enabled-output behavior remain unmeasured.
-SHA-256 hashes in `source-manifest.json` identify the published files.
+SHA-256 hashes in `source-manifest-70506a0.json` identify files at the original
+commit `70506a0` and its original paths. The later tree organization does not
+retroactively change that snapshot; use the root publication manifest for the
+current layout.

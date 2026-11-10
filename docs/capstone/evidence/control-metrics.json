@@ -1,0 +1,344 @@
+{
+  "status": "manual_review_aid_not_compliance",
+  "source_sha256": {
+    "src/control/dual_supervisor.cpp": "29e181dba844c761ae931604d7fd5e0ee33612430cc53a438b79d642fdb948b6",
+    "src/control/control_codec.cpp": "fce0f55a8709657093db6b74f0c5ff6b346fa618028f2bfffb1be655c9990acf",
+    "src/control/control_runtime.cpp": "7334d7afe88508ec1ad0ff401e28af754d754fa6bf388d8cbb361cd9524614de",
+    "src/control/release_monitor.cpp": "5be22ace4d8d45076a634ee91342626ea390675a4f05db0f8a7918d7fef28167",
+    "src/control/release_runtime.cpp": "d7a31a65fdab186a396248f7599c36e78c767625368055289b1d45e9a55ff83a"
+  },
+  "compiler": "clang version 22.1.8 (https://github.com/llvm/llvm-project ca7933e47d3a3451d81e72ac174dcb5aa28b59d1)",
+  "definition": "1 + if/for/while/do/case/conditional + short-circuit && and ||",
+  "functions": [
+    {
+      "file": "src/control/dual_supervisor.cpp",
+      "function": "within",
+      "physical_lines": 5,
+      "branch_count_with_short_circuit_plus_one": 2
+    },
+    {
+      "file": "src/control/dual_supervisor.cpp",
+      "function": "magnitude",
+      "physical_lines": 4,
+      "branch_count_with_short_circuit_plus_one": 2
+    },
+    {
+      "file": "src/control/dual_supervisor.cpp",
+      "function": "maximum",
+      "physical_lines": 4,
+      "branch_count_with_short_circuit_plus_one": 3
+    },
+    {
+      "file": "src/control/dual_supervisor.cpp",
+      "function": "configfaults",
+      "physical_lines": 22,
+      "branch_count_with_short_circuit_plus_one": 16
+    },
+    {
+      "file": "src/control/dual_supervisor.cpp",
+      "function": "packfaults",
+      "physical_lines": 20,
+      "branch_count_with_short_circuit_plus_one": 10
+    },
+    {
+      "file": "src/control/dual_supervisor.cpp",
+      "function": "motorfaults",
+      "physical_lines": 29,
+      "branch_count_with_short_circuit_plus_one": 15
+    },
+    {
+      "file": "src/control/dual_supervisor.cpp",
+      "function": "coupledchecks",
+      "physical_lines": 20,
+      "branch_count_with_short_circuit_plus_one": 7
+    },
+    {
+      "file": "src/control/dual_supervisor.cpp",
+      "function": "thermalfactor",
+      "physical_lines": 10,
+      "branch_count_with_short_circuit_plus_one": 2
+    },
+    {
+      "file": "src/control/dual_supervisor.cpp",
+      "function": "allocate",
+      "physical_lines": 37,
+      "branch_count_with_short_circuit_plus_one": 14
+    },
+    {
+      "file": "src/control/dual_supervisor.cpp",
+      "function": "simulationconfig",
+      "physical_lines": 7,
+      "branch_count_with_short_circuit_plus_one": 1
+    },
+    {
+      "file": "src/control/dual_supervisor.cpp",
+      "function": "evaluate",
+      "physical_lines": 38,
+      "branch_count_with_short_circuit_plus_one": 18
+    },
+    {
+      "file": "src/control/control_codec.cpp",
+      "function": "checksum",
+      "physical_lines": 13,
+      "branch_count_with_short_circuit_plus_one": 4
+    },
+    {
+      "file": "src/control/control_codec.cpp",
+      "function": "encode",
+      "physical_lines": 29,
+      "branch_count_with_short_circuit_plus_one": 10
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "timingvalid",
+      "physical_lines": 9,
+      "branch_count_with_short_circuit_plus_one": 12
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "runtimeconfigvalid",
+      "physical_lines": 7,
+      "branch_count_with_short_circuit_plus_one": 8
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "resetallowed",
+      "physical_lines": 5,
+      "branch_count_with_short_circuit_plus_one": 4
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "limited",
+      "physical_lines": 18,
+      "branch_count_with_short_circuit_plus_one": 9
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "snapshotfaults",
+      "physical_lines": 18,
+      "branch_count_with_short_circuit_plus_one": 6
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "prepareframes",
+      "physical_lines": 17,
+      "branch_count_with_short_circuit_plus_one": 4
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "dispatch",
+      "physical_lines": 16,
+      "branch_count_with_short_circuit_plus_one": 4
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "cleareffort",
+      "physical_lines": 10,
+      "branch_count_with_short_circuit_plus_one": 2
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "limitcommands",
+      "physical_lines": 17,
+      "branch_count_with_short_circuit_plus_one": 3
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "updatelatches",
+      "physical_lines": 16,
+      "branch_count_with_short_circuit_plus_one": 7
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "attemptdispatch",
+      "physical_lines": 33,
+      "branch_count_with_short_circuit_plus_one": 5
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "finishcycle",
+      "physical_lines": 19,
+      "branch_count_with_short_circuit_plus_one": 5
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "initialize",
+      "physical_lines": 13,
+      "branch_count_with_short_circuit_plus_one": 2
+    },
+    {
+      "file": "src/control/control_runtime.cpp",
+      "function": "run",
+      "physical_lines": 45,
+      "branch_count_with_short_circuit_plus_one": 10
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "bounded",
+      "physical_lines": 4,
+      "branch_count_with_short_circuit_plus_one": 2
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "absolute",
+      "physical_lines": 4,
+      "branch_count_with_short_circuit_plus_one": 2
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "fresh",
+      "physical_lines": 5,
+      "branch_count_with_short_circuit_plus_one": 5
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "validlimit",
+      "physical_lines": 7,
+      "branch_count_with_short_circuit_plus_one": 6
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "thermal",
+      "physical_lines": 51,
+      "branch_count_with_short_circuit_plus_one": 8
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "temperatures",
+      "physical_lines": 51,
+      "branch_count_with_short_circuit_plus_one": 17
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "circulationvalid",
+      "physical_lines": 6,
+      "branch_count_with_short_circuit_plus_one": 6
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "synchronizedpower",
+      "physical_lines": 10,
+      "branch_count_with_short_circuit_plus_one": 4
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "circulation",
+      "physical_lines": 60,
+      "branch_count_with_short_circuit_plus_one": 18
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "faultvalue",
+      "physical_lines": 5,
+      "branch_count_with_short_circuit_plus_one": 1
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "recordfault",
+      "physical_lines": 48,
+      "branch_count_with_short_circuit_plus_one": 14
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "monitor",
+      "physical_lines": 21,
+      "branch_count_with_short_circuit_plus_one": 5
+    },
+    {
+      "file": "src/control/release_monitor.cpp",
+      "function": "demonstration_release_config",
+      "physical_lines": 36,
+      "branch_count_with_short_circuit_plus_one": 5
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "Queueport",
+      "physical_lines": 3,
+      "branch_count_with_short_circuit_plus_one": 1
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "send",
+      "physical_lines": 4,
+      "branch_count_with_short_circuit_plus_one": 1
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "setinhibit",
+      "physical_lines": 4,
+      "branch_count_with_short_circuit_plus_one": 2
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "kickwatchdog",
+      "physical_lines": 4,
+      "branch_count_with_short_circuit_plus_one": 1
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "mapcommand",
+      "physical_lines": 4,
+      "branch_count_with_short_circuit_plus_one": 1
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "~Queueport",
+      "physical_lines": 1,
+      "branch_count_with_short_circuit_plus_one": 1
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "resetallowed",
+      "physical_lines": 5,
+      "branch_count_with_short_circuit_plus_one": 4
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "inhibit",
+      "physical_lines": 13,
+      "branch_count_with_short_circuit_plus_one": 4
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "dispatchstatus",
+      "physical_lines": 44,
+      "branch_count_with_short_circuit_plus_one": 16
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "runtimerecords",
+      "physical_lines": 18,
+      "branch_count_with_short_circuit_plus_one": 6
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "releasevalid",
+      "physical_lines": 17,
+      "branch_count_with_short_circuit_plus_one": 13
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "driveallowed",
+      "physical_lines": 5,
+      "branch_count_with_short_circuit_plus_one": 4
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "acquisitionfaults",
+      "physical_lines": 30,
+      "branch_count_with_short_circuit_plus_one": 6
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "initialize_release",
+      "physical_lines": 11,
+      "branch_count_with_short_circuit_plus_one": 4
+    },
+    {
+      "file": "src/control/release_runtime.cpp",
+      "function": "run_release",
+      "physical_lines": 80,
+      "branch_count_with_short_circuit_plus_one": 18
+    }
+  ]
+}

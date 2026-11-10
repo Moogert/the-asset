@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-28",
+  "status": "calculated_requirements_not_measured_vehicle_capability",
+  "registration_county": "Wake, NC, user supplied",
+  "target_mph": 75,
+  "duration_minutes": 20,
+  "duration_basis": "User said 20m; interpreted as minutes because request describes sustained thermal testing",
+  "distance_miles": 25,
+  "acceptance_grade_fraction": null,
+  "default_planning_case": "Hilly route. Use 3 percent sustained comparison and 6 percent for the full 20 minutes as a conservative design stress screen; actual acceptance-course grade profile remains unknown.",
+  "vehicle_config": "configs/vehicle-75mph-study.json",
+  "assumptions": {
+    "mass_kg": 1300.0,
+    "rolling_diameter_m": 0.5655,
+    "drag_area_m2": 0.65,
+    "drivetrain_efficiency": 0.865628,
+    "auxiliary_w": 500.0,
+    "ambient_c": 35,
+    "loaded_bus_for_current_example_v": 300,
+    "mission_allowance_fraction": 0.2
+  },
+  "scenarios": [
+    {
+      "grade_percent": 0,
+      "mg1_and_mg2_rpm": 4657.3097785155605,
+      "wheel_kw": 20.134459730024638,
+      "battery_terminal_kw": 23.7599450688109,
+      "drivetrain_loss_kw_excluding_aux_and_battery_internal_loss": 3.1254853387862624,
+      "energy_20min_kwh": 7.919981689603634,
+      "energy_with_20percent_mission_allowance_kwh": 9.50397802752436,
+      "current_at_300v_a": 79.19981689603632,
+      "mg2_no_fw_dc_screen_v": 658.643065294954
+    },
+    {
+      "grade_percent": 3.0,
+      "mg1_and_mg2_rpm": 4657.3097785155605,
+      "wheel_kw": 32.949483714595445,
+      "battery_terminal_kw": 38.564253599231364,
+      "drivetrain_loss_kw_excluding_aux_and_battery_internal_loss": 5.114769884635919,
+      "energy_20min_kwh": 12.854751199743788,
+      "energy_with_20percent_mission_allowance_kwh": 15.425701439692546,
+      "current_at_300v_a": 128.54751199743788,
+      "mg2_no_fw_dc_screen_v": 658.643065294954
+    },
+    {
+      "grade_percent": 6.0,
+      "mg1_and_mg2_rpm": 4657.3097785155605,
+      "wheel_kw": 45.725407245517125,
+      "battery_terminal_kw": 53.32339208703638,
+      "drivetrain_loss_kw_excluding_aux_and_battery_internal_loss": 7.097984841519256,
+      "energy_20min_kwh": 17.774464029012126,
+      "energy_with_20percent_mission_allowance_kwh": 21.32935683481455,
+      "current_at_300v_a": 177.74464029012125,
+      "mg2_no_fw_dc_screen_v": 658.643065294954
+    }
+  ],
+  "example_aged_leaf_operating_energy_kwh": 13.44,
+  "kinetic_energy_at_75mph_kj": 730.6824095999999,
+  "kinetic_energy_ratio_to_70mph": 1.1479591836734693,
+  "aerodynamic_power_ratio_to_70mph": 1.2299562682215743,
+  "physical_acceptance": false,
+  "unknowns": [
+    "exact course/grade/turns/weather and accepted speed tolerance",
+    "verified component ratings and available torque under field weakening",
+    "measured pack usable energy, loaded voltage, resistance and charge/discharge limits",
+    "validated weights, axle geometry, brake bias, chassis, cooling and HV installation",
+    "inspection/title classification and exact manufacture date",
+    "current funding, ownership credits, quotations and final deadline"
+  ],
+  "user_confirmed_hilly_design_required": true,
+  "conservative_uphill_design_screen_fraction": 0.06,
+  "candidate_battery_capacity_class_kwh": 40,
+  "battery_operating_energy_40kwh_70percent_capacity_80percent_window_kwh": 22.4,
+  "required_nameplate_kwh_if_70percent_capacity_80percent_window": 38.08813720502599,
+  "downhill_6percent_at_75mph": {
+    "gravity_kw": 25.600155291843738,
+    "aero_kw": 15.005220895304639,
+    "rolling_kw": 5.120031058368748,
+    "net_braking_kw_no_regen": 5.474903338170351,
+    "net_braking_energy_20min_mj": 6.56988400580442,
+    "limitations": "Constant speed, no wind, stated road-load assumptions; not a brake rating. Different/lower speeds and tailwind can increase net friction demand; include stop/fade/assist tests."
+  }
+}

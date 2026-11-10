@@ -1,0 +1,25 @@
+Test project <WORKSPACE>/build-capstone
+      Start  1: civic_io_regression
+ 1/10 Test  #1: civic_io_regression ..............   Passed    1.63 sec
+      Start  2: harness_regression
+ 2/10 Test  #2: harness_regression ...............   Passed    0.08 sec
+      Start  3: dual_drive_regression
+ 3/10 Test  #3: dual_drive_regression ............   Passed    0.12 sec
+      Start  4: cpp_control_regression
+ 4/10 Test  #4: cpp_control_regression ...........   Passed    0.07 sec
+      Start  5: controller_revision_regression
+ 5/10 Test  #5: controller_revision_regression ...   Passed    0.69 sec
+      Start  6: emulator_interface_regression
+ 6/10 Test  #6: emulator_interface_regression ....   Passed    0.57 sec
+      Start  7: emulator_connector_exports
+ 7/10 Test  #7: emulator_connector_exports .......   Passed    0.25 sec
+      Start  8: drivetrain_analysis_regression
+ 8/10 Test  #8: drivetrain_analysis_regression ...   Passed    0.37 sec
+      Start  9: loopback_http_regression
+ 9/10 Test  #9: loopback_http_regression .........   Passed    1.20 sec
+      Start 10: bench_analysis_regression
+10/10 Test #10: bench_analysis_regression ........   Passed   36.52 sec
+
+100% tests passed out of 10
+
+Total Test time (real) =  42.05 sec

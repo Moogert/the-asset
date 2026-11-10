@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-28",
+  "scope": "documentation, packaging assumptions and cost arithmetic; no physical evidence",
+  "checks": {
+    "configuration_json": "passed",
+    "changed_markdown_relative_links": "passed",
+    "budget_arithmetic": "passed",
+    "existing_physics_model_tests": "10 passed"
+  },
+  "battery_calculations": {
+    "leaf_usable_kwh": 13.439999999999998,
+    "p28a_18p": {
+      "cells": 1728,
+      "energy_kwh": 17.418239999999997,
+      "usable_kwh": 13.934591999999999,
+      "cell_mass_kg": 79.488
+    },
+    "p28a_25p": {
+      "cells": 2400,
+      "energy_kwh": 24.192,
+      "usable_kwh": 19.353600000000004,
+      "cell_mass_kg": 110.39999999999999
+    },
+    "grade_current_a": 159.06666666666666,
+    "grade_15_min_energy_kwh": 11.93,
+    "assumed_resistance_heat_w": 2530.2204444444446
+  },
+  "brake_budgets_usd": {
+    "rear_parts": {
+      "before_contingency": [
+        995,
+        1860
+      ],
+      "with_25_percent_contingency": [
+        1244,
+        2325
+      ]
+    },
+    "all_parts": {
+      "before_contingency": [
+        2667,
+        4615
+      ],
+      "with_25_percent_contingency": [
+        3334,
+        5769
+      ]
+    },
+    "all_parts_and_labor": {
+      "before_contingency": [
+        3867,
+        6915
+      ],
+      "with_25_percent_contingency": [
+        4834,
+        8644
+      ]
+    }
+  },
+  "source_files_sha256": {
+    "README.md": "127773b2e29f05ba5be92c96dff98faf552a4aa345226c9db60fc54a615e078f",
+    "docs/capstone/README.md": "7a0fabce99baa971e31d1fbb3bd5d39597e9db9517961c0bf74338f29370f823",
+    "docs/capstone/FIRST_REVIEW.md": "9f06afecc9a9b55b2c48c4c045c7dab84e3c83f6dbc6bd326a563bf14a2167eb",
+    "docs/capstone/BATTERY_PACKAGING.md": "44b329c05ea82446bac9d3819a69111766ffdef5c647bff9bda286f8309c8193",
+    "docs/capstone/BRAKES.md": "27d23c13f080a08297773e2d06bd91fe839e1b7f8d3a2b6453fb23c6e98aedbb",
+    "docs/capstone/ENGINEERING.md": "0b020101107e53fd05df80084137e74899f883f9e15d4d22ad30fe403c772b49",
+    "docs/capstone/COMMISSIONING.md": "cccc637ea252406785377cede27f3d2a8306276116316abcb0a12aea9d913d3f",
+    "docs/capstone/REQUIREMENTS.md": "8969287e3371be35475bee188ffe0209b1dfa2109cc3377da06d5f4ce1ab0eef",
+    "docs/capstone/PUMP_AND_LEAF_SELECTION.md": "0e6ac2c6b507b27dc7e2b9c3597fa5ed3f0cb8fb7248a8019cbe58e5883d395b",
+    "docs/capstone/VALIDATION.md": "67779247f4c747519d29989f2977bbade0cfb0b25d8585d7172f561ec65fed6c",
+    "configs/battery-packaging-study.json": "dbce3e5dd5ae7506dc3fa54af85192649e43fc8191ad8d7dcd6dd6364218e79a",
+    "configs/porsche-brake-conversion.json": "95fd295e8b3c0c92ad6b30c07739a4b40eba1bc9c6aaaadfa9af401262402b39",
+    "configs/build-inputs.json": "53303c14c6740f750d707fd13c14e480a5dbfb9fc6742cf8ebc6f43df984aeed"
+  }
+}

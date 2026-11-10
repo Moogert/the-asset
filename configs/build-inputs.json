@@ -1,0 +1,106 @@
+{
+  "status": "user-supplied build facts recorded; physical ratings and measurements remain unverified",
+  "hardware_availability": "User reports full drivetrain plus MCU/basic instruments available; exact identities/revisions/calibrations not supplied or inspected",
+  "brakes": {
+    "vehicle": "1996 Civic DX hatchback",
+    "front_description": "stock DX size per user; likely small-hub 240 mm nominal / vendor 242 mm family, physical measurement pending",
+    "rear_configuration": "drums",
+    "abs": false,
+    "master_cylinder_bore_mm": null,
+    "wheel_model_width_offset": null,
+    "planned_conversion": "986 Boxster base FRONT calipers plus 294 mm JCW rotors and matching knuckle adapter",
+    "worksheet": "configs/porsche-brake-conversion.json",
+    "rear_drum_hydraulic_balance_verified": false,
+    "installed_and_tested": false,
+    "planned_rear_conversion": "Planned 1994-2001 Integra DC2/DC4 non-Type-R 4x100 rear-disc assemblies; exact donor, cables and hydraulic match pending"
+  },
+  "tires": {
+    "sidewall_code": "205/45R15",
+    "measured_loaded_rolling_circumference_m": null
+  },
+  "radiator": {
+    "vehicle": "1996 Civic DX radiator assumed",
+    "core_width_mm": null,
+    "core_height_mm": null,
+    "core_thickness_mm": null,
+    "material": "aluminum (user supplied)",
+    "rows": null,
+    "part_number": null,
+    "fan_model": "standard Civic fan (user supplied)",
+    "fan_count": null,
+    "full_shroud": null
+  },
+  "cooling": {
+    "coolant_pump_model": "Listed replacement for BMW 11517597715; manufacturer/controller version unverified",
+    "measured_installed_coolant_flow_l_min": null,
+    "loop_description": "Shared inverter/transaxle coolant loop selected; exact routing and installed flow not yet specified",
+    "inverter_transaxle_shared_loop": true,
+    "oil_pump_model": null,
+    "oil_cooler_description": null,
+    "sump_pickup_return_and_filter_description": null,
+    "pump_interface_review": {
+      "status": "unapproved_conflicting_generic_references",
+      "claimed_application_part": "11517597715",
+      "manufacturer_catalog_cross_reference": "Pierburg 7.07223.01.0 CWA200",
+      "user_supplied_pinout": {
+        "1": "ignition +12 V",
+        "2": "BSD",
+        "3": "main +12 V",
+        "4": "ground"
+      },
+      "user_claimed_protocol": "1200 baud BSD/LIN; interchangeability not established",
+      "matching_generic_bsd_reference": "https://www.maxxecu.com/webhelp/settings-inputs-bsd_protocol.html",
+      "reference_scope": "E9x N54 from 9/2007, other listed pump numbers",
+      "conflicting_cwa200_reference": "https://www.tecomotive.com/download/manual_tinyCWA_V3.5a.pdf",
+      "conflict": "CWA200 instructions use pins 1 and 4 for main current; user BSD description uses pins 3 and 4",
+      "approved_pinout": null,
+      "approved_fuse_a": null,
+      "verified_control_protocol": null,
+      "no_signal_full_speed_verified_on_actual_unit": false
+    }
+  },
+  "battery": {
+    "chemistry": null,
+    "series_cell_count": null,
+    "minimum_loaded_v": null,
+    "nominal_v": null,
+    "maximum_charged_v": null,
+    "continuous_discharge_a": null,
+    "regen_acceptance_a": null,
+    "donor_intent": "Used Leaf donor, now evaluating 40 kWh class against hilly endurance; final selection requires measured usable energy/current/thermal and packaging/axle-load review",
+    "packaging_priority": "Retain rear seats if feasible; assess removed fuel-tank cavity first, split protected enclosure alternative",
+    "fuel_tank_retained": false,
+    "rear_seat_retention_preferred": true,
+    "packaging_worksheet": "configs/battery-packaging-study.json",
+    "capacity_class_under_evaluation_kwh": 40
+  },
+  "duty": {
+    "continuous_speed_mph": 75.0,
+    "sustained_grade_fraction": null,
+    "grade_duration_minutes": null,
+    "ambient_c": 35.0,
+    "sustained_hill_required": true,
+    "orientation_request": "Explain whole-transaxle attitude, internal stator clocking and electrical field angle",
+    "continuous_duration_minutes": 20.0,
+    "duration_basis": "User 20m interpreted as minutes; 25 miles at 75 mph",
+    "acceptance_grade_fraction": null,
+    "hilly_course_assumed": true,
+    "conservative_uphill_design_screen_fraction": 0.06,
+    "acceptance_course_elevation_profile": null
+  },
+  "orientation": {
+    "transaxle_model_confirmed": null,
+    "stock_installed_attitude_retained": null,
+    "planned_pitch_degrees_from_stock": null,
+    "planned_roll_degrees_from_stock": null,
+    "stator_internal_clocking_changed": null,
+    "oil_distribution_verified": false
+  },
+  "registration": {
+    "state": "NC",
+    "county": "Wake",
+    "manufacture_date": null,
+    "conversion_title_classification": null,
+    "inspection_route_confirmed": false
+  }
+}

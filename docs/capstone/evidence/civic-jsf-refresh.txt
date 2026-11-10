@@ -1,0 +1,14 @@
+{
+  "status": "cpp_automated_review_not_compliance",
+  "summary": {
+    "coverageWarnings": 0,
+    "reviews": 193,
+    "suppressed": 0,
+    "violations": 0
+  },
+  "coverage": {
+    "automatedRules": 40,
+    "executedAutomatedRules": 40,
+    "reviewRules": 193
+  }
+}

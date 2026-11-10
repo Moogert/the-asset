@@ -1,0 +1,113 @@
+{
+  "status": "disabled production worksheet; not loaded by firmware",
+  "date": "2026-10-29",
+  "processor": "STM32F107 Cortex-M3 / ZombieVerter",
+  "board_revision": null,
+  "v1d_revision": null,
+  "production": false,
+  "hardware_verified": false,
+  "runtime_entrypoint": "Capstone::run_release",
+  "physical_port": null,
+  "temperature_channels": [
+    {
+      "component": 0,
+      "name": "MG1 motor",
+      "sensor_id": null,
+      "actual_sensor_location": null,
+      "required": null,
+      "derate_c": null,
+      "shutdown_c": null,
+      "recovery_hysteresis_c": null,
+      "max_age_ms": null,
+      "filter_ms": null,
+      "calibration_evidence": null
+    },
+    {
+      "component": 1,
+      "name": "MG2 motor",
+      "sensor_id": null,
+      "actual_sensor_location": null,
+      "required": null,
+      "derate_c": null,
+      "shutdown_c": null,
+      "recovery_hysteresis_c": null,
+      "max_age_ms": null,
+      "filter_ms": null,
+      "calibration_evidence": null
+    },
+    {
+      "component": 2,
+      "name": "MG1 inverter",
+      "sensor_id": null,
+      "actual_sensor_location": null,
+      "required": null,
+      "derate_c": null,
+      "shutdown_c": null,
+      "recovery_hysteresis_c": null,
+      "max_age_ms": null,
+      "filter_ms": null,
+      "calibration_evidence": null
+    },
+    {
+      "component": 3,
+      "name": "MG2 inverter",
+      "sensor_id": null,
+      "actual_sensor_location": null,
+      "required": null,
+      "derate_c": null,
+      "shutdown_c": null,
+      "recovery_hysteresis_c": null,
+      "max_age_ms": null,
+      "filter_ms": null,
+      "calibration_evidence": null
+    },
+    {
+      "component": 4,
+      "name": "transmission oil",
+      "sensor_id": null,
+      "actual_sensor_location": null,
+      "required": null,
+      "derate_c": null,
+      "shutdown_c": null,
+      "recovery_hysteresis_c": null,
+      "max_age_ms": null,
+      "filter_ms": null,
+      "calibration_evidence": null
+    },
+    {
+      "component": 5,
+      "name": "shared coolant",
+      "sensor_id": null,
+      "actual_sensor_location": null,
+      "required": null,
+      "derate_c": null,
+      "shutdown_c": null,
+      "recovery_hysteresis_c": null,
+      "max_age_ms": null,
+      "filter_ms": null,
+      "calibration_evidence": null
+    }
+  ],
+  "circulation": {
+    "independent_channel_power_source": null,
+    "uncertainty_method": null,
+    "threshold_w": null,
+    "confirmation_ms": null,
+    "max_skew_ms": null,
+    "required": null
+  },
+  "transport": {
+    "control_ids": null,
+    "max_command_age_ms": null,
+    "max_pair_skew_ms": null,
+    "tx_completion_evidence": null,
+    "controller_application_evidence": null,
+    "queue_cancellation_evidence": null,
+    "measured_inhibit_latency_ms": null
+  },
+  "notes": [
+    "Use demonstration_release_config only for synthetic tests. Physical ports reject unverified/nonproduction configurations.",
+    "Existing current envelopes are simulated, not calibrated torque maps.",
+    "JSON is a review worksheet; no automatic hardware profile loading is implemented."
+  ]
+}

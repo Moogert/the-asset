@@ -1,0 +1,64 @@
+{
+  "status": "cpp_automated_review_not_compliance",
+  "tool_version": "jsfav 0.1.0",
+  "tool_path": "<LOCAL_PROJECTS>\\smash\\jsfav-checker\\build-msvc\\Release\\jsfav.exe",
+  "tool_sha256": "931a60e98446ea14e14113d21938f36104463c307fb7d58c2d0742438774c025",
+  "catalog_sha256": "3625e0ff61709169fade5821d0ae86d63a4a4c7401a6f921cb593dc3ec471081",
+  "command": [
+    "<LOCAL_PROJECTS>\\smash\\jsfav-checker\\build-msvc\\Release\\jsfav.exe",
+    "scan",
+    "include/control/dual_supervisor.h",
+    "include/control/control_runtime.h",
+    "src/control/dual_supervisor.cpp",
+    "src/control/control_codec.cpp",
+    "src/control/control_runtime.cpp",
+    "include/control/release_control.h",
+    "src/control/release_monitor.cpp",
+    "src/control/release_runtime.cpp",
+    "--profile",
+    "literal",
+    "--format",
+    "json",
+    "--output",
+    "<WORKSPACE>\\docs\\capstone\\evidence\\jsf-cpp-review.json",
+    "-p",
+    "<WORKSPACE>\\build-control-clang\\compile_commands.json"
+  ],
+  "working_directory": "<WORKSPACE>",
+  "selected_files_sha256": {
+    "include/control/dual_supervisor.h": "fdbf591b50a6ad24da851cbbb1b763569b05fe7b33d40188e579ee10b77de908",
+    "include/control/control_runtime.h": "ecebd7b16421f65d099c10ea961a818f69981da018bec2164b002c519e23d4b2",
+    "src/control/dual_supervisor.cpp": "29e181dba844c761ae931604d7fd5e0ee33612430cc53a438b79d642fdb948b6",
+    "src/control/control_codec.cpp": "fce0f55a8709657093db6b74f0c5ff6b346fa618028f2bfffb1be655c9990acf",
+    "src/control/control_runtime.cpp": "7334d7afe88508ec1ad0ff401e28af754d754fa6bf388d8cbb361cd9524614de",
+    "include/control/release_control.h": "fb966af6fa823c3fa2e2444cfeb1d2d438978ae4c4f61addc2317f57d85c2903",
+    "src/control/release_monitor.cpp": "5be22ace4d8d45076a634ee91342626ea390675a4f05db0f8a7918d7fef28167",
+    "src/control/release_runtime.cpp": "d7a31a65fdab186a396248f7599c36e78c767625368055289b1d45e9a55ff83a"
+  },
+  "unscanned_c_implementations_sha256": {
+    "src/core/dual_drive.c": "7ea02a3a5a5220626e029d38da27a3e9866ee2bdc14b76b2eabc982e88047f94",
+    "src/core/prius_inverter_adapter.c": "86d164e8117d8e96a0e99023376a2f8904918041cc213640dbc73495203053ea"
+  },
+  "limitations": [
+    "193 catalog rules require manual review",
+    "Automated checks are review aids, not complete proofs for their rules",
+    "Host build does not prove MCU timing or physical inhibit behavior",
+    "Scope, platform assumptions and deviations require review"
+  ],
+  "profile": "literal",
+  "partial": false,
+  "coverage": {
+    "automatedRules": 40,
+    "executedAutomatedRules": 40,
+    "reviewRules": 193
+  },
+  "summary": {
+    "coverageWarnings": 0,
+    "reviews": 193,
+    "suppressed": 0,
+    "violations": 0
+  },
+  "compilation_database_sha256": "8acd1ffad41737c70fad3033d984000915a56a26c89d99591be9a4595a9df10b",
+  "scope_sha256": "56e924b601201265e447206bafd9216fbe8531f7237120f857270d324b9fe47c",
+  "cmake_sha256": "01b9e475d480a78069778e0b19d86d2c1d7b4aec01d2caa21f7fadebbdeb6765"
+}

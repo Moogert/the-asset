@@ -1,0 +1,382 @@
+{
+  "status": "unverified_identification_and_purchasing_worksheet_not_a_live_pin_map",
+  "date": "2026-10-29",
+  "vehicle": "1996 Honda Civic DX hatchback, original manual, no ABS",
+  "ecu": {
+    "part_number": null,
+    "emissions_market": "non-California/Federal, user reported; verify ECU label",
+    "engine_code_verified": null,
+    "factory_diagram_reference": null,
+    "connector_face_photos_reference": null
+  },
+  "firmware_compile_profile": "firmware/include/vehicle_profile.h",
+  "project_connector_schedule": "configs/emulator-harness-connectors.json",
+  "profile_note": "JSON is an evidence/identification worksheet, not loaded by firmware. Compile-time release is separate; do not flip booleans without evidence.",
+  "release": {
+    "honda_verified": false,
+    "output_interfaces_verified": false,
+    "engine_model_verified": false,
+    "ev_telemetry_verified": false,
+    "service_inputs_verified": false,
+    "measured_waveform_evidence": null,
+    "hardware_review": null,
+    "reader_acceptance": null,
+    "honda_fault_mapping_verified": false
+  },
+  "connections": [
+    {
+      "signal": "CKP",
+      "mcu_assignment": "Mega D22",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    },
+    {
+      "signal": "TDC",
+      "mcu_assignment": "Mega D23",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    },
+    {
+      "signal": "CYP",
+      "mcu_assignment": "Mega D24",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    },
+    {
+      "signal": "additional position",
+      "mcu_assignment": "Mega D25 reserved",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    },
+    {
+      "signal": "VSS",
+      "mcu_assignment": "Mega D26",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    },
+    {
+      "signal": "TPS",
+      "mcu_assignment": "DAC0",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    },
+    {
+      "signal": "MAP",
+      "mcu_assignment": "DAC1",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    },
+    {
+      "signal": "upstream O2",
+      "mcu_assignment": "DAC2",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    },
+    {
+      "signal": "downstream O2",
+      "mcu_assignment": "DAC3",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    },
+    {
+      "signal": "ECT",
+      "mcu_assignment": "Mega D42-D44 ladder",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    },
+    {
+      "signal": "IAT",
+      "mcu_assignment": "Mega D45-D47 ladder",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    },
+    {
+      "signal": "injector observation",
+      "mcu_assignment": "Mega D2",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    },
+    {
+      "signal": "heater observation",
+      "mcu_assignment": "Mega D3",
+      "honda_connector": null,
+      "honda_cavity": null,
+      "wire_color": null,
+      "source_drawing_page": null,
+      "electrical_type": null,
+      "range_and_impedance": null,
+      "calibration_reference": null,
+      "scope_capture": null,
+      "status": "unverified"
+    }
+  ],
+  "monitor_inventory": {
+    "position_and_sync": "unknown until exact ECU identification; not demonstrated",
+    "misfire_pickup": "unknown until exact ECU identification; not demonstrated",
+    "oxygen_control": "unknown until exact ECU identification; not demonstrated",
+    "oxygen_heaters": "unknown until exact ECU identification; not demonstrated",
+    "catalyst": "unknown until exact ECU identification; not demonstrated",
+    "evap_tank_pressure_purge": "unknown until exact ECU identification; not demonstrated",
+    "injector_ignition_loads": "unknown until exact ECU identification; not demonstrated",
+    "idle_air": "unknown until exact ECU identification; not demonstrated",
+    "electrical_load_charging": "unknown until exact ECU identification; not demonstrated",
+    "fan_ac_main_relay": "unknown until exact ECU identification; not demonstrated"
+  },
+  "costs": {
+    "currency": "USD",
+    "basis": "engineering allowances only; no supplier quotations, 28 October 2026",
+    "bom": [
+      {
+        "id": "H1",
+        "item": "Arduino Mega 2560 board",
+        "quantity": 1,
+        "unit": "board",
+        "unit_low_usd": 35,
+        "unit_high_usd": 55
+      },
+      {
+        "id": "H2",
+        "item": "Teensy 4.1 board",
+        "quantity": 1,
+        "unit": "board",
+        "unit_low_usd": 30,
+        "unit_high_usd": 45
+      },
+      {
+        "id": "H3",
+        "item": "Dual SPI DAC/reference provision",
+        "quantity": 4,
+        "unit": "channel-pair",
+        "unit_low_usd": 8,
+        "unit_high_usd": 15
+      },
+      {
+        "id": "H4",
+        "item": "Analog buffers, clamps and disconnect switches",
+        "quantity": 1,
+        "unit": "lot",
+        "unit_low_usd": 35,
+        "unit_high_usd": 80
+      },
+      {
+        "id": "H5",
+        "item": "8-position resistance ladder and protected switching",
+        "quantity": 2,
+        "unit": "sensor circuit",
+        "unit_low_usd": 20,
+        "unit_high_usd": 40
+      },
+      {
+        "id": "H6",
+        "item": "Position-signal conditioning/driver allowance",
+        "quantity": 4,
+        "unit": "channel",
+        "unit_low_usd": 15,
+        "unit_high_usd": 30
+      },
+      {
+        "id": "H7",
+        "item": "Protected ECU output/switch observation inputs",
+        "quantity": 1,
+        "unit": "lot",
+        "unit_low_usd": 40,
+        "unit_high_usd": 90
+      },
+      {
+        "id": "H8",
+        "item": "3.3 V-compatible CAN transceiver assemblies",
+        "quantity": 2,
+        "unit": "bus interface",
+        "unit_low_usd": 15,
+        "unit_high_usd": 30
+      },
+      {
+        "id": "H9",
+        "item": "K-line, optional L-line driver and logic translation",
+        "quantity": 1,
+        "unit": "assembly",
+        "unit_low_usd": 20,
+        "unit_high_usd": 45
+      },
+      {
+        "id": "H10",
+        "item": "Protected automotive power, fusing and transient protection",
+        "quantity": 1,
+        "unit": "lot",
+        "unit_low_usd": 40,
+        "unit_high_usd": 90
+      },
+      {
+        "id": "H11",
+        "item": "Independent watchdogs, gate and warning-lamp interface",
+        "quantity": 1,
+        "unit": "lot",
+        "unit_low_usd": 30,
+        "unit_high_usd": 70
+      },
+      {
+        "id": "H12",
+        "item": "Honda breakout connectors and harness materials",
+        "quantity": 1,
+        "unit": "lot",
+        "unit_low_usd": 80,
+        "unit_high_usd": 180
+      },
+      {
+        "id": "H13",
+        "item": "Characterized dummy-load provision and heat protection",
+        "quantity": 1,
+        "unit": "lot",
+        "unit_low_usd": 75,
+        "unit_high_usd": 250
+      },
+      {
+        "id": "H14",
+        "item": "PCB/perfboard, enclosures, test points and connectors",
+        "quantity": 1,
+        "unit": "lot",
+        "unit_low_usd": 50,
+        "unit_high_usd": 150
+      },
+      {
+        "id": "H15",
+        "item": "ANCEL AD310 candidate handheld reader",
+        "quantity": 1,
+        "unit": "reader",
+        "unit_low_usd": 25,
+        "unit_high_usd": 50
+      }
+    ],
+    "parts_before_contingency_usd": [
+      622,
+      1425
+    ],
+    "parts_with_25_percent_contingency_usd": [
+      778,
+      1782
+    ],
+    "optional_elm_development_adapter_usd": [
+      35,
+      70
+    ],
+    "exclusions": [
+      "Honda ECU if not already owned",
+      "labor",
+      "scope, probes and lab power supply",
+      "dedicated load equipment beyond allowance",
+      "vehicle qualification or road approval",
+      "tax and freight"
+    ],
+    "status": "historical combined-gateway reserve; not current purchasing list; exact revised quote pending",
+    "current_required_interfaces": {
+      "vehicle_EV_CAN": 1,
+      "additional_reader_CAN": 0,
+      "Honda_K_line_master": 0,
+      "combined_MIL_driver": 0,
+      "Bluetooth_module": null
+    },
+    "retired_vehicle_items": [
+      "second reader CAN interface",
+      "K/L diagnostic master",
+      "MIL OR circuit"
+    ]
+  },
+  "sources": [
+    "https://docs.arduino.cc/hardware/mega-2560/",
+    "https://www.pjrc.com/store/teensy41.html",
+    "https://www.microchip.com/en-us/product/MCP4922",
+    "https://www.st.com/resource/en/datasheet/l9637.pdf",
+    "https://www.anceltech.com/article/ancel-ad310.html"
+  ],
+  "diagnostic_architecture": "Original Honda ECU owns native OBD and MIL; Teensy coordinates induced signal faults and USB/Bluetooth records. No diagnostic bus master in default image.",
+  "bluetooth": {
+    "module": null,
+    "pins": null,
+    "transport": "Diagnostictransport; unbound",
+    "vehicle_verified": false
+  }
+}

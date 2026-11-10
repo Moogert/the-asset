@@ -1,0 +1,20 @@
+{
+  "machine": "MG2",
+  "status": "worksheet_not_flashable",
+  "firmware": "v5.40.R FOC",
+  "proposed_nodeid": 2,
+  "proposed_controlid": 64,
+  "can_bitrate": 500000,
+  "control_period_ms": 10,
+  "controlcheck": 1,
+  "encmode": 4,
+  "potmode": 3,
+  "calibrated_parameters": {
+    "polepairs": null, "respolepairs": null, "syncofs": null,
+    "pinswap": null, "deadtime": null, "pwmfrq": null,
+    "il1gain": null, "il2gain": null, "udcgain": null,
+    "ocurlim": null, "throtcur": null, "idcmax": null, "idcmin": null,
+    "fmax": null, "manualid": 0, "manualiq": 0
+  },
+  "notes": "IDs are project proposals pending bus survey and CAN hardware review. Independent calibration required even with a locked planetary assembly."
+}

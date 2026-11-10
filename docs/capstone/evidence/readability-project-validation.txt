@@ -1,0 +1,19 @@
+Test project <WORKSPACE>/build-capstone
+    Start 1: civic_io_regression
+1/7 Test #1: civic_io_regression ..............   Passed   15.25 sec
+    Start 2: harness_regression
+2/7 Test #2: harness_regression ...............   Passed    9.91 sec
+    Start 3: dual_drive_regression
+3/7 Test #3: dual_drive_regression ............   Passed    1.77 sec
+    Start 4: cpp_control_regression
+4/7 Test #4: cpp_control_regression ...........   Passed    3.39 sec
+    Start 5: drivetrain_analysis_regression
+5/7 Test #5: drivetrain_analysis_regression ...   Passed    0.46 sec
+    Start 6: loopback_http_regression
+6/7 Test #6: loopback_http_regression .........   Passed    6.16 sec
+    Start 7: bench_analysis_regression
+7/7 Test #7: bench_analysis_regression ........   Passed   43.43 sec
+
+100% tests passed out of 7
+
+Total Test time (real) =  80.67 sec

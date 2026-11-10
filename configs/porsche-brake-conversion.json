@@ -1,0 +1,394 @@
+{
+  "status": "planned_vehicle_work_package_not_installed_or_approved",
+  "review_date": "2026-10-28",
+  "currency": "USD",
+  "vehicle": "1996 Honda Civic DX hatchback EV conversion",
+  "source_note": {
+    "original_path": "../brembo_guide.md",
+    "archive_path": "docs/capstone/references/legacy-brembo-guide.md",
+    "sha256": "5a43b327c9ea6cea2144eb2695969cb879dea90eacfcc43d4804fd120ba5b47f",
+    "role": "historical user planning; current BRAKES.md supersedes conflicting assumptions"
+  },
+  "confirmed_by_user": {
+    "rear_brakes": "drums",
+    "abs": false,
+    "front_brakes": "stock DX size; not physically measured",
+    "tire_size": "205/45R15"
+  },
+  "unverified": {
+    "front_rotor_measured_mm": null,
+    "hub_register_mm": null,
+    "master_cylinder_bore_mm": null,
+    "master_cylinder_part_number": null,
+    "front_original_piston_mm": null,
+    "rear_wheel_cylinder_bore_mm": null,
+    "proportioning_valve_identity": null,
+    "hard_line_diameter_and_flare": null,
+    "booster_condition": null,
+    "wheel_make_width_offset": null,
+    "converted_axle_weights_kg": null,
+    "supplier_confirmation_for_rear_drums": null,
+    "road_use_approval": null,
+    "installed_and_tested": false,
+    "rear_donor_identity": null,
+    "rear_disc_hydraulic_balance_verified": false,
+    "parking_cable_fit_verified": false
+  },
+  "selection": {
+    "calipers": "986 Boxster BASE FRONT; casting references 986.351.421 / 986.351.422",
+    "rotors": "294 mm R53 Mini Cooper S JCW; supplier references Centric 125.34092 / DBA2524 / RDA7974",
+    "likely_knuckle_path": "Honed small-hub 242 mm/9.5 inch kit, pending rotor/hub measurement; some matching small Honda rotor catalogues state 240 mm",
+    "alternative": "HDP23-01 262 mm kit only if actual large knuckles are present",
+    "knuckle_swap_automatically_required": false,
+    "rear_drum_compatibility_validated": false,
+    "master_cylinder": "retain as inspection/calculation baseline, final bore and compatibility unresolved",
+    "hard_lines": "retain serviceable compatible original lines; no automatic diameter increase",
+    "flex_hoses": "budget correct replacement front hoses; verify inlet adapters, full-lock and suspension-travel slack",
+    "assist": "retain suitable vacuum booster with standalone-rated electric vacuum supply; exact pump/control not selected",
+    "friction_braking_without_regen_required": true,
+    "rear_conversion": "Planned 1994-2001 Integra DC2/DC4 non-Type-R 4x100 rear-disc assemblies; exact donor, cables and hydraulic match pending"
+  },
+  "price_observations": [
+    {
+      "item": "Honed 242 mm mounting kit",
+      "unit_usd": 256.64,
+      "date": "2026-10-27",
+      "url": "https://honeddevelopments.com/product/honda-porsche-242-brake-caliper-mounting-kit/"
+    },
+    {
+      "item": "Honed 262 mm mounting kit",
+      "unit_usd": 264.19,
+      "date": "2026-10-27",
+      "url": "https://honeddevelopments.com/product/honda-porsche-brake-caliper-mounting-kit/"
+    },
+    {
+      "item": "HELLA UP30 009286001 pump only; sourcing reference, not approved assembly",
+      "unit_usd": 330.99,
+      "date": "2026-10-27",
+      "url": "https://www.summitracing.com/search/department/brake-systems/section/vacuum-pumps/product-line/hella-up30-electric-vacuum-pumps/part-type/vacuum-pumps-street?SortBy=Default&SortOrder=Ascending&fr=part-type&gnview=Horizontal&outofstock=true&ptr=vacuum-pumps-street&ptr_oos=1"
+    }
+  ],
+  "bom": [
+    {
+      "id": "F1",
+      "group": "front",
+      "item": "Correct Honed mounting kit; select ONE knuckle version",
+      "quantity": 1,
+      "unit": "kit",
+      "unit_low_usd": 257,
+      "unit_high_usd": 265,
+      "basis": "rounded observed USD kit prices; brackets, mounting hardware and hose adapters included; small-hub kit includes centering rings"
+    },
+    {
+      "id": "F2",
+      "group": "front",
+      "item": "Used serviceable 986 base FRONT calipers",
+      "quantity": 1,
+      "unit": "pair",
+      "unit_low_usd": 350,
+      "unit_high_usd": 650,
+      "basis": "planning allowance; no donor pair quoted; new genuine calipers excluded"
+    },
+    {
+      "id": "F3",
+      "group": "front",
+      "item": "Seal/boot and pad-retaining service parts for both calipers",
+      "quantity": 1,
+      "unit": "service lot",
+      "unit_low_usd": 120,
+      "unit_high_usd": 250,
+      "basis": "allowance; replacement pistons/crossover pipes or professional rebuilding extra if needed"
+    },
+    {
+      "id": "F4",
+      "group": "front",
+      "item": "Matching front pad set, compound to be selected",
+      "quantity": 1,
+      "unit": "axle set",
+      "unit_low_usd": 75,
+      "unit_high_usd": 150,
+      "basis": "allowance; supplier references observed separately, not a binding quote"
+    },
+    {
+      "id": "F5",
+      "group": "front",
+      "item": "Compatible 294 mm JCW rotors",
+      "quantity": 2,
+      "unit": "rotor",
+      "unit_low_usd": 90,
+      "unit_high_usd": 130,
+      "basis": "allowance; confirm exact manufacturer specification, not generic Mini fitment"
+    },
+    {
+      "id": "F6",
+      "group": "front",
+      "item": "Correct conversion-compatible front flexible hoses",
+      "quantity": 1,
+      "unit": "pair",
+      "unit_low_usd": 100,
+      "unit_high_usd": 180,
+      "basis": "allowance; supplier permits suitable existing hoses, but age/slack/condition must be checked"
+    },
+    {
+      "id": "F7",
+      "group": "front",
+      "item": "Compatible fresh brake fluid for flush/bleed",
+      "quantity": 1,
+      "unit": "service supply",
+      "unit_low_usd": 30,
+      "unit_high_usd": 60,
+      "basis": "allowance; fluid type and quantity follow actual hydraulic-system specification"
+    },
+    {
+      "id": "F8",
+      "group": "front",
+      "item": "Cleaning, caps and minor service consumables",
+      "quantity": 1,
+      "unit": "lot",
+      "unit_low_usd": 30,
+      "unit_high_usd": 60,
+      "basis": "allowance; included kit hardware/washers not charged twice"
+    },
+    {
+      "id": "E1",
+      "group": "assist",
+      "item": "Standalone-rated electric brake-vacuum pump",
+      "quantity": 1,
+      "unit": "pump",
+      "unit_low_usd": 300,
+      "unit_high_usd": 400,
+      "basis": "allowance anchored by UP30 pump-only listing; exact system not selected"
+    },
+    {
+      "id": "E2",
+      "group": "assist",
+      "item": "Vacuum reservoir, check valve and vacuum-rated hose",
+      "quantity": 1,
+      "unit": "assembly",
+      "unit_low_usd": 80,
+      "unit_high_usd": 180,
+      "basis": "allowance; size for actual booster and reserve requirement"
+    },
+    {
+      "id": "E3",
+      "group": "assist",
+      "item": "Vacuum sensor/switch, demand control and low-vacuum warning",
+      "quantity": 1,
+      "unit": "assembly",
+      "unit_low_usd": 100,
+      "unit_high_usd": 200,
+      "basis": "allowance; independent brake-assist control, thresholds unassigned"
+    },
+    {
+      "id": "E4",
+      "group": "assist",
+      "item": "Fused LV wiring, relay/driver, connector and mounts",
+      "quantity": 1,
+      "unit": "lot",
+      "unit_low_usd": 50,
+      "unit_high_usd": 100,
+      "basis": "allowance; exact fuse and wiring ratings remain pump dependent"
+    },
+    {
+      "id": "L1",
+      "group": "labor",
+      "item": "Installation, bleed and basic validation labor",
+      "quantity": 1,
+      "unit": "allowance",
+      "unit_low_usd": 800,
+      "unit_high_usd": 1500,
+      "basis": "engineering allowance, not a shop quote; certification and test-venue fees excluded"
+    },
+    {
+      "id": "R1",
+      "group": "rear",
+      "item": "Matched left/right 4x100 disc trailing-arm assemblies with spindles, backing plates, carriers and serviceable hubs; excludes calipers/rotors/pads",
+      "quantity": 1,
+      "unit": "pair",
+      "unit_low_usd": 350,
+      "unit_high_usd": 650,
+      "basis": "Engineering allowance, not a quote. Credit included donor parts; do not count complete assemblies and replacements twice."
+    },
+    {
+      "id": "R2",
+      "group": "rear",
+      "item": "Matching left/right rebuilt rear calipers with functional parking mechanisms",
+      "quantity": 1,
+      "unit": "pair",
+      "unit_low_usd": 180,
+      "unit_high_usd": 320,
+      "basis": "Engineering allowance, not a quote. Credit included donor parts; do not count complete assemblies and replacements twice."
+    },
+    {
+      "id": "R3",
+      "group": "rear",
+      "item": "Matching new standard non-Type-R rear rotors",
+      "quantity": 2,
+      "unit": "rotor",
+      "unit_low_usd": 40,
+      "unit_high_usd": 70,
+      "basis": "Engineering allowance, not a quote. Credit included donor parts; do not count complete assemblies and replacements twice."
+    },
+    {
+      "id": "R4",
+      "group": "rear",
+      "item": "Rear axle pad set",
+      "quantity": 1,
+      "unit": "set",
+      "unit_low_usd": 35,
+      "unit_high_usd": 70,
+      "basis": "Engineering allowance, not a quote. Credit included donor parts; do not count complete assemblies and replacements twice."
+    },
+    {
+      "id": "R5",
+      "group": "rear",
+      "item": "Correct rear flexible hoses",
+      "quantity": 1,
+      "unit": "pair",
+      "unit_low_usd": 60,
+      "unit_high_usd": 100,
+      "basis": "Engineering allowance, not a quote. Credit included donor parts; do not count complete assemblies and replacements twice."
+    },
+    {
+      "id": "R6",
+      "group": "rear",
+      "item": "Disc-caliper parking cables matched to Civic routing and equalizer",
+      "quantity": 1,
+      "unit": "pair",
+      "unit_low_usd": 80,
+      "unit_high_usd": 140,
+      "basis": "Engineering allowance, not a quote. Credit included donor parts; do not count complete assemblies and replacements twice."
+    },
+    {
+      "id": "R7",
+      "group": "rear",
+      "item": "Trailing-arm bushings and minor suspension service parts",
+      "quantity": 1,
+      "unit": "lot",
+      "unit_low_usd": 80,
+      "unit_high_usd": 160,
+      "basis": "Engineering allowance, not a quote. Credit included donor parts; do not count complete assemblies and replacements twice."
+    },
+    {
+      "id": "R8",
+      "group": "rear",
+      "item": "Specified new nuts/bolts/clips/washers and mounting consumables",
+      "quantity": 1,
+      "unit": "lot",
+      "unit_low_usd": 50,
+      "unit_high_usd": 100,
+      "basis": "Engineering allowance, not a quote. Credit included donor parts; do not count complete assemblies and replacements twice."
+    },
+    {
+      "id": "R9",
+      "group": "rear",
+      "item": "Matched non-ABS disc-system proportioning valve provision; exact part unselected",
+      "quantity": 1,
+      "unit": "allowance",
+      "unit_low_usd": 80,
+      "unit_high_usd": 180,
+      "basis": "Engineering allowance, not a quote. Credit included donor parts; do not count complete assemblies and replacements twice."
+    },
+    {
+      "id": "L2",
+      "group": "rear_labor",
+      "item": "Rear conversion, parking adjustment and alignment incremental labor",
+      "quantity": 1,
+      "unit": "allowance",
+      "unit_low_usd": 400,
+      "unit_high_usd": 800,
+      "basis": "Allowance beyond L1; use one consolidated shop quote before purchasing"
+    }
+  ],
+  "contingency_fraction": 0.25,
+  "conditional_allowances_usd": [
+    {
+      "item": "Matched master cylinder if assessment requires replacement",
+      "low": 150,
+      "high": 350
+    },
+    {
+      "item": "Replacement hard-line tubing/fittings, parts only",
+      "low": 50,
+      "high": 300
+    },
+    {
+      "item": "Spacers and longer studs if verified appropriate",
+      "low": 100,
+      "high": 250
+    },
+    {
+      "item": "Replacement wheel set if needed, excluding tires",
+      "low": 600,
+      "high": 1200
+    },
+    {
+      "item": "Front knuckle/hub/bearing changes only if axle or inspected fitment requires",
+      "low": 300,
+      "high": 700
+    },
+    {
+      "item": "Replacement caliper piston set if inspection requires",
+      "low": 250,
+      "high": 350
+    },
+    {
+      "item": "Rear hub/bearing pair if donor hubs fail inspection",
+      "low": 150,
+      "high": 300
+    }
+  ],
+  "exclusions": [
+    "shipping, sales tax and import charges",
+    "credit for parts already owned",
+    "conditional work listed separately",
+    "new genuine calipers",
+    "replacement booster if defective",
+    "engineering/road approval and test-venue fees"
+  ],
+  "release_gates": [
+    "exact front knuckle/hub/rotor identification",
+    "Integra rear-disc donor/parking-cable/hydraulic matching and converted axle-load/bias review",
+    "master bore, piston/wheel-cylinder areas, pedal travel and pressure reviewed",
+    "vacuum assist and loss-of-supply behavior verified",
+    "15-inch wheel clearance proven",
+    "hydraulic and regen-unavailable stop/fade/bias tests completed",
+    "supplier race-use restriction and road-use acceptability resolved"
+  ],
+  "sources_rear": [
+    "https://typerperformance.com.au/collections/civic-ek/products/rear-disc-brake-conversion-trailing-arms-4x100-honda-civic-eg-ek-92-00-integra-dc2-94-3",
+    "https://www.acurapartswarehouse.com/parts-list/1997-acura-integra--4dr_ls-ka4at/chassis/rear_brake_disk.html"
+  ],
+  "budget_summary_usd": {
+    "rear_parts": {
+      "before_contingency": [
+        995,
+        1860
+      ],
+      "with_25_percent_contingency": [
+        1244,
+        2325
+      ]
+    },
+    "all_parts": {
+      "before_contingency": [
+        2667,
+        4615
+      ],
+      "with_25_percent_contingency": [
+        3334,
+        5769
+      ]
+    },
+    "all_parts_and_labor": {
+      "before_contingency": [
+        3867,
+        6915
+      ],
+      "with_25_percent_contingency": [
+        4834,
+        8644
+      ]
+    }
+  }
+}

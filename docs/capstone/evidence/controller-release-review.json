@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-29",
+  "status": "software_review_only_physical_acceptance_pending",
+  "target": "ZombieVerter STM32F107; portable Cortex-M3 objects only; board port not implemented",
+  "diagnostics": "Original Honda ECU owns native OBD and MIL; detailed EV records USB; Bluetooth unbound",
+  "tests": {
+    "msvc_ctest_suites": 8,
+    "new_release_assertions": 147,
+    "clang_control_suites": 2,
+    "all_passed": true
+  },
+  "jsf": {
+    "scope_files": 8,
+    "automated_rules": 40,
+    "summary": {
+      "coverageWarnings": 0,
+      "reviews": 193,
+      "suppressed": 0,
+      "violations": 0
+    },
+    "full_compliance_established": false
+  },
+  "readability": {
+    "mode": "current_format_only",
+    "passed": true,
+    "historical_token_equivalence_claimed": false
+  },
+  "presentation": {
+    "png_size": [
+      3600,
+      2400
+    ],
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "visually_inspected": true,
+    "evidence": "synthetic_demo"
+  },
+  "physical_evidence": {
+    "flashed": false,
+    "ecu_codes_verified": false,
+    "reader_verified": false,
+    "bluetooth_verified": false,
+    "inhibit_latency_measured": false,
+    "production_limits_verified": false
+  },
+  "source_sha256": {
+    "CMakeLists.txt": "01b9e475d480a78069778e0b19d86d2c1d7b4aec01d2caa21f7fadebbdeb6765",
+    "configs/control-source-scope.json": "56e924b601201265e447206bafd9216fbe8531f7237120f857270d324b9fe47c",
+    "configs/controller-release-profile.json": "ceb1dc96bb9428b5bb1db72f9d3a79af10803a26859bba7e13c57143d5b39185",
+    "configs/honda-ecu-interface.json": "ca661264c6df296caadd6e1ac4fbdf9fefc1638f894b3fcd853b237cc95a614a",
+    "configs/honda-fault-indication.json": "9e8be52e05fc2962bdd38dc1e96c346f5a3cd22cbe5e32f3ba9612ddb8883f69",
+    "firmware/include/vehicle_profile.h": "73fc2e9964d5813ce541ff4f54921dea5aeeaa89e293255dfefde5182bf9c3a6",
+    "firmware/lib/CapstoneIO/src/detail.cpp": "b1a6a8f1d43c30f8c274653129cc7726282a25abb47d4c988ea1e51a553729d2",
+    "firmware/lib/CapstoneIO/src/detail.h": "781f9bc19cc4cfe4ae1f5f6c760b9769e7466c2ff1029c407d5ae621e3c6d07c",
+    "firmware/lib/CapstoneIO/src/diagnostics.cpp": "6c42710a8b4c90a45d808dccb0366f0c46127677e31a778dc27604da89aab418",
+    "firmware/lib/CapstoneIO/src/diagnostics.h": "216caebf42c66042800a8111fbccd9587c70458285d29cd937531da2d3452f63",
+    "firmware/lib/CapstoneIO/src/engine.cpp": "7e371ba90c88e1584eee76cd34adf673e1b65aef7e9f26b35b05e23b7ec9592e",
+    "firmware/lib/CapstoneIO/src/engine.h": "d07d0bab7fcad6c997b5ce2f1c54a44fc79b1c1a1a69903c0339f01f451cfd76",
+    "firmware/lib/CapstoneIO/src/indication.cpp": "8917a5bce978ee099ad93f51607fdeb0f0e62cbc0d1ea617fa9f4f17b49a6087",
+    "firmware/lib/CapstoneIO/src/indication.h": "9074d59e0e65feee720efa1af9ad8ca52189357501a705e23f20232868f7f210",
+    "firmware/lib/CapstoneIO/src/journal.cpp": "549f26c9e0efcdfd36fc5f51645bb15c71522eb9a488cfc6b2d85a85e61cffe0",
+    "firmware/lib/CapstoneIO/src/journal.h": "5d6c532dec3e653b64b703f97ee54cb46b6b0164e62a47e3bf6486b06beb08fb",
+    "firmware/lib/CapstoneIO/src/transport.cpp": "2dcd78030808140a72be6e20e5982c62309512fc16dc3cfebb2edc5f9d8134c3",
+    "firmware/lib/CapstoneIO/src/transport.h": "39f6ea7e2cbdf48739abd8207336d9ef21e990d34a745ec22bb5ce8da8595b57",
+    "firmware/platformio.ini": "e5d0773d7490046a815748fbc86c49597a8bf759c2e97da7f9c57305e323816d",
+    "firmware/src/legacy_obd_gateway.cpp": "28d63770c7b4047c385ff5dd34e23141c5ccf14dfef06c226d6d3986230e2631",
+    "firmware/src/mega_engine.cpp": "bf5c6a90b9760b37abe076e3e57f9c463fb895f403487189a449d7bde8931a18",
+    "firmware/src/teensy_gateway.cpp": "f557dd91d5a847b1f7e59615086d38ea619db3b8e96e60738d19a214022bd051",
+    "include/control/control_runtime.h": "ecebd7b16421f65d099c10ea961a818f69981da018bec2164b002c519e23d4b2",
+    "include/control/dual_supervisor.h": "fdbf591b50a6ad24da851cbbb1b763569b05fe7b33d40188e579ee10b77de908",
+    "include/control/release_control.h": "fb966af6fa823c3fa2e2444cfeb1d2d438978ae4c4f61addc2317f57d85c2903",
+    "include/diagnostics/supervisor_bridge.h": "f3a32abe79e6ba5996b4ef2954007ac10aa9e69a30e3a3b960477780093db32b",
+    "src/app/controller_revision_demo.cpp": "eb2d1104c51e09112b2931d0ac39abb0cdeae122d4907e8fced4feef932faa3b",
+    "src/control/control_codec.cpp": "fce0f55a8709657093db6b74f0c5ff6b346fa618028f2bfffb1be655c9990acf",
+    "src/control/control_runtime.cpp": "7334d7afe88508ec1ad0ff401e28af754d754fa6bf388d8cbb361cd9524614de",
+    "src/control/dual_supervisor.cpp": "29e181dba844c761ae931604d7fd5e0ee33612430cc53a438b79d642fdb948b6",
+    "src/control/release_monitor.cpp": "5be22ace4d8d45076a634ee91342626ea390675a4f05db0f8a7918d7fef28167",
+    "src/control/release_runtime.cpp": "d7a31a65fdab186a396248f7599c36e78c767625368055289b1d45e9a55ff83a",
+    "tests/test_controller_revision.cpp": "d255e331fb48a7b318de7e59a8496846cc1bb41b97e0269fad69bcf5293beab4",
+    "tools/build_controller_target.py": "72b7d9c384f73580fd702163f9f4f428828ccd700ccc373a9f4f17bcb61bb852",
+    "tools/check_readability.py": "60efb2058bdbb0d111b29f31f3cf2dff5f53d8994f12e44638a32609d05a5246",
+    "tools/controller_revision_demo.py": "bbfd4a988fd1a244ff17467d353b7e00f2d6ec3ccfda4ebc41804fc3193d7270"
+  },
+  "document_sha256": {
+    "docs/capstone/CONTROLLER_RELEASE.md": "b5eeeade1bab9565a4686424980a352b00efeb9309399cc59352cbfdf02a38de",
+    "docs/capstone/HONDA_ECU_AND_OBD.md": "a184f3dc7b148bc474f9249f057844db62a2f343fe9dbe125856893d872c2591",
+    "docs/capstone/HONDA_HARNESS.md": "0015b8f81818936b92c37bb511df412b368f9ee4f3e9a087d0e587562a9026af",
+    "docs/capstone/HONDA_DTC_CODES.md": "f924e172fa2cb0afcc06ddeaa73d6283ae277f8f73dfb663290d0cefc2002ab1",
+    "docs/capstone/REQUIREMENTS.md": "b51d3a41dbe7336403d92b9019608cd876782f3b23be056e29ad84da4ae0a1fe",
+    "docs/capstone/VALIDATION.md": "010b0b6bbc78b312e13b14eea0cc8153f0841a1bba877e3c50be3fdeabea4169",
+    "docs/capstone/JSF_REVIEW.md": "27fb16518887eff83cfe89d3e3c972b6021a05b5edff50d71782fd6959be6849",
+    "docs/capstone/CODE_REVIEW.md": "94eb74a2a09f4f13fbd84d88468b676a4ea326dfee52e74b25846e0c27ea0a4a",
+    "firmware/README.md": "84b5c5d12c153b8cfbc00128cdbb2a262ce08882a05e36462f9b40623bb06f20"
+  },
+  "binary_sha256": {
+    "firmware/.pio/build/mega_engine/firmware.hex": "3de3f4a2b0e03765801b989fb87c30672c55fa788779fd33b49aa3f156ba4a94",
+    "firmware/.pio/build/mega_engine/firmware.elf": "04a48dd655dff44fd0db41941547d933a8b693fb97d032c7a6e27fdeeca375ae",
+    "firmware/.pio/build/teensy_gateway/firmware.hex": "2d75bdca9d101c5e98feb229b412c5fee055f4b0ec3a5dee7458b0203e9105a0",
+    "firmware/.pio/build/teensy_gateway/firmware.elf": "2db032f0700426752bac3935e59c40c9677dee712d05e661395da9816d73d89f",
+    "firmware/.pio/build/teensy_legacy_obd_demo/firmware.hex": "6cdaf14ed35563a03b2254bbf1067c3fb33db39487b8956670cf1941c1674708",
+    "firmware/.pio/build/teensy_legacy_obd_demo/firmware.elf": "38ae70bdece87f3f43fc627c1aa0e9afd10fda05b75e124d826457c93dbe6d06"
+  },
+  "evidence_sha256": {
+    "docs/capstone/evidence/controller-release-clang-build.txt": "1e1fa1e55813a001e372643f16205841c5e349a9ca94115f095d49a4855cffc2",
+    "docs/capstone/evidence/controller-release-clang-tests.txt": "a72f5da80b42aee88bda26171b7676afe2536d643d374e285a0d87132dca7e25",
+    "docs/capstone/evidence/controller-release-ctest.txt": "b5a2e6ec0f19a6a756f05840a8c7b8730d5819e79d9ee05a5a6d1b78e01a6125",
+    "docs/capstone/evidence/controller-release-firmware-build.txt": "84de3736bcf624e1387e7059d4135899a939c1fd177cc827fe11411b34070354",
+    "docs/capstone/evidence/controller-release-host-build.txt": "8babb52cd6fdd052527836b89550aee8bc00ab24786efe584aaee888af03b569",
+    "docs/capstone/evidence/controller-release-jsf.txt": "980fd9e20cbc3f799b9147a3a90d7653dba76260362fbf73e5c008cbe2998e84",
+    "docs/capstone/evidence/controller-release-legacy-build.txt": "0351b0ad964214d15dd3460a8503d8cfff3d14ba2b432300f70b2e8cb6089ac7",
+    "docs/capstone/evidence/controller-release-metrics.txt": "6942c6b1582e96d5019b08aab4dbbcd911b12fb316de126f84feb4d3e28e6602",
+    "docs/capstone/evidence/controller-release-readability.json": "a5cd2fbe4d9a021714348b789f1dcf5cd7f7996da56b619501cc816d2219e159",
+    "docs/capstone/evidence/controller-release-stm32-build.txt": "0dd59360048e437748c5e4733d45ede3f776a224ac996c134f1891b49f739c9e"
+  },
+  "object_manifest_sha256": "081fa346986ed0e547d53805fe42feaf012ccbd4ea494f30659aef16cc5bf19a",
+  "limitations": [
+    "No physical traction port, board-specific MCU image, precharge sequencer or calibrated torque allocation supplied.",
+    "Component detail is RAM-only; coarse EV fault journal retained.",
+    "Honda category mappings are all unverified; no assigned Honda code is invented.",
+    "Bluetooth implements an unbound output interface and mock parity tests, not a radio connection.",
+    "Third-party build warnings remain in raw logs; manual JSF/platform review remains open."
+  ]
+}

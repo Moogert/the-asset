@@ -1,0 +1,56 @@
+{
+  "status": "physics_sensitivity_estimate_not_measured_radiator_specification",
+  "radiator": "Standard Civic radiator, dedicated EV coolant loop with fan and shroud assumed",
+  "ambient_c": 35.0,
+  "coolant_flow_l_min": 10.0,
+  "coolant_density_kg_l": 1.05,
+  "coolant_cp_j_kg_k": 3600.0,
+  "mg1_shaft_power_share": 0.25,
+  "winding_design_limit_c": 140.0,
+  "coolant_design_limit_c": 65.0,
+  "inverter_case_design_limit_c": 80.0,
+  "transient_seconds": 60.0,
+  "scenarios": {
+    "pessimistic_low_airflow": {
+      "radiator_ua_w_k": 80.0,
+      "motor_efficiency": 0.88,
+      "inverter_efficiency": 0.96,
+      "gear_efficiency": 0.97,
+      "mg1_winding_to_coolant_k_w": 0.1,
+      "mg2_winding_to_coolant_k_w": 0.06,
+      "inverter_case_to_coolant_k_w": 0.02,
+      "mg1_effective_heat_capacity_j_k": 3000.0,
+      "mg2_effective_heat_capacity_j_k": 6000.0
+    },
+    "nominal_airflow": {
+      "radiator_ua_w_k": 250.0,
+      "motor_efficiency": 0.92,
+      "inverter_efficiency": 0.97,
+      "gear_efficiency": 0.97,
+      "mg1_winding_to_coolant_k_w": 0.06,
+      "mg2_winding_to_coolant_k_w": 0.04,
+      "inverter_case_to_coolant_k_w": 0.015,
+      "mg1_effective_heat_capacity_j_k": 4500.0,
+      "mg2_effective_heat_capacity_j_k": 9000.0
+    },
+    "optimistic_high_airflow": {
+      "radiator_ua_w_k": 500.0,
+      "motor_efficiency": 0.95,
+      "inverter_efficiency": 0.98,
+      "gear_efficiency": 0.97,
+      "mg1_winding_to_coolant_k_w": 0.04,
+      "mg2_winding_to_coolant_k_w": 0.025,
+      "inverter_case_to_coolant_k_w": 0.01,
+      "mg1_effective_heat_capacity_j_k": 6000.0,
+      "mg2_effective_heat_capacity_j_k": 12000.0
+    }
+  },
+  "assumptions": [
+    "All UA, efficiency, internal thermal resistance and heat-capacity values are engineering sensitivity assumptions, not measured Civic or Prius properties",
+    "All motor loss assigned to winding node, conservatively; rotor/magnet hotspots are not resolved",
+    "All gear and inverter losses enter the same coolant heat budget",
+    "Radiator UA is coolant-mean to inlet-air conductance; low airflow is not inferred from road speed alone",
+    "Cooling plumbing provides the stated motor-to-coolant thermal paths; stock engine-driven lubrication may change after modification",
+    "Limits are planning targets, not allowable hardware settings"
+  ]
+}

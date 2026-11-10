@@ -1,0 +1,15 @@
+test_bad_experiment (test_analysis.AnalysisTests.test_bad_experiment) ... ok
+test_invalid (test_analysis.AnalysisTests.test_invalid) ... ok
+test_kinematics (test_analysis.AnalysisTests.test_kinematics) ... ok
+test_measured_comparison (test_analysis.AnalysisTests.test_measured_comparison) ... ok
+test_oil_network_and_cooler (test_analysis.AnalysisTests.test_oil_network_and_cooler) ... ok
+test_published_back_emf_proxy (test_analysis.AnalysisTests.test_published_back_emf_proxy) ... ok
+test_roadload_and_voltage (test_analysis.AnalysisTests.test_roadload_and_voltage) ... ok
+test_selected_tire_and_leaf_architectures (test_analysis.AnalysisTests.test_selected_tire_and_leaf_architectures) ... ok
+test_thermal_energy_balance_and_cooling (test_analysis.AnalysisTests.test_thermal_energy_balance_and_cooling) ... ok
+test_tire_and_build_refinement (test_analysis.AnalysisTests.test_tire_and_build_refinement) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.027s
+
+OK

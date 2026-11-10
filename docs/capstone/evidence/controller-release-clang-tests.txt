@@ -1,0 +1,9 @@
+Test project <WORKSPACE>/build-control-clang
+    Start 4: cpp_control_regression
+1/2 Test #4: cpp_control_regression ...........   Passed    9.60 sec
+    Start 5: controller_revision_regression
+2/2 Test #5: controller_revision_regression ...   Passed    1.30 sec
+
+100% tests passed out of 2
+
+Total Test time (real) =  11.02 sec

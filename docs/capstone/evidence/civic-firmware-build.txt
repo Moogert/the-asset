@@ -1,0 +1,124 @@
+Processing mega_engine (platform: atmelavr@5.1.0; board: megaatmega2560; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/atmelavr/megaatmega2560.html
+PLATFORM: Atmel AVR (5.1.0) > Arduino Mega or Mega 2560 ATmega2560 (Mega 2560)
+HARDWARE: ATMEGA2560 16MHz, 8KB RAM, 248KB Flash
+DEBUG: Current (avr-stub) External (avr-stub, simavr)
+PACKAGES:
+ - framework-arduino-avr @ 5.2.0
+ - toolchain-atmelavr @ 1.70300.191015 (7.3.0)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 6 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- CapstoneIO @ 0.1.0
+|-- SPI @ 1.0
+Building in release mode
+Compiling .pio\build\mega_engine\src\mega_engine.cpp.o
+Compiling .pio\build\mega_engine\lib83d\CapstoneIO\diagnostics.cpp.o
+Compiling .pio\build\mega_engine\lib83d\CapstoneIO\transport.cpp.o
+Archiving .pio\build\mega_engine\lib83d\libCapstoneIO.a
+Linking .pio\build\mega_engine\firmware.elf
+Checking size .pio\build\mega_engine\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]  14.2% (used 1161 bytes from 8192 bytes)
+Flash: [          ]   4.9% (used 12568 bytes from 253952 bytes)
+========================= [SUCCESS] Took 11.57 seconds =========================
+
+Processing teensy_gateway (platform: teensy@5.0.0; board: teensy41; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/teensy/teensy41.html
+PLATFORM: Teensy (5.0.0) > Teensy 4.1
+HARDWARE: IMXRT1062 600MHz, 512KB RAM, 7.75MB Flash
+DEBUG: Current (jlink) External (jlink)
+PACKAGES:
+ - framework-arduinoteensy @ 1.159.0 (1.59)
+ - tool-teensy @ 1.162.0 (1.62)
+ - toolchain-gccarmnoneeabi-teensy @ 1.110301.0 (11.3.1)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 93 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- CapstoneIO @ 0.1.0
+|-- EEPROM @ 2.0
+|-- FlexCAN_T4
+Building in release mode
+Compiling .pio\build\teensy_gateway\src\teensy_gateway.cpp.o
+Compiling .pio\build\teensy_gateway\lib83d\CapstoneIO\diagnostics.cpp.o
+Compiling .pio\build\teensy_gateway\lib83d\CapstoneIO\transport.cpp.o
+In file included from src\teensy_gateway.cpp:2:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\EEPROM/EEPROM.h:50:30: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+   50 |     operator const uint8_t() const       { return **this; }
+      |                              ^~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\EEPROM/EEPROM.h:99:26: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+   99 |     operator const int() const          { return index; }
+      |                          ^~~~~
+In file included from src\teensy_gateway.cpp:3:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: In member function 'virtual bool CANListener::frameHandler(CAN_message_t&, int, uint8_t)':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:313:47: warning: unused parameter 'frame' [-Wunused-parameter]
+  313 |     virtual bool frameHandler (CAN_message_t &frame, int mailbox, uint8_t controller) { return false; }
+      |                                ~~~~~~~~~~~~~~~^~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:313:58: warning: unused parameter 'mailbox' [-Wunused-parameter]
+  313 |     virtual bool frameHandler (CAN_message_t &frame, int mailbox, uint8_t controller) { return false; }
+      |                                                      ~~~~^~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:313:75: warning: unused parameter 'controller' [-Wunused-parameter]
+  313 |     virtual bool frameHandler (CAN_message_t &frame, int mailbox, uint8_t controller) { return false; }
+      |                                                                   ~~~~~~~~^~~~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: In member function 'virtual void CANListener::txHandler(int, uint8_t)':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:314:33: warning: unused parameter 'mailbox' [-Wunused-parameter]
+  314 |     virtual void txHandler (int mailbox, uint8_t controller) {;} /* unused in Collin's library */
+      |                             ~~~~^~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:314:50: warning: unused parameter 'controller' [-Wunused-parameter]
+  314 |     virtual void txHandler (int mailbox, uint8_t controller) {;} /* unused in Collin's library */
+      |                                          ~~~~~~~~^~~~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: At global scope:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:531:5: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  531 |     volatile bool fifo_filter_match(uint32_t id);
+      |     ^~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:533:5: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  533 |     volatile void frame_distribution(CAN_message_t &msg);
+      |     ^~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:536:5: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  536 |     volatile bool filter_match(FLEXCAN_MAILBOX mb_num, uint32_t id);
+      |     ^~~~~~~~
+In file included from <USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:558,
+                 from src\teensy_gateway.cpp:3:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.tpp:1464:11: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ 1464 | FCTP_FUNC volatile bool FCTP_OPT::fifo_filter_match(uint32_t id) {
+      |           ^~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.tpp:1483:11: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ 1483 | FCTP_FUNC volatile bool FCTP_OPT::filter_match(FLEXCAN_MAILBOX mb_num, uint32_t id) {
+      |           ^~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.tpp:1662:11: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ 1662 | FCTP_FUNC volatile void FCTP_OPT::frame_distribution(CAN_message_t &msg) {
+      |           ^~~~~~~~
+In file included from src\teensy_gateway.cpp:3:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: In instantiation of 'int FlexCAN_T4<_bus, _rxSize, _txSize>::write(const CANFD_message_t&) [with CAN_DEV_TABLE _bus = CAN2; FLEXCAN_RXQUEUE_TABLE _rxSize = RX_SIZE_256; FLEXCAN_TXQUEUE_TABLE _txSize = TX_SIZE_16; CANFD_message_t = CANFD_message_t]':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:482:9:   required from here
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:482:38: warning: unused parameter 'msg' [-Wunused-parameter]
+  482 |     int write(const CANFD_message_t &msg) { return 0; } /* to satisfy base class for external pointers */
+      |               ~~~~~~~~~~~~~~~~~~~~~~~^~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: In instantiation of 'int FlexCAN_T4<_bus, _rxSize, _txSize>::write(const CANFD_message_t&) [with CAN_DEV_TABLE _bus = CAN1; FLEXCAN_RXQUEUE_TABLE _rxSize = RX_SIZE_256; FLEXCAN_TXQUEUE_TABLE _txSize = TX_SIZE_16; CANFD_message_t = CANFD_message_t]':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:482:9:   required from here
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:482:38: warning: unused parameter 'msg' [-Wunused-parameter]
+Archiving .pio\build\teensy_gateway\lib83d\libCapstoneIO.a
+Linking .pio\build\teensy_gateway\firmware.elf
+Checking size .pio\build\teensy_gateway\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+Calculating size .pio\build\teensy_gateway\firmware.elf
+teensy_size: Memory Usage on Teensy 4.1:
+teensy_size:   FLASH: code:73472, data:35784, headers:8500   free for files:8008708
+teensy_size:    RAM1: variables:62720, code:70776, padding:27528   free for local variables:363264
+teensy_size:    RAM2: variables:12416  free for malloc/new:511872
+Building .pio\build\teensy_gateway\firmware.hex
+========================= [SUCCESS] Took 11.65 seconds =========================
+
+Environment     Status    Duration
+--------------  --------  ------------
+mega_engine     SUCCESS   00:00:11.569
+teensy_gateway  SUCCESS   00:00:11.650
+========================= 2 succeeded in 00:00:23.219 =========================

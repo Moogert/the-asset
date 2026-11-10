@@ -1,0 +1,28 @@
+{
+  "status": "early_24_kwh_leaf_architecture_comparison_only_donor_not_selected",
+  "original_series_groups": 96,
+  "original_parallel_cells": 2,
+  "original_nameplate_kwh": 24.0,
+  "original_nominal_v": 360.0,
+  "original_full_v": 398.4,
+  "assumed_minimum_loaded_v_at_96s": 300.0,
+  "example_remaining_capacity_fraction": 0.7,
+  "example_operating_energy_window_fraction": 0.8,
+  "configurations": [
+    {"name": "retain_original_series_architecture", "series_groups": 96, "parallel_cells": 2},
+    {"name": "reduced_series_subset", "series_groups": 72, "parallel_cells": 2},
+    {"name": "all_modules_rearranged_low_voltage", "series_groups": 48, "parallel_cells": 4}
+  ],
+  "sources": [
+    "https://owners.nissanusa.com/content/techpub/ManualsAndGuides/LEAF/2016/2016_LEAF-first-responders-guide.pdf",
+    "https://faq2.nissan.co.jp/faq/show/6447?site_domain=default"
+  ],
+  "limitations": [
+    "Applies only to the early 24 kWh 48-module 2s2p/module architecture; later Leaf module arrangements differ",
+    "300 V loaded floor is a screening assumption, not an OEM discharge cutoff",
+    "70% capacity and 80% operating window are example assumptions, not a donor health report",
+    "Capacity/SOH does not establish internal resistance, continuous current or regenerative acceptance",
+    "Reconfiguration requires independently designed monitoring, contactors, interlocks, insulation and packaging; do not assume the OEM LBC works unchanged",
+    "Field weakening/current/thermal and vehicle mass constraints remain unresolved"
+  ]
+}

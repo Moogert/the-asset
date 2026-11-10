@@ -1,0 +1,10 @@
+flowchart LR
+    GPIO[MCU waveform / DAC / selector] --> Interface[Matched protected driver]
+    Interface --> Switch[Normally open output switch]
+    Switch --> Input[Verified Honda ECU input via X0]
+    Gate[D8: software gate] --> AND[Hardware AND / override]
+    Watchdog[Independent watchdog healthy] --> AND
+    Ignition[Protected ignition permission] --> AND
+    AND --> Switch
+    Load[ECU actuator output] --> Box[Rated load and protected observation]
+    Box --> Sense[X5: low-voltage observation to D2/D3]

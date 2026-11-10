@@ -1,0 +1,20 @@
+{
+  "status": "project connector allocation only; no released Honda ECU pin map",
+  "date": "2026-10-29",
+  "manufacturer_reference": "https://www.te.com/content/dam/te-com/custom/media/connector-selector/docs/ict-connector-selector-en.pdf",
+  "ecu_interposer": {"id": "X0", "ecu_part_number": null, "vehicle_mating_parts": null, "ecu_mating_parts": null, "factory_connector_view": null},
+  "connectors": [
+    {"id":"X1", "plug":"DT06-4S", "receptacle":"DT04-4P", "wedgelocks":["W4S","W4P"], "quantity_pairs":1,
+     "cavities":[[1,"protected battery 12V","protected regulator"],[2,"ignition 12V","protected hardware regulator/output enable"],[3,"electronics power return","reviewed power ground"],[4,"unused","seal"]]},
+    {"id":"X2", "plug":"DTM06-12SA", "receptacle":"DTM04-12PA", "wedgelocks":["WM-12S","WM-12P"], "quantity_pairs":1,
+     "cavities":[[1,"CKP+","D22 via matched driver"],[2,"CKP-","matched driver return"],[3,"TDC+","D23 via matched driver"],[4,"TDC-","matched driver return"],[5,"CYP+","D24 via matched driver"],[6,"CYP-","matched driver return"],[7,"extra position+","D25 reserved"],[8,"extra position-","reserved driver return"],[9,"VSS signal","D26 via matched driver"],[10,"VSS return","verified circuit return"],[11,"unused","seal"],[12,"unused","seal"]]},
+    {"id":"X3", "plug":"DTM06-12SB", "receptacle":"DTM04-12PB", "wedgelocks":["WM-12S","WM-12P"], "quantity_pairs":1,
+     "cavities":[[1,"TPS signal","DAC0; connect D34"],[2,"TPS return","verified ECU reference"],[3,"MAP signal","DAC1; connect D35"],[4,"MAP return","verified ECU reference"],[5,"upstream O2 signal","DAC2; connect D36"],[6,"upstream O2 return","verified ECU reference"],[7,"downstream O2 signal","DAC3; connect D37"],[8,"downstream O2 return","verified ECU reference"],[9,"ECT signal","ladder D42/43/44; connect D38"],[10,"ECT return","verified ECU reference"],[11,"IAT signal","ladder D45/46/47; connect D39"] ,[12,"IAT return","verified ECU reference"]]},
+    {"id":"X4", "plug":"DTM06-6S", "receptacle":"DTM04-6P", "wedgelocks":["WM-6S","WM-6P"], "quantity_pairs":1,
+     "cavities":[[1,"Mega TX to Teensy","TX18 via translation to Teensy RX7"],[2,"Teensy TX to Mega","Teensy TX8 via translation to RX19"],[3,"logic return","reviewed logic return"],[4,"emulator enable contact","protected input D9 active LOW"],[5,"enable contact return","dry-contact return"],[6,"unused","seal"]]},
+    {"id":"X5", "plug":"DTM06-4S", "receptacle":"DTM04-4P", "wedgelocks":["WM-4S","WM-4P"], "quantity_pairs":1,
+     "cavities":[[1,"conditioned injector observation","D2; no ECU power wire"],[2,"conditioned heater observation","D3; no ECU power wire"],[3,"observation logic return","reviewed logic return"],[4,"unused","seal"]]}
+  ],
+  "honda_connections": [],
+  "note": "Each cavity row is [project number, net, internal connection]. Honda cavity assignments, wire/contact selections and electrical verification remain pending."
+}

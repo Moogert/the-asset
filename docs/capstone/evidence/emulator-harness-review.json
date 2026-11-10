@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-29",
+  "status": "software_and_project_connector_design_only",
+  "host_suites_passed": 10,
+  "new_interface_checks": 70,
+  "readability": "56 C/C++ files and 23 Python entries; format only",
+  "ecu_cavities_released": false,
+  "electrical_validation_performed": false,
+  "flashed": false,
+  "connector_cavity_records": 38,
+  "mermaid_sources": 3,
+  "notes": [
+    "No Honda ECU pin numbers inferred. Exact ECU label and factory diagrams pending.",
+    "Default board channels 6/7 are unfitted; their fault-category mappings report unavailable.",
+    "Output/reference calibration, position interface and actuator-load designs remain unverified.",
+    "Eight-file traction JSF scope unchanged; Arduino subsystem remains outside that claim."
+  ],
+  "sources": {
+    "TE": "https://www.te.com/content/dam/te-com/custom/media/connector-selector/docs/ict-connector-selector-en.pdf",
+    "Microchip": "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/22250A.pdf"
+  },
+  "file_sha256": {
+    "CMakeLists.txt": "2db01e5e048c20c6d9bab9434311e22a27aa6c1f67bb9c25bc6847be3fb16e48",
+    "configs/emulator-harness-connectors.json": "2df252ab73d18dbd9d4e17f1a1cf53783fab94add62321d49222386613765046",
+    "configs/honda-ecu-interface.json": "28907d0cc2b2c507e4241ccf6372f3bfa5466f824c2e51fb82b01cecc2571563",
+    "docs/capstone/diagrams/engine-install-topology.mmd": "1f84924e329c0a03642576c172dad54da6165a6f6a4f592de6a22d5c9fc7ac9b",
+    "docs/capstone/diagrams/engine-interface-gating.mmd": "7b709a5ab25b743790dbdb1d661c5b2594d0ae869c51521d3573f08dfbe34407",
+    "docs/capstone/diagrams/engine-simulator-states.mmd": "10ad22eeb640b1384ed29396ac13ae70c648255aa7642c36bedb0876b2dc2fe9",
+    "docs/capstone/emulator-harness-netlist.csv": "3df54c1635b420f855c7cdfb64c22a3f101ee46f913127f295b2b7a16bcf4e1b",
+    "docs/capstone/ENGINE_SIMULATOR_INSTALL.md": "fe81cf78eb66148a151b88182b6d831b8c52cafe489be0f4e64dec05af6868bf",
+    "docs/capstone/HONDA_ECU_AND_OBD.md": "cb819eb06d79a75297b545de881cab856c755dfa91d895eca3bd0a5f755f026d",
+    "docs/capstone/HONDA_HARNESS.md": "2125a4d9f0fbc4c738fa0f733939777515292348f5bf2f72d0e514e2052dbabf",
+    "firmware/include/emulator_pins.h": "bf4ef2ae374141d6853ee7efb08323dffb88775034264d262da968d57c7f809a",
+    "firmware/include/vehicle_profile.h": "4fe7f938efc2920724de3e575a8c583d537a74c50f051068b2b5d1fb4a7baecb",
+    "firmware/lib/CapstoneIO/src/detail.cpp": "b1a6a8f1d43c30f8c274653129cc7726282a25abb47d4c988ea1e51a553729d2",
+    "firmware/lib/CapstoneIO/src/detail.h": "781f9bc19cc4cfe4ae1f5f6c760b9769e7466c2ff1029c407d5ae621e3c6d07c",
+    "firmware/lib/CapstoneIO/src/diagnostics.cpp": "6c42710a8b4c90a45d808dccb0366f0c46127677e31a778dc27604da89aab418",
+    "firmware/lib/CapstoneIO/src/diagnostics.h": "216caebf42c66042800a8111fbccd9587c70458285d29cd937531da2d3452f63",
+    "firmware/lib/CapstoneIO/src/emulator_io.cpp": "0550ac3509c8cf70fcf00a219c61bab7a1bd15fd27c2ce60abbd537c7cadd49f",
+    "firmware/lib/CapstoneIO/src/emulator_io.h": "1c99b2997602a9bec6005df39a15545c2e0053de5e77371c6bf8e8e86a33f2f0",
+    "firmware/lib/CapstoneIO/src/engine.cpp": "64b91cfe6f21391f0d1e39363fe928daef530324d6dc3d467296b5f14a524fca",
+    "firmware/lib/CapstoneIO/src/engine.h": "b87ebbc33cb1b55945a35cb242d7070adbf58b51347b8ab7756213ab8b3a8e8b",
+    "firmware/lib/CapstoneIO/src/indication.cpp": "822b4877a28d766d5718f69681750ec1aa9f0ea078ee7de97e4f0a7439061c9a",
+    "firmware/lib/CapstoneIO/src/indication.h": "0aa3a6eff130deeeb3f38e26d2fa0b641fc2efe89eb06569b3f891be70a1f644",
+    "firmware/lib/CapstoneIO/src/journal.cpp": "549f26c9e0efcdfd36fc5f51645bb15c71522eb9a488cfc6b2d85a85e61cffe0",
+    "firmware/lib/CapstoneIO/src/journal.h": "5d6c532dec3e653b64b703f97ee54cb46b6b0164e62a47e3bf6486b06beb08fb",
+    "firmware/lib/CapstoneIO/src/transport.cpp": "2dcd78030808140a72be6e20e5982c62309512fc16dc3cfebb2edc5f9d8134c3",
+    "firmware/lib/CapstoneIO/src/transport.h": "39f6ea7e2cbdf48739abd8207336d9ef21e990d34a745ec22bb5ce8da8595b57",
+    "firmware/platformio.ini": "e5d0773d7490046a815748fbc86c49597a8bf759c2e97da7f9c57305e323816d",
+    "firmware/README.md": "fd95820535d1a9482c350e9f69de35f45f62bea197327ff7dfff82be4656ffa5",
+    "firmware/src/legacy_obd_gateway.cpp": "28d63770c7b4047c385ff5dd34e23141c5ccf14dfef06c226d6d3986230e2631",
+    "firmware/src/mega_engine.cpp": "f332f126992d6e85866f19bea265bf613cd6fe1a4d09e13a55a7b5b3f6b35dea",
+    "firmware/src/teensy_gateway.cpp": "f557dd91d5a847b1f7e59615086d38ea619db3b8e96e60738d19a214022bd051",
+    "tests/test_emulator_io.cpp": "53bddcf8cd4ce150b73e5a7e7075547f7f9bc8978c28e7410d264858a3ec6639",
+    "tools/check_readability.py": "c794b78aa844bfc5df9eeebb1113eeffbc06afdac416aae846a963cb8ff0f20c",
+    "tools/export_emulator_harness.py": "d5010749a50d2149a4c5b6983923835f4a32c89a3e9e77ced1f2e0e43d10f28c"
+  },
+  "firmware_sha256": {
+    "firmware/.pio/build/mega_engine/firmware.hex": "fe9819c45e87d3ebb9532cd8236b230903135a695b3aba45acb16b08efac61d9",
+    "firmware/.pio/build/mega_engine/firmware.elf": "793b15da600e5e576eea5f91794300cb699c164261f8bfefca4db6907fd28351",
+    "firmware/.pio/build/teensy_gateway/firmware.hex": "094d8cd256f096f2a6b59ce7a6bcb2a3f6844bfaeca6274e8aacc0eda4798018",
+    "firmware/.pio/build/teensy_gateway/firmware.elf": "10da133a9a923f4bbc86467491fe18efe27809c736367d7f691e721020bb870a"
+  },
+  "logs_sha256": {
+    "emulator-harness-ctest.txt": "bfeb7087a2b3b71fabbd630a504865977a2d08d3e54cd27536fd5b858b9f484e",
+    "emulator-harness-firmware-build.txt": "403aa722ea14d12f18f6bd782b00065705f09cf106c5197090e4e518dec37262",
+    "emulator-harness-host-build.txt": "aa8d20753b85a1e480601ea6661239d108befaf1f4531cd9fb3d3a071303b2a3",
+    "emulator-harness-readability.json": "402946554f9a11c8e4df53149f23bce2c98981cb2637591b29ec40e607cd4dac"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "unvalidated_network_sensitivity_not_an_oem_temperature_map",
+  "fluid_baseline": "Toyota Genuine ATF WS; confirm exact donor service specification",
+  "oil_density_kg_l": 0.85,
+  "oil_cp_j_kg_k": 2000.0,
+  "stock_oil_to_coolant_conductance_w_k": 20.0,
+  "mg1_direct_winding_to_coolant_k_w": 0.12,
+  "mg2_direct_winding_to_coolant_k_w": 0.08,
+  "mg1_winding_to_oil_k_w": 0.1,
+  "mg2_winding_to_oil_k_w": 0.07,
+  "oil_planning_band_c": [70.0, 90.0],
+  "oil_control_screen_target_c": 80.0,
+  "oil_planning_derate_c": 100.0,
+  "oil_planning_stop_c": 110.0,
+  "options": {
+    "stock_paths_only": {"added_cooler_ua_w_k": 0.0, "external_oil_flow_l_min": 0.0, "pump_heat_w": 0.0},
+    "candidate_oil_to_coolant_cooler": {"added_cooler_ua_w_k": 150.0, "external_oil_flow_l_min": 3.0, "pump_heat_w": 20.0}
+  },
+  "assumptions": [
+    "All conductances/resistances, oil properties, external flow, pump heat and planning bands are engineering assumptions, not measured WS/P112/cooler specifications",
+    "Winding-to-oil and winding-to-casing paths are distinct from the previous lumped winding resistance and must not be added to it",
+    "A single well-mixed bulk oil node misses compartment gradients, jet distribution, aeration and local bearing/magnet hotspots",
+    "Cooler effectiveness uses a counterflow heat exchanger with the configured coolant flow available at its branch; a parallel branch may have less flow",
+    "No viscosity-loss or pump-pressure model: this analysis compares thermal feasibility, not a proven energy optimum",
+    "Planning temperatures are proposed commissioning targets, not OEM trips or controller settings"
+  ]
+}

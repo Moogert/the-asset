@@ -1,0 +1,15 @@
+Test project <WORKSPACE>/build-capstone
+    Start 1: harness_regression
+1/5 Test #1: harness_regression ...............   Passed    0.14 sec
+    Start 2: dual_drive_regression
+2/5 Test #2: dual_drive_regression ............   Passed    0.16 sec
+    Start 3: cpp_control_regression
+3/5 Test #3: cpp_control_regression ...........   Passed    6.22 sec
+    Start 4: drivetrain_analysis_regression
+4/5 Test #4: drivetrain_analysis_regression ...   Passed    0.77 sec
+    Start 5: loopback_http_regression
+5/5 Test #5: loopback_http_regression .........   Passed    1.17 sec
+
+100% tests passed out of 5
+
+Total Test time (real) =   8.68 sec

@@ -1,0 +1,292 @@
+Processing mega_engine (platform: atmelavr@5.1.0; board: megaatmega2560; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/atmelavr/megaatmega2560.html
+PLATFORM: Atmel AVR (5.1.0) > Arduino Mega or Mega 2560 ATmega2560 (Mega 2560)
+HARDWARE: ATMEGA2560 16MHz, 8KB RAM, 248KB Flash
+DEBUG: Current (avr-stub) External (avr-stub, simavr)
+PACKAGES:
+ - framework-arduino-avr @ 5.2.0
+ - toolchain-atmelavr @ 1.70300.191015 (7.3.0)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 6 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- CapstoneIO @ 0.1.0
+|-- SPI @ 1.0
+Building in release mode
+Compiling .pio\build\mega_engine\src\mega_engine.cpp.o
+Compiling .pio\build\mega_engine\lib83d\CapstoneIO\detail.cpp.o
+Compiling .pio\build\mega_engine\lib83d\CapstoneIO\diagnostics.cpp.o
+Compiling .pio\build\mega_engine\lib83d\CapstoneIO\engine.cpp.o
+Compiling .pio\build\mega_engine\lib83d\CapstoneIO\indication.cpp.o
+Compiling .pio\build\mega_engine\lib83d\CapstoneIO\journal.cpp.o
+Compiling .pio\build\mega_engine\lib83d\CapstoneIO\transport.cpp.o
+Compiling .pio\build\mega_engine\lib8c7\SPI\SPI.cpp.o
+Archiving .pio\build\mega_engine\libFrameworkArduinoVariant.a
+Compiling .pio\build\mega_engine\FrameworkArduino\CDC.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\HardwareSerial.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\HardwareSerial0.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\HardwareSerial1.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\HardwareSerial2.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\HardwareSerial3.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\IPAddress.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\PluggableUSB.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\Print.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\Stream.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\Tone.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\USBCore.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\WInterrupts.c.o
+Compiling .pio\build\mega_engine\FrameworkArduino\WMath.cpp.o
+Archiving .pio\build\mega_engine\lib8c7\libSPI.a
+Archiving .pio\build\mega_engine\lib83d\libCapstoneIO.a
+Compiling .pio\build\mega_engine\FrameworkArduino\WString.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\abi.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\hooks.c.o
+Compiling .pio\build\mega_engine\FrameworkArduino\main.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\new.cpp.o
+Compiling .pio\build\mega_engine\FrameworkArduino\wiring.c.o
+Compiling .pio\build\mega_engine\FrameworkArduino\wiring_analog.c.o
+Compiling .pio\build\mega_engine\FrameworkArduino\wiring_digital.c.o
+Compiling .pio\build\mega_engine\FrameworkArduino\wiring_pulse.S.o
+Compiling .pio\build\mega_engine\FrameworkArduino\wiring_pulse.c.o
+Compiling .pio\build\mega_engine\FrameworkArduino\wiring_shift.c.o
+<USER_HOME>\.platformio\packages\framework-arduino-avr\cores\arduino\new.cpp: In function 'void* operator new(std::size_t, std::nothrow_t)':
+<USER_HOME>\.platformio\packages\framework-arduino-avr\cores\arduino\new.cpp:59:60: warning: unused parameter 'tag' [-Wunused-parameter]
+ void * operator new(std::size_t size, const std::nothrow_t tag) noexcept {
+                                                            ^~~
+<USER_HOME>\.platformio\packages\framework-arduino-avr\cores\arduino\new.cpp: In function 'void* operator new [](std::size_t, const std::nothrow_t&)':
+<USER_HOME>\.platformio\packages\framework-arduino-avr\cores\arduino\new.cpp:68:63: warning: unused parameter 'tag' [-Wunused-parameter]
+ void * operator new[](std::size_t size, const std::nothrow_t& tag) noexcept {
+                                                               ^~~
+<USER_HOME>\.platformio\packages\framework-arduino-avr\cores\arduino\new.cpp: In function 'void operator delete(void*, const std::nothrow_t&)':
+<USER_HOME>\.platformio\packages\framework-arduino-avr\cores\arduino\new.cpp:103:55: warning: unused parameter 'tag' [-Wunused-parameter]
+ void operator delete(void* ptr, const std::nothrow_t& tag) noexcept {
+                                                       ^~~
+<USER_HOME>\.platformio\packages\framework-arduino-avr\cores\arduino\new.cpp: In function 'void operator delete [](void*, const std::nothrow_t&)':
+<USER_HOME>\.platformio\packages\framework-arduino-avr\cores\arduino\new.cpp:106:57: warning: unused parameter 'tag' [-Wunused-parameter]
+ void operator delete[](void* ptr, const std::nothrow_t& tag) noexcept {
+                                                         ^~~
+Archiving .pio\build\mega_engine\libFrameworkArduino.a
+Linking .pio\build\mega_engine\firmware.elf
+Checking size .pio\build\mega_engine\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  17.0% (used 1390 bytes from 8192 bytes)
+Flash: [=         ]   6.2% (used 15698 bytes from 253952 bytes)
+Building .pio\build\mega_engine\firmware.hex
+========================= [SUCCESS] Took 13.63 seconds =========================
+
+Processing teensy_gateway (platform: teensy@5.0.0; board: teensy41; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/teensy/teensy41.html
+PLATFORM: Teensy (5.0.0) > Teensy 4.1
+HARDWARE: IMXRT1062 600MHz, 512KB RAM, 7.75MB Flash
+DEBUG: Current (jlink) External (jlink)
+PACKAGES:
+ - framework-arduinoteensy @ 1.159.0 (1.59)
+ - tool-teensy @ 1.162.0 (1.62)
+ - toolchain-gccarmnoneeabi-teensy @ 1.110301.0 (11.3.1)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 93 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- CapstoneIO @ 0.1.0
+|-- EEPROM @ 2.0
+|-- FlexCAN_T4
+Building in release mode
+Compiling .pio\build\teensy_gateway\src\teensy_gateway.cpp.o
+Compiling .pio\build\teensy_gateway\lib83d\CapstoneIO\detail.cpp.o
+Compiling .pio\build\teensy_gateway\lib83d\CapstoneIO\diagnostics.cpp.o
+Compiling .pio\build\teensy_gateway\lib83d\CapstoneIO\engine.cpp.o
+Compiling .pio\build\teensy_gateway\lib83d\CapstoneIO\indication.cpp.o
+Compiling .pio\build\teensy_gateway\lib83d\CapstoneIO\journal.cpp.o
+Compiling .pio\build\teensy_gateway\lib83d\CapstoneIO\transport.cpp.o
+Compiling .pio\build\teensy_gateway\lib434\EEPROM\EEPROM.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\AudioStream.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\CrashReport.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\DMAChannel.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\EventResponder.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\HardwareSerial.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\HardwareSerial1.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\HardwareSerial2.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\HardwareSerial3.cpp.o
+In file included from <USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\DMAChannel.cpp:31:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\DMAChannel.h: In copy constructor 'DMASetting::DMASetting(const DMASetting&)':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\DMAChannel.h:399:25: warning: implicitly-declared 'constexpr DMASetting& DMASetting::operator=(const DMASetting&)' is deprecated [-Wdeprecated-copy]
+  399 |                 *this = c;
+      |                         ^
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\DMAChannel.h:397:9: note: because 'DMASetting' has user-provided 'DMASetting::DMASetting(const DMASetting&)'
+  397 |         DMASetting(const DMASetting &c) {
+      |         ^~~~~~~~~~
+Compiling .pio\build\teensy_gateway\FrameworkArduino\HardwareSerial4.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\HardwareSerial5.cpp.o
+Archiving .pio\build\teensy_gateway\lib434\libEEPROM.a
+Compiling .pio\build\teensy_gateway\FrameworkArduino\HardwareSerial6.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\HardwareSerial7.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\HardwareSerial8.cpp.o
+Archiving .pio\build\teensy_gateway\lib83d\libCapstoneIO.a
+Compiling .pio\build\teensy_gateway\FrameworkArduino\IPAddress.cpp.o
+In file included from src\teensy_gateway.cpp:2:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\EEPROM/EEPROM.h:50:30: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+   50 |     operator const uint8_t() const       { return **this; }
+      |                              ^~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\EEPROM/EEPROM.h:99:26: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+   99 |     operator const int() const          { return index; }
+      |                          ^~~~~
+In file included from src\teensy_gateway.cpp:3:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: In member function 'virtual bool CANListener::frameHandler(CAN_message_t&, int, uint8_t)':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:313:47: warning: unused parameter 'frame' [-Wunused-parameter]
+  313 |     virtual bool frameHandler (CAN_message_t &frame, int mailbox, uint8_t controller) { return false; }
+      |                                ~~~~~~~~~~~~~~~^~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:313:58: warning: unused parameter 'mailbox' [-Wunused-parameter]
+  313 |     virtual bool frameHandler (CAN_message_t &frame, int mailbox, uint8_t controller) { return false; }
+      |                                                      ~~~~^~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:313:75: warning: unused parameter 'controller' [-Wunused-parameter]
+  313 |     virtual bool frameHandler (CAN_message_t &frame, int mailbox, uint8_t controller) { return false; }
+      |                                                                   ~~~~~~~~^~~~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: In member function 'virtual void CANListener::txHandler(int, uint8_t)':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:314:33: warning: unused parameter 'mailbox' [-Wunused-parameter]
+  314 |     virtual void txHandler (int mailbox, uint8_t controller) {;} /* unused in Collin's library */
+      |                             ~~~~^~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:314:50: warning: unused parameter 'controller' [-Wunused-parameter]
+  314 |     virtual void txHandler (int mailbox, uint8_t controller) {;} /* unused in Collin's library */
+      |                                          ~~~~~~~~^~~~~~~~~~
+Compiling .pio\build\teensy_gateway\FrameworkArduino\IntervalTimer.cpp.o
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: At global scope:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:531:5: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  531 |     volatile bool fifo_filter_match(uint32_t id);
+      |     ^~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:533:5: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  533 |     volatile void frame_distribution(CAN_message_t &msg);
+      |     ^~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:536:5: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  536 |     volatile bool filter_match(FLEXCAN_MAILBOX mb_num, uint32_t id);
+      |     ^~~~~~~~
+In file included from <USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:558,
+                 from src\teensy_gateway.cpp:3:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.tpp:1464:11: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ 1464 | FCTP_FUNC volatile bool FCTP_OPT::fifo_filter_match(uint32_t id) {
+      |           ^~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.tpp:1483:11: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ 1483 | FCTP_FUNC volatile bool FCTP_OPT::filter_match(FLEXCAN_MAILBOX mb_num, uint32_t id) {
+      |           ^~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.tpp:1662:11: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ 1662 | FCTP_FUNC volatile void FCTP_OPT::frame_distribution(CAN_message_t &msg) {
+      |           ^~~~~~~~
+Compiling .pio\build\teensy_gateway\FrameworkArduino\Print.cpp.o
+In file included from src\teensy_gateway.cpp:3:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: In instantiation of 'int FlexCAN_T4<_bus, _rxSize, _txSize>::write(const CANFD_message_t&) [with CAN_DEV_TABLE _bus = CAN2; FLEXCAN_RXQUEUE_TABLE _rxSize = RX_SIZE_256; FLEXCAN_TXQUEUE_TABLE _txSize = TX_SIZE_16; CANFD_message_t = CANFD_message_t]':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:482:9:   required from here
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:482:38: warning: unused parameter 'msg' [-Wunused-parameter]
+  482 |     int write(const CANFD_message_t &msg) { return 0; } /* to satisfy base class for external pointers */
+      |               ~~~~~~~~~~~~~~~~~~~~~~~^~~
+Compiling .pio\build\teensy_gateway\FrameworkArduino\Stream.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\Time.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\Tone.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\WMath.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\WString.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\analog.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\bootdata.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\clockspeed.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\debugprintf.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\delay.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\digital.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\eeprom.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\extmem.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\fuse.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\interrupt.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\keylayouts.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\libc.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\main.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\memcpy-armv7m.S.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\memset.S.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\new.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\nonstd.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\pwm.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\rtc.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\serialEvent.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\serialEvent1.cpp.o
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\nonstd.c: In function 'dtostrf':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\nonstd.c:207:53: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  207 |                         if (newDecimalPoint - decpt == precision + 1) decpt++;
+      |                                                     ^~
+Compiling .pio\build\teensy_gateway\FrameworkArduino\serialEvent2.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\serialEvent3.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\serialEvent4.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\serialEvent5.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\serialEvent6.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\serialEvent7.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\serialEvent8.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\serialEventUSB1.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\serialEventUSB2.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_alloc_valid.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_calloc.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_free.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_hash.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_malloc.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_malloc_stats.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_pool.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_realloc.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_realloc_i.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_realloc_move.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_szalloc.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_util.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\sm_zalloc.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\startup.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\tempmon.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb.c.o
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_malloc.c: In function 'sm_malloc_pool':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_malloc.c:26:49: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'unsigned int'} [-Wsign-compare]
+   26 |         while (CHAR_PTR(shdr)-CHAR_PTR(basehdr) < spool->pool_size) {
+      |                                                 ^
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_malloc.c:44:65: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'unsigned int'} [-Wsign-compare]
+   44 |                         while (CHAR_PTR(dhdr)-CHAR_PTR(basehdr) < spool->pool_size) {
+      |                                                                 ^
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_malloc_stats.c: In function 'sm_malloc_stats_pool':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_malloc_stats.c:27:49: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'unsigned int'} [-Wsign-compare]
+   27 |         while (CHAR_PTR(shdr)-CHAR_PTR(basehdr) < spool->pool_size) {
+      |                                                 ^
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_audio.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_desc.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_flightsim.cpp.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_inst.cpp.o
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_realloc_i.c: In function 'sm_realloc_pool_i':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_realloc_i.c:81:49: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'unsigned int'} [-Wsign-compare]
+   81 |         while (CHAR_PTR(dhdr)-CHAR_PTR(basehdr) < spool->pool_size) {
+      |                                                 ^
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_joystick.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_keyboard.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_midi.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_mouse.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_mtp.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_rawhid.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_seremu.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_serial.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_serial2.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_serial3.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\usb_touch.c.o
+Compiling .pio\build\teensy_gateway\FrameworkArduino\yield.cpp.o
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\usb_serial.c: In function 'rx_event':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\usb_serial.c:157:33: warning: comparison of integer expressions of different signedness: 'int' and 'long unsigned int' [-Wsign-compare]
+  157 |                         if (len <= CDC_RX_SIZE_480 - count) {
+      |                                 ^~
+Archiving .pio\build\teensy_gateway\libFrameworkArduino.a
+Linking .pio\build\teensy_gateway\firmware.elf
+Checking size .pio\build\teensy_gateway\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+Calculating size .pio\build\teensy_gateway\firmware.elf
+teensy_size: Memory Usage on Teensy 4.1:
+teensy_size:   FLASH: code:67008, data:34760, headers:8820   free for files:8015876
+teensy_size:    RAM1: variables:51648, code:64312, padding:1224   free for local variables:407104
+teensy_size:    RAM2: variables:12416  free for malloc/new:511872
+Building .pio\build\teensy_gateway\firmware.hex
+========================= [SUCCESS] Took 25.97 seconds =========================
+
+Environment     Status    Duration
+--------------  --------  ------------
+mega_engine     SUCCESS   00:00:13.631
+teensy_gateway  SUCCESS   00:00:25.966
+========================= 2 succeeded in 00:00:39.597 =========================

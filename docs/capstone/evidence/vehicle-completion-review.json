@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-28",
+  "status": "requirements_budget_and_regulatory_research_not_vehicle_acceptance",
+  "user_confirmed": {
+    "county": "Wake, NC",
+    "speed_mph": 75,
+    "twenty_minutes": "20m interpreted as minutes",
+    "hilly_design_required": true
+  },
+  "acceptance_grade_confirmed": false,
+  "current_approved_budget_known": false,
+  "extension_amount_computed": false,
+  "checks": {
+    "json": "passed",
+    "local_links": "passed",
+    "budget_no_double_count_scope": "reviewed work-package boundaries; quotes and owned credits pending",
+    "budget_arithmetic": "passed",
+    "independent_roadload_energy_rpm_arithmetic": "passed",
+    "existing_model_regressions": "10 passed",
+    "no_regen_downhill_braking_arithmetic": "passed"
+  },
+  "sources_checked": [
+    "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_20/GS_20-183.2.html",
+    "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_20/GS_20-4.01.html",
+    "https://library.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_20/GS_20-79.4.html",
+    "https://www.ncdot.gov/dmv/title-registration/pages/default.aspx",
+    "https://ncshp.gov/investigative-services-unit",
+    "https://library.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_20/GS_20-183.3.html",
+    "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_20/GS_20-124.html",
+    "https://honeddevelopments.com/wp-content/uploads/2019/07/Porsche-Caliper-Mounting-Kit-HDP23-01-Instructions-V2.pdf",
+    "https://usa.nissannews.com/en-US/releases/overview-2018-nissan-leaf",
+    "https://honeddevelopments.com/product/honda-porsche-242-brake-caliper-mounting-kit/"
+  ],
+  "source_files_sha256": {
+    "docs/capstone/VEHICLE_COMPLETION.md": "7f853c434b62367cda6a29ddea3bd5b0b3377cdbbc263cacf03430af6434d901",
+    "docs/capstone/BUDGET_EXTENSION.md": "ec84c48ea35aef1dc0a76540503efb0bc016e5170a9afbf1bdcae0a176d552fa",
+    "docs/capstone/FIRST_REVIEW.md": "148916d9fdc376de8f45647dbf27cc39608eba33c3449cd2f8ace9ea2b76f06f",
+    "docs/capstone/REQUIREMENTS.md": "b6b6e43a671368221d9c4b58903fc2f3dfdfb8e8c0f345d9ec87178e63527bf9",
+    "docs/capstone/ENGINEERING.md": "8764fbf967c34f91773c9ac3ce5c757d110d3a520e5fd5e8863f887a2f176b8f",
+    "docs/capstone/COMMISSIONING.md": "1b7c981fece5205474505e1ee7fcef210cce1b82dd6cf3aa8ebfce95c2d14b3f",
+    "README.md": "453da3d1e89834d2e5c787d96a476b8da722e6e3bd8b53720d2fc778b2622be5",
+    "docs/capstone/README.md": "271fbb9e1144d64174f1246f7f8a0a4728a20690a87ddac09933d1acdc6192c1",
+    "configs/build-inputs.json": "afcf93be0202ec970d532d3e19033d63f6c023d2cf2ecf69533c5b67ee364cec",
+    "configs/vehicle-75mph-study.json": "054859fc521fe9d3656bef75bb1252f26faaab1dff2d0d27b15eeaa704234267",
+    "configs/vehicle-completion-budget.json": "74934a7fc45644aabfec62464f4d4697a490267fc4d01739685efbb64506c0f2",
+    "docs/capstone/evidence/vehicle-75mph-study.json": "f3255f3073a25c0448b86a6b25f3898f44be70842db0b5ff02af97c282b282d7",
+    "output/vehicle-75mph-analysis.json": "076b3edf263142fe6596c84142db8511c9d312e2d75ee59ea20edb6510cca2f0",
+    "docs/capstone/BATTERY_PACKAGING.md": "9248d625f7b8bc4f8e06c7625d4d9306736f80bacfa740e8974d58e420639ed2",
+    "configs/battery-packaging-study.json": "3b14cd04f0e292441527643552c0334491084b9b413da895f7edef1d95f42138"
+  },
+  "limitations": [
+    "No vehicle-specific legal determination or agency contact",
+    "No vendor quotes or inventory credits",
+    "No 75 mph loaded drive/thermal/brake/HV or course acceptance",
+    "Grade and speed tolerance still require agreement",
+    "Old 70 mph default study retained intentionally; new scenario is separate"
+  ],
+  "provisional_stress_screen_grade_fraction": 0.06,
+  "actual_course_grade_profile_known": false,
+  "candidate_capacity_class_kwh": 40,
+  "budget_with_25percent_contingency_usd": [
+    23299,
+    52988
+  ]
+}

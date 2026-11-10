@@ -1,0 +1,7 @@
+{
+  "profile": "generic_oem_leaf_lbc",
+  "status_id": 384,
+  "bitrate": 500000,
+  "required_signals": ["pack_voltage", "pack_current", "charge_limit", "discharge_limit", "temperature", "contactor", "interlock"],
+  "note": "Synthetic simulator profile. Replace with verified captures and exact LBC documentation before any HIL work."
+}

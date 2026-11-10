@@ -1,0 +1,11 @@
+Resolving mega_engine dependencies...
+Platform atmelavr @ 5.1.0 (required: atmelavr @ 5.1.0)
+├── framework-arduino-avr @ 5.2.0 (required: platformio/framework-arduino-avr @ 5.2.0)
+└── toolchain-atmelavr @ 1.70300.191015 (required: platformio/toolchain-atmelavr @ 1.70300.191015)
+
+
+Resolving teensy_gateway dependencies...
+Platform teensy @ 5.0.0 (required: teensy @ 5.0.0)
+├── framework-arduinoteensy @ 1.159.0 (required: platformio/framework-arduinoteensy @ 1.159.0)
+├── tool-teensy @ 1.162.0 (required: platformio/tool-teensy @ 1.162.0)
+└── toolchain-gccarmnoneeabi-teensy @ 1.110301.0 (required: platformio/toolchain-gccarmnoneeabi-teensy @ 1.110301.0)

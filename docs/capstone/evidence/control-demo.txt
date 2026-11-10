@@ -1,0 +1,21 @@
+SIMULATION ONLY - C++ dual-motor supervisor; no hardware outputs
+10 ms: disarmed startup
+  MG1=0.0% MG2=0.0% inhibit-request=ON faults=0x00000000
+20 ms: combined drive
+  simulated frame id=0x03F counter=0
+  simulated frame id=0x040 counter=0
+  MG1=10.0% MG2=10.0% inhibit-request=OFF faults=0x00000000
+30 ms: combined drive
+  simulated frame id=0x03F counter=1
+  simulated frame id=0x040 counter=1
+  MG1=20.0% MG2=20.0% inhibit-request=OFF faults=0x00000000
+40 ms: MG1 feedback lost
+  MG1=0.0% MG2=0.0% inhibit-request=ON faults=0x00000002
+50 ms: feedback restored; remains latched
+  MG1=0.0% MG2=0.0% inhibit-request=ON faults=0x00000002
+60 ms: deliberate disarmed reset
+  MG1=0.0% MG2=0.0% inhibit-request=ON faults=0x00000000
+70 ms: combined drive rearmed
+  simulated frame id=0x03F counter=2
+  simulated frame id=0x040 counter=2
+  MG1=10.0% MG2=10.0% inhibit-request=OFF faults=0x00000000

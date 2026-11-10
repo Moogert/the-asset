@@ -1,0 +1,47 @@
+{
+  "status": "partial_header_scan_not_compliance",
+  "tool_version": "jsfav 0.1.0",
+  "tool_path": "<LOCAL_PROJECTS>\\smash\\jsfav-checker\\build-msvc\\Release\\jsfav.exe",
+  "tool_sha256": "931a60e98446ea14e14113d21938f36104463c307fb7d58c2d0742438774c025",
+  "catalog_sha256": "3625e0ff61709169fade5821d0ae86d63a4a4c7401a6f921cb593dc3ec471081",
+  "command": [
+    "<LOCAL_PROJECTS>\\smash\\jsfav-checker\\build-msvc\\Release\\jsfav.exe",
+    "scan",
+    "include/dual_drive.h",
+    "include/prius_inverter_adapter.h",
+    "--profile",
+    "literal",
+    "--format",
+    "json",
+    "--output",
+    "<WORKSPACE>\\docs\\capstone\\evidence\\jsf-header-baseline.json"
+  ],
+  "working_directory": "<WORKSPACE>",
+  "selected_files_sha256": {
+    "include/dual_drive.h": "1275c052b61ac05915dc98a73bd5b4a1f617e0bd09d7da3ac13c422d94250fb8",
+    "include/prius_inverter_adapter.h": "ca2cb0cf07f99043ad8fd8ab51be4f79fb4e84c0c4f436847503be725163bcc7"
+  },
+  "unscanned_c_implementations_sha256": {
+    "src/core/dual_drive.c": "7ab202cadd5f1fa931afff0b962ad5c5d9566b05d883dd30f063c5d45777214f",
+    "src/core/prius_inverter_adapter.c": "c9d30db1f87d73045853530d6543c74ce1f4d9d4abd58457f2c94125e28fe346"
+  },
+  "limitations": [
+    "No compilation database",
+    "No semantic C++ analysis",
+    "C11 implementation excluded by checker suffix selection",
+    "Every rule disposition remains open"
+  ],
+  "profile": "literal",
+  "partial": true,
+  "coverage": {
+    "automatedRules": 40,
+    "executedAutomatedRules": 12,
+    "reviewRules": 193
+  },
+  "summary": {
+    "coverageWarnings": 1,
+    "reviews": 221,
+    "suppressed": 0,
+    "violations": 0
+  }
+}

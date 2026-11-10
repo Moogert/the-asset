@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-28",
+  "status": "gross_whole_vehicle_planning_allowances_not_extension_request_or_quotes",
+  "currency": "USD",
+  "current_approved_budget_usd": null,
+  "spent_or_committed_usd": null,
+  "verified_owned_parts_credit_usd": null,
+  "current_unspent_funding_usd": null,
+  "demonstration_deadline": null,
+  "remaining_quote_based_estimate_usd": null,
+  "extension_requested_usd": null,
+  "contingency_fraction": 0.25,
+  "rows": [
+    {
+      "id": "V01",
+      "work_package": "Traction electronics, supervisor, reviewed CAN interfaces and signal harness",
+      "low_usd": 1400,
+      "high_usd": 3000,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V02",
+      "work_package": "Transaxle modification, inspection, seals and lubrication work",
+      "low_usd": 500,
+      "high_usd": 1200,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V03",
+      "work_package": "Drivetrain mounts/axles/CV hardware and dedicated fabrication subcontract",
+      "low_usd": 1500,
+      "high_usd": 3500,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V04",
+      "work_package": "Tested Leaf donor, 40 kWh-class allowance for hilly endurance; final capacity unselected",
+      "low_usd": 3000,
+      "high_usd": 6000,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V05",
+      "work_package": "Battery enclosure/mounts/restraint/insulation",
+      "low_usd": 850,
+      "high_usd": 2250,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V06",
+      "work_package": "BMS and battery sensing",
+      "low_usd": 500,
+      "high_usd": 1000,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V07",
+      "work_package": "HV fuse/contactors/precharge/disconnect/interlock/insulation monitoring",
+      "low_usd": 700,
+      "high_usd": 1600,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V08",
+      "work_package": "Protected HV/LV traction wiring, glands and connectors",
+      "low_usd": 400,
+      "high_usd": 900,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V09",
+      "work_package": "Drivetrain coolant/ATF circulation and heat rejection",
+      "low_usd": 400,
+      "high_usd": 1000,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V10",
+      "work_package": "Battery thermal provisions",
+      "low_usd": 200,
+      "high_usd": 700,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V11",
+      "work_package": "Compatible charger, charge inlet/pilot and plug-in drive interlock",
+      "low_usd": 700,
+      "high_usd": 1600,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V12",
+      "work_package": "Traction DC/DC, 12 V buffer battery and LV distribution",
+      "low_usd": 350,
+      "high_usd": 850,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V13",
+      "work_package": "Porsche front/Integra rear/vacuum-assist PARTS, existing detailed BOM",
+      "low_usd": 2667,
+      "high_usd": 4615,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V14",
+      "work_package": "Chassis/steering/bearing/tyre service and alignment allowance",
+      "low_usd": 800,
+      "high_usd": 2000,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V15",
+      "work_package": "Body electrics, visibility/defog and cabin utility work",
+      "low_usd": 400,
+      "high_usd": 1000,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V16",
+      "work_package": "Honda/Mega/Teensy diagnostic PARTS, existing detailed BOM",
+      "low_usd": 622,
+      "high_usd": 1425,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V17",
+      "work_package": "Engineering review, calibration, dyno/instrument hire and controlled tests",
+      "low_usd": 1200,
+      "high_usd": 3000,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V18",
+      "work_package": "Course access, recovery/transport and test logistics",
+      "low_usd": 700,
+      "high_usd": 2000,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V19",
+      "work_package": "Integration/brake installation labor not already quoted under V03",
+      "low_usd": 1500,
+      "high_usd": 4000,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    },
+    {
+      "id": "V20",
+      "work_package": "Title/inspection/admin and insurance-related allowance",
+      "low_usd": 250,
+      "high_usd": 750,
+      "basis": "engineering allowance, not a vendor quote; verify scope and ownership before requesting funds"
+    }
+  ],
+  "gross_before_contingency_usd": [
+    18639,
+    42390
+  ],
+  "gross_with_25percent_contingency_usd": [
+    23299,
+    52988
+  ],
+  "scope_notes": [
+    "One whole-vehicle estimate, not added to earlier aggregate drivetrain/battery/brake allowances",
+    "V03 includes dedicated mount/axle fabrication; V19 excludes labor already included there",
+    "V13 and V16 use pre-contingency parts totals; no separate second package contingency added",
+    "V07/V08 are the single common HV protection/wiring allocation, not added again within a battery subtotal",
+    "V17 assumes access/hire; not purchase of a commercial dynamometer or full lab",
+    "No ownership credits have been applied; existing drivetrain/MCU/instrument claims need inventory verification",
+    "Conditional master/wheel/caliper repairs, structural battery redesign, tax/freight and unusually expensive insurance may exceed allowances",
+    "A higher-capacity donor or revised driveline after the 75 mph gate requires re-quotation",
+    "Revised for hills: V04 now evaluates a 40 kWh-class donor allowance; this is not a quote or proof the enclosure/axle-load budget suffices"
+  ],
+  "request_formula": "remaining verified scope + priced risk reserve - available unspent approved funds - confirmed new contributions; exclude already-paid work"
+}

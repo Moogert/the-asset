@@ -1,0 +1,1569 @@
+{
+  "coverage": {
+    "automatedRules": 40,
+    "executedAutomatedRules": 40,
+    "reviewRules": 193
+  },
+  "languageStandards": [
+    "c++03"
+  ],
+  "partial": false,
+  "profile": "literal",
+  "results": [
+    {
+      "classification": "review",
+      "evidence": "Elements from a namespace should be selected as follows: • using declaration or explicit qualification for few (approximately five) names, • using directive for many names. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 100",
+      "profile": "literal",
+      "ruleId": "100",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Templates shall be reviewed as follows: 1. with respect to the template in isolation considering assumptions or requirements placed on its arguments. 2. with respect to all functions instantiated by actual arguments. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 101",
+      "profile": "literal",
+      "ruleId": "101",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Template tests shall be created to cover all actual template instantiations. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 102",
+      "profile": "literal",
+      "ruleId": "102",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Constraint checks should be applied to template arguments. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 103",
+      "profile": "literal",
+      "ruleId": "103",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A template specialization shall be declared before its use. See Stroustrup [2], 13.5. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 104",
+      "profile": "literal",
+      "ruleId": "104",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A template definition’s dependence on its instantiation contexts should be minimized. See Stroustrup [2], 13.2.5 and C.13.8. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 105",
+      "profile": "literal",
+      "ruleId": "105",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Specializations for pointer types should be made where appropriate. See Stroustrup [2], 13.5. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 106",
+      "profile": "literal",
+      "ruleId": "106",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Functions shall always be declared at file scope. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 107",
+      "profile": "literal",
+      "ruleId": "107",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A function definition should not be placed in a class specification unless the function is intended to be inlined. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 109",
+      "profile": "literal",
+      "ruleId": "109",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Values of character types will be restricted to a defined and documented subset of ISO 10646-1. [9] Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 10",
+      "profile": "literal",
+      "ruleId": "10",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A function shall not return a pointer or reference to a non-static local object. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 111",
+      "profile": "literal",
+      "ruleId": "111",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Function return values should not obscure resource ownership. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 112",
+      "profile": "literal",
+      "ruleId": "112",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All exit points of value-returning functions shall be through return statements. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 114",
+      "profile": "literal",
+      "ruleId": "114",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "If a function returns error information, then that error information will be tested. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 115",
+      "profile": "literal",
+      "ruleId": "115",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Small, concrete-type arguments (two or three words in size) should be passed by value if changes made to formal parameters should not be reflected in the calling function. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 116",
+      "profile": "literal",
+      "ruleId": "116",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "An object should be passed as const T& if the function should not change the value of the object. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 117.1",
+      "profile": "literal",
+      "ruleId": "117.1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "An object should be passed as T& if the function may change the value of the object. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 117.2",
+      "profile": "literal",
+      "ruleId": "117.2",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Arguments should be passed by reference if NULL values are not possible: Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 117",
+      "profile": "literal",
+      "ruleId": "117",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "An object should be passed as const T* if its value should not be modified. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 118.1",
+      "profile": "literal",
+      "ruleId": "118.1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "An object should be passed as T* if its value may be modified. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 118.2",
+      "profile": "literal",
+      "ruleId": "118.2",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Arguments should be passed via pointers if NULL values are possible: Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 118",
+      "profile": "literal",
+      "ruleId": "118",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Functions shall not call themselves, either directly or indirectly (i.e. recursion shall not be allowed). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 119",
+      "profile": "literal",
+      "ruleId": "119",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Overloaded operations or methods should form families that use the same semantics, share the same name, have the same purpose, and that are differentiated by formal parameters. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 120",
+      "profile": "literal",
+      "ruleId": "120",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Only functions with 1 or 2 statements should be considered candidates for inline functions. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 121",
+      "profile": "literal",
+      "ruleId": "121",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Trivial accessor and mutator functions should be inlined. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 122",
+      "profile": "literal",
+      "ruleId": "122",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The number of accessor and mutator functions should be minimized. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 123",
+      "profile": "literal",
+      "ruleId": "123",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Trivial forwarding functions should be inlined. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 124",
+      "profile": "literal",
+      "ruleId": "124",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Unnecessary temporary objects should be avoided. See Meyers [7], item 19, 20, 21. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 125",
+      "profile": "literal",
+      "ruleId": "125",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Code that is not used (commented out) shall be deleted. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 127",
+      "profile": "literal",
+      "ruleId": "127",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Comments that document actions or sources (e.g. tables, figures, paragraphs, etc.) outside of the file being documented will not be allowed. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 128",
+      "profile": "literal",
+      "ruleId": "128",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Comments in header files should describe the externally visible behavior of the functions or classes being documented. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 129",
+      "profile": "literal",
+      "ruleId": "129",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The purpose of every line of executable code should be explained by a comment, although one comment may describe more than one line of code. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 130",
+      "profile": "literal",
+      "ruleId": "130",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "One should avoid stating in comments what is better stated in code (i.e. do not simply repeat what is in the code). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 131",
+      "profile": "literal",
+      "ruleId": "131",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Each variable declaration, typedef, enumeration value, and structure member will be commented. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 132",
+      "profile": "literal",
+      "ruleId": "132",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Every source file will be documented with an introductory comment that provides information on the file name, its contents, and any program-required information (e.g. legal statements, copyright information, etc). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 133",
+      "profile": "literal",
+      "ruleId": "133",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Assumptions (limitations) made by functions should be documented in the function’s preamble. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 134",
+      "profile": "literal",
+      "ruleId": "134",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Identifiers in an inner scope shall not use the same name as an identifier in an outer scope, and therefore hide that identifier. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 135",
+      "profile": "literal",
+      "ruleId": "135",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Declarations should be at the smallest feasible scope. (See also AV Rule 143). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 136",
+      "profile": "literal",
+      "ruleId": "136",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All declarations at file scope should be static where possible. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 137",
+      "profile": "literal",
+      "ruleId": "137",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Identifiers shall not simultaneously have both internal and external linkage in the same translation unit. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 138",
+      "profile": "literal",
+      "ruleId": "138",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "External objects will not be declared in more than one file. (See also AV Rule 39.) Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 139",
+      "profile": "literal",
+      "ruleId": "139",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Multi-byte characters and wide string literals will not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 13",
+      "profile": "literal",
+      "ruleId": "13",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A class, structure, or enumeration will not be declared in the definition of its type. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 141",
+      "profile": "literal",
+      "ruleId": "141",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All variables shall be initialized before use. (See also AV Rule 136, AV Rule 71, and AV Rule 73, and AV Rule 143 concerning declaration scope, object construction, default constructors, and the point of variable introduction respectively.) Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 142",
+      "profile": "literal",
+      "ruleId": "142",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Variables will not be introduced until they can be initialized with meaningful values. (See also AV Rule 136, AV Rule 142, and AV Rule 73 concerning declaration scope, initialization before use, and default constructors respectively.) Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 143",
+      "profile": "literal",
+      "ruleId": "143",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Braces shall be used to indicate and match the structure in the non-zero initialization of arrays and structures. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 144",
+      "profile": "literal",
+      "ruleId": "144",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "In an enumerator list, the ‘=‘ construct shall not be used to explicitly initialize members other than the first, unless all items are explicitly initialized. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 145",
+      "profile": "literal",
+      "ruleId": "145",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Floating point implementations shall comply with a defined floating point standard. The standard that will be used is the ANSI/IEEE Std 754 [1]. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 146",
+      "profile": "literal",
+      "ruleId": "146",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The underlying bit representations of floating point numbers shall not be used in any way by the programmer. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 147",
+      "profile": "literal",
+      "ruleId": "147",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Enumeration types shall be used instead of integer types (and constants) to select from a limited series of choices. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 148",
+      "profile": "literal",
+      "ruleId": "148",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A string literal shall not be modified. Note that strictly conforming compilers should catch violations, but many do not. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 151.1",
+      "profile": "literal",
+      "ruleId": "151.1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Numeric values in code will not be used; symbolic values will be used instead. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 151",
+      "profile": "literal",
+      "ruleId": "151",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Bit-fields will not be used to pack data into a word for the sole purpose of saving space. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 155",
+      "profile": "literal",
+      "ruleId": "155",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All the members of a structure (or class) shall be named and shall only be accessed via their names. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 156",
+      "profile": "literal",
+      "ruleId": "156",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The right hand operand of a && or || operator shall not contain side effects. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 157",
+      "profile": "literal",
+      "ruleId": "157",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The operands of a logical && or || shall be parenthesized if the operands contain binary operators. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 158",
+      "profile": "literal",
+      "ruleId": "158",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Provision shall be made for run-time checking (defensive programming). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 15",
+      "profile": "literal",
+      "ruleId": "15",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "An assignment expression shall be used only as the expression in an expression statement. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 160",
+      "profile": "literal",
+      "ruleId": "160",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Signed and unsigned values shall not be mixed in arithmetic or comparison operations. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 162",
+      "profile": "literal",
+      "ruleId": "162",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Unsigned arithmetic shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 163",
+      "profile": "literal",
+      "ruleId": "163",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The left-hand operand of a right-shift operator shall not have a negative value. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 164.1",
+      "profile": "literal",
+      "ruleId": "164.1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The right hand operand of a shift operator shall lie between zero and one less than the width in bits of the left-hand operand (inclusive). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 164",
+      "profile": "literal",
+      "ruleId": "164",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The unary minus operator shall not be applied to an unsigned expression. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 165",
+      "profile": "literal",
+      "ruleId": "165",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The sizeof operator will not be used on expressions that contain side effects. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 166",
+      "profile": "literal",
+      "ruleId": "166",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The implementation of integer division in the chosen compiler shall be determined, documented and taken into account. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 167",
+      "profile": "literal",
+      "ruleId": "167",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The comma operator shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 168",
+      "profile": "literal",
+      "ruleId": "168",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Pointers to pointers should be avoided when possible. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 169",
+      "profile": "literal",
+      "ruleId": "169",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Only DO-178B level A [15] certifiable or SEAL 1 C/C++ libraries shall be used with safety- critical (i.e. SEAL 1) code [13]. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 16",
+      "profile": "literal",
+      "ruleId": "16",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "More than 2 levels of pointer indirection shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 170",
+      "profile": "literal",
+      "ruleId": "170",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Relational operators shall not be applied to pointer types except where both operands are of the same type and point to: • the same object, • the same function, • members of the same object, or • elements of the same array (including one past the end of the same array). Note that if either operand is null, then both shall be null. Also, “members of the same object” should not be construed to include base class subobjects (See also AV Rule 210). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 171",
+      "profile": "literal",
+      "ruleId": "171",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The address of an object with automatic storage shall not be assigned to an object which persists after the object has ceased to exist. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 173",
+      "profile": "literal",
+      "ruleId": "173",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The null pointer shall not be de-referenced. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 174",
+      "profile": "literal",
+      "ruleId": "174",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A pointer shall not be compared to NULL or be assigned NULL; use plain 0 instead. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 175",
+      "profile": "literal",
+      "ruleId": "175",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A typedef will be used to simplify program syntax when declaring function pointers. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 176",
+      "profile": "literal",
+      "ruleId": "176",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "User-defined conversion functions should be avoided. See Meyers [7], item 5. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 177",
+      "profile": "literal",
+      "ruleId": "177",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Down casting (casting from base to derived class) shall only be allowed through one of the following mechanism: • Virtual functions that act like dynamic casts (most likely useful in relatively simple cases) • Use of the visitor (or similar) pattern (most likely useful in complicated cases) Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 178",
+      "profile": "literal",
+      "ruleId": "178",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A pointer to a virtual base class shall not be converted to a pointer to a derived class. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 179",
+      "profile": "literal",
+      "ruleId": "179",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The error indicator errno shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 17",
+      "profile": "literal",
+      "ruleId": "17",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Implicit conversions that may result in a loss of information shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 180",
+      "profile": "literal",
+      "ruleId": "180",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Redundant explicit casts will not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 181",
+      "profile": "literal",
+      "ruleId": "181",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Type casting from any type to or from pointers shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 182",
+      "profile": "literal",
+      "ruleId": "182",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Every possible measure should be taken to avoid type casting. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 183",
+      "profile": "literal",
+      "ruleId": "183",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Floating point numbers shall not be converted to integers unless such a conversion is a specified algorithmic requirement or is necessary for a hardware interface. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 184",
+      "profile": "literal",
+      "ruleId": "184",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "There shall be no unreachable code. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 186",
+      "profile": "literal",
+      "ruleId": "186",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All non-null statements shall potentially have a side-effect. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 187",
+      "profile": "literal",
+      "ruleId": "187",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All if, else if constructs will contain either a final else clause or a comment indicating why a final else clause is not necessary. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 192",
+      "profile": "literal",
+      "ruleId": "192",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Every non-empty case clause in a switch statement shall be terminated with a break statement. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 193",
+      "profile": "literal",
+      "ruleId": "193",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All switch statements that do not intend to test for every enumeration value shall contain a final default clause. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 194",
+      "profile": "literal",
+      "ruleId": "194",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A switch expression will not represent a Boolean value. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 195",
+      "profile": "literal",
+      "ruleId": "195",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Every switch statement will have at least two cases and a potential default. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 196",
+      "profile": "literal",
+      "ruleId": "196",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Floating point variables shall not be used as loop counters. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 197",
+      "profile": "literal",
+      "ruleId": "197",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The initialization expression in a for loop will perform no actions other than to initialize the value of a single for loop parameter. Note that the initialization expression may invoke an accessor that returns an initial element in a sequence: for (Iter_type p = c.begin() ; p != c.end() ; ++p) // Good { … } Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 198",
+      "profile": "literal",
+      "ruleId": "198",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The increment expression in a for loop will perform no action other than to change a single loop parameter to the next value for the loop. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 199",
+      "profile": "literal",
+      "ruleId": "199",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "<locale.h> and the setlocale function shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 19",
+      "profile": "literal",
+      "ruleId": "19",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Any one function (or method) will contain no more than 200 logical source lines of code (L- SLOCs). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 1",
+      "profile": "literal",
+      "ruleId": "1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Numeric variables being used within a for loop for iteration counting shall not be modified in the body of the loop. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 201",
+      "profile": "literal",
+      "ruleId": "201",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Floating point variables shall not be tested for exact equality or inequality. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 202",
+      "profile": "literal",
+      "ruleId": "202",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Evaluation of expressions shall not lead to overflow/underflow (unless required algorithmically and then should be heavily documented). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 203",
+      "profile": "literal",
+      "ruleId": "203",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The value of an expression shall be the same under any order of evaluation that the standard permits. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 204.1",
+      "profile": "literal",
+      "ruleId": "204.1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A single operation with side-effects shall only be used in the following contexts: 1. by itself 2. the right-hand side of an assignment 3. a condition 4. the only argument expression with a side-effect in a function call 5. condition of a loop 6. switch condition 7. single part of a chained operation. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 204",
+      "profile": "literal",
+      "ruleId": "204",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The volatile keyword shall not be used unless directly interfacing with hardware. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 205",
+      "profile": "literal",
+      "ruleId": "205",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Allocation/deallocation from/to the free store (heap) shall not occur after initialization. Note that the “placement” operator new(), although not technically dynamic memory, may only be used in low-level memory management routines. See AV Rule 70.1 for object lifetime issues associated with placement operator new(). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 206",
+      "profile": "literal",
+      "ruleId": "206",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Unencapsulated global data will be avoided. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 207",
+      "profile": "literal",
+      "ruleId": "207",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The basic types of int, short, long, float and double shall not be used, but specific-length equivalents should be typedef’d accordingly for each compiler, and these type names used in the code. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 209",
+      "profile": "literal",
+      "ruleId": "209",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The setjmp macro and the longjmp function shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 20",
+      "profile": "literal",
+      "ruleId": "20",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Algorithms shall not make assumptions concerning the order of allocation of nonstatic data members separated by an access specifier. See also AV Rule 210 on data representation. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 210.1",
+      "profile": "literal",
+      "ruleId": "210.1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Algorithms shall not make assumptions concerning how data is represented in memory (e.g. big endian vs. little endian, base class subobject ordering in derived classes, nonstatic data member ordering across access specifiers, etc.) Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 210",
+      "profile": "literal",
+      "ruleId": "210",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Algorithms shall not assume that shorts, ints, longs, floats, doubles or long doubles begin at particular addresses. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 211",
+      "profile": "literal",
+      "ruleId": "211",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Underflow or overflow functioning shall not be depended on in any special way. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 212",
+      "profile": "literal",
+      "ruleId": "212",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "No dependence shall be placed on C++’s operator precedence rules, below arithmetic operators, in expressions. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 213",
+      "profile": "literal",
+      "ruleId": "213",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Assuming that non-local static objects, in separate translation units, are initialized in a special order shall not be done. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 214",
+      "profile": "literal",
+      "ruleId": "214",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Pointer arithmetic will not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 215",
+      "profile": "literal",
+      "ruleId": "215",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Programmers should not attempt to prematurely optimize code. See Meyers [7], item 16. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 216",
+      "profile": "literal",
+      "ruleId": "216",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Compile-time and link-time errors should be preferred over run-time errors. See Meyers [6], item 46. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 217",
+      "profile": "literal",
+      "ruleId": "217",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Compiler warning levels will be set in compliance with project policies. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 218",
+      "profile": "literal",
+      "ruleId": "218",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All tests applied to a base class interface shall be applied to all derived class interfaces as well. If the derived class poses stronger postconditions/invariants, then the new postconditions /invariants shall be substituted in the derived class tests. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 219",
+      "profile": "literal",
+      "ruleId": "219",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The signal handling facilities of <signal.h> shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 21",
+      "profile": "literal",
+      "ruleId": "21",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Structural coverage algorithms shall be applied against flattened classes. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 220",
+      "profile": "literal",
+      "ruleId": "220",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Structural coverage of a class within an inheritance hierarchy containing virtual functions shall include testing every possible resolution for each set of identical polymorphic references. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 221",
+      "profile": "literal",
+      "ruleId": "221",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The input/output library <stdio.h> shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 22",
+      "profile": "literal",
+      "ruleId": "22",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The library functions atof, atoi and atol from library <stdlib.h> shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 23",
+      "profile": "literal",
+      "ruleId": "23",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The library functions abort, exit, getenv and system from library <stdlib.h> shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 24",
+      "profile": "literal",
+      "ruleId": "24",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The time handling functions of library <time.h> shall not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 25",
+      "profile": "literal",
+      "ruleId": "25",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "#ifndef, #define and #endif will be used to prevent multiple inclusions of the same header file. Other techniques to prevent the multiple inclusions of header files will not be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 27",
+      "profile": "literal",
+      "ruleId": "27",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The #ifndef and #endif pre-processor directives will only be used as defined in AV Rule 27 to prevent multiple inclusions of the same header file. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 28",
+      "profile": "literal",
+      "ruleId": "28",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "There shall not be any self-modifying code. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 2",
+      "profile": "literal",
+      "ruleId": "2",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Header files should contain logically related declarations only. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 34",
+      "profile": "literal",
+      "ruleId": "34",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Compilation dependencies should be minimized when possible. (Stroustrup [2], Meyers [6], item 34) Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 36",
+      "profile": "literal",
+      "ruleId": "36",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Header (include) files should include only those header files that are required for them to successfully compile. Files that are only used by the associated .cpp file should be placed in the .cpp file—not the .h file. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 37",
+      "profile": "literal",
+      "ruleId": "37",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Declarations of classes that are only accessed via pointers (*) or references (&) should be supplied by forward headers that contain only forward declarations. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 38",
+      "profile": "literal",
+      "ruleId": "38",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Header files (*.h) will not contain non-const variable definitions or function definitions. (See also AV Rule 139.) Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 39",
+      "profile": "literal",
+      "ruleId": "39",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All functions shall have a cyclomatic complexity number of 20 or less. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 3",
+      "profile": "literal",
+      "ruleId": "3",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Every implementation file shall include the header files that uniquely define the inline functions, types, and templates used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 40",
+      "profile": "literal",
+      "ruleId": "40",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Each expression-statement will be on a separate line. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 42",
+      "profile": "literal",
+      "ruleId": "42",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All indentations will be at least two spaces and be consistent within the same source file. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 44",
+      "profile": "literal",
+      "ruleId": "44",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All words in an identifier will be separated by the ‘_’ character. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 45",
+      "profile": "literal",
+      "ruleId": "45",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "User-specified identifiers (internal and external) will not rely on significance of more than 64 characters. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 46",
+      "profile": "literal",
+      "ruleId": "46",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Identifiers will not differ by: • Only a mixture of case • The presence/absence of the underscore character • The interchange of the letter ‘O’, with the number ‘0’ or the letter ‘D’ • The interchange of the letter ‘I’, with the number ‘1’ or the letter ‘l’ • The interchange of the letter ‘S’ with the number ‘5’ • The interchange of the letter ‘Z’ with the number 2 • The interchange of the letter ‘n’ with the letter ‘h’. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 48",
+      "profile": "literal",
+      "ruleId": "48",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All acronyms in an identifier will be composed of uppercase letters. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 49",
+      "profile": "literal",
+      "ruleId": "49",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "To break a “should” rule, the following approval must be received by the developer: • approval from the software engineering lead (obtained by the unit approval in the developmental CM tool) Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 4",
+      "profile": "literal",
+      "ruleId": "4",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The following character sequences shall not appear in header file names: ‘, \\, /*, //, or \". Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 53.1",
+      "profile": "literal",
+      "ruleId": "53.1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The name of a header file should reflect the logical entity for which it provides declarations. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 55",
+      "profile": "literal",
+      "ruleId": "55",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The name of an implementation file should reflect the logical entity for which it provides definitions and have a “.cpp” extension (this name will normally be identical to the header file that provides the corresponding declarations.) At times, more than one .cpp file for a given logical entity will be required. In these cases, a suffix should be appended to reflect a logical differentiation. Example 1: One .cpp file for the Matrix class: Matrix.cpp Example 2: Multiple files for a math library: Math_sqrt.cpp Math_sin.cpp Math_cos.cpp Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 56",
+      "profile": "literal",
+      "ruleId": "56",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The public, protected, and private sections of a class will be declared in that order (the public section is declared before the protected section which is declared before the private section). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 57",
+      "profile": "literal",
+      "ruleId": "57",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "When declaring and defining functions with more than two parameters, the leading parenthesis and the first argument will be written on the same line as the function name. Each additional argument will be written on a separate line (with the closing parenthesis directly after the last argument). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 58",
+      "profile": "literal",
+      "ruleId": "58",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "To break a “will” or a “shall” rule, the following approvals must be received by the developer: • approval from the software engineering lead (obtained by the unit approval in the developmental CM tool) • approval from the software product manager (obtained by the unit approval in the developmental CM tool) Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 5",
+      "profile": "literal",
+      "ruleId": "5",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Braces (\"{}\") which enclose a block will be placed in the same column, on separate lines directly before and after the block. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 60",
+      "profile": "literal",
+      "ruleId": "60",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The dereference operator ‘*’ and the address-of operator ‘&’ will be directly connected with the type-specifier. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 62",
+      "profile": "literal",
+      "ruleId": "62",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Spaces will not be used around ‘.’ or ‘->’, nor between unary operators and operands. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 63",
+      "profile": "literal",
+      "ruleId": "63",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A class interface should be complete and minimal. See Meyers [6], item 18. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 64",
+      "profile": "literal",
+      "ruleId": "64",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A structure should be used to model an entity that does not require an invariant. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 65",
+      "profile": "literal",
+      "ruleId": "65",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A class should be used to model an entity that maintains an invariant. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 66",
+      "profile": "literal",
+      "ruleId": "66",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Public and protected data should only be used in structs—not classes. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 67",
+      "profile": "literal",
+      "ruleId": "67",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Unneeded implicitly generated member functions shall be explicitly disallowed. See Meyers [6], item 27. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 68",
+      "profile": "literal",
+      "ruleId": "68",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A member function that does not affect the state of an object (its instance variables) will be declared const. Member functions should be const by default. Only when there is a clear, explicit reason should the const modifier on member functions be omitted. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 69",
+      "profile": "literal",
+      "ruleId": "69",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Each deviation from a “shall” rule shall be documented in the file that contains the deviation). Deviations from this rule shall not be allowed, AV Rule 5 notwithstanding. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 6",
+      "profile": "literal",
+      "ruleId": "6",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "An object shall not be improperly used before its lifetime begins or after its lifetime ends. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 70.1",
+      "profile": "literal",
+      "ruleId": "70.1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A class will have friends only when a function or object requires access to the private elements of the class, but is unable to be a member of the class for logical or efficiency reasons. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 70",
+      "profile": "literal",
+      "ruleId": "70",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A class’s virtual functions shall not be invoked from its destructor or any of its constructors. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 71.1",
+      "profile": "literal",
+      "ruleId": "71.1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Calls to an externally visible operation of an object, other than its constructors, shall not be allowed until the object has been fully initialized. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 71",
+      "profile": "literal",
+      "ruleId": "71",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The invariant2 for a class should be: • a part of the postcondition of every class constructor, • a part of the precondition of the class destructor (if any), • a part of the precondition and postcondition of every other publicly accessible operation. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 72",
+      "profile": "literal",
+      "ruleId": "72",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Unnecessary default constructors shall not be defined. See Meyers [7], item 4. (See also AV Rule 143). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 73",
+      "profile": "literal",
+      "ruleId": "73",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Initialization of nonstatic class members will be performed through the member initialization list rather than through assignment in the body of a constructor. See Meyers [6], item 12. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 74",
+      "profile": "literal",
+      "ruleId": "74",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Members of the initialization list shall be listed in the order in which they are declared in the class. See Stroustrup [2], 10.4.5 and Meyers [6], item 13. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 75",
+      "profile": "literal",
+      "ruleId": "75",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A copy constructor and an assignment operator shall be declared for classes that contain pointers to data items or nontrivial destructors. See Meyers [6], item 11. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 76",
+      "profile": "literal",
+      "ruleId": "76",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The definition of a member function shall not contain default arguments that produce a signature identical to that of the implicitly-declared copy constructor for the corresponding class/structure. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 77.1",
+      "profile": "literal",
+      "ruleId": "77.1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A copy constructor shall copy all data members and bases that affect the class invariant (a data element representing a cache, for example, would not need to be copied). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 77",
+      "profile": "literal",
+      "ruleId": "77",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All base classes with a virtual function shall define a virtual destructor. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 78",
+      "profile": "literal",
+      "ruleId": "78",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All resources acquired by a class shall be released by the class’s destructor. See Stroustrup [2], 14.4 and Meyers [7], item 9. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 79",
+      "profile": "literal",
+      "ruleId": "79",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Approval will not be required for a deviation from a “shall” or “will” rule that complies with an exception specified by that rule. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 7",
+      "profile": "literal",
+      "ruleId": "7",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The default copy and assignment operators will be used for classes when those operators offer reasonable semantics. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 80",
+      "profile": "literal",
+      "ruleId": "80",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "The assignment operator shall handle self-assignment correctly (see Stroustrup [2], Appendix E.3.3 and 10.4.4) Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 81",
+      "profile": "literal",
+      "ruleId": "81",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "An assignment operator shall return a reference to *this. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 82",
+      "profile": "literal",
+      "ruleId": "82",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "An assignment operator shall assign all data members and bases that affect the class invariant (a data element representing a cache, for example, would not need to be copied). Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 83",
+      "profile": "literal",
+      "ruleId": "83",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Operator overloading will be used sparingly and in a conventional manner. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 84",
+      "profile": "literal",
+      "ruleId": "84",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "When two operators are opposites (such as == and !=), both will be defined and one will be defined in terms of the other. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 85",
+      "profile": "literal",
+      "ruleId": "85",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Concrete types should be used to represent simple independent concepts. See Stroustrup [2], 25.2. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 86",
+      "profile": "literal",
+      "ruleId": "86",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Hierarchies should be based on abstract classes. See Stroustrup [2], 12.5. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 87",
+      "profile": "literal",
+      "ruleId": "87",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A stateful virtual base shall be explicitly declared in each derived class that accesses it. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 88.1",
+      "profile": "literal",
+      "ruleId": "88.1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Multiple inheritance shall only be allowed in the following restricted form: n interfaces plus m private implementations, plus at most one protected implementation. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 88",
+      "profile": "literal",
+      "ruleId": "88",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A base class shall not be both virtual and non-virtual in the same hierarchy. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 89",
+      "profile": "literal",
+      "ruleId": "89",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "All code shall conform to ISO/IEC 14882:2002(E) standard C++. [10] Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 8",
+      "profile": "literal",
+      "ruleId": "8",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Heavily used interfaces should be minimal, general and abstract. See Stroustrup [2] 23.4. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 90",
+      "profile": "literal",
+      "ruleId": "90",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Public inheritance will be used to implement “is-a” relationships. See Meyers [6], item 35. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 91",
+      "profile": "literal",
+      "ruleId": "91",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "A subtype (publicly derived classes) will conform to the following guidelines with respect to all classes involved in the polymorphic assignment of different subclass instances to the same variable or parameter during the execution of the system: • Preconditions of derived methods must be at least as weak as the preconditions of the methods they override. • Postconditions of derived methods must be at least as strong as the postconditions of the methods they override. In other words, subclass methods must expect less and deliver more than the base class methods they override. This rule implies that subtypes will conform to the Liskov Substitution Principle. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 92",
+      "profile": "literal",
+      "ruleId": "92",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "“has-a” or “is-implemented-in-terms-of” relationships will be modeled through membership or non-public inheritance. See Meyers [6], item 40. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 93",
+      "profile": "literal",
+      "ruleId": "93",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "An inherited nonvirtual function shall not be redefined in a derived class. See Meyers [6], item 37. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 94",
+      "profile": "literal",
+      "ruleId": "94",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "An inherited default parameter shall never be redefined. See Meyers [6], item 38. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 95",
+      "profile": "literal",
+      "ruleId": "95",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Arrays shall not be treated polymorphically. See Meyers [7], item 3. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 96",
+      "profile": "literal",
+      "ruleId": "96",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Neither operand of an equality operator (== or !=) shall be a pointer to a virtual member function. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 97.1",
+      "profile": "literal",
+      "ruleId": "97.1",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Arrays shall not be used in interfaces. Instead, the Array class should be used. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 97",
+      "profile": "literal",
+      "ruleId": "97",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Every nonlocal name, except main(), should be placed in some namespace. See Stroustrup [2], 8.2. Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 98",
+      "profile": "literal",
+      "ruleId": "98",
+      "suppressed": false
+    },
+    {
+      "classification": "review",
+      "evidence": "Only those characters specified in the C++ basic source character set will be used. This set includes 96 characters: the space character, the control characters representing horizontal tab, vertical tab, form feed, and newline, and the following 91 graphical characters: a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 _ { } [ ] # ( ) < > % : ; . ? * + - / ^ & | ~ ! = , \\ \" ’ Review reason: No validated automatic check in this release; inspect source and external evidence.",
+      "message": "Review AV Rule 9",
+      "profile": "literal",
+      "ruleId": "9",
+      "suppressed": false
+    }
+  ],
+  "schemaVersion": 1,
+  "summary": {
+    "coverageWarnings": 0,
+    "reviews": 193,
+    "suppressed": 0,
+    "violations": 0
+  },
+  "tool": {
+    "name": "jsfav",
+    "version": "0.1.0"
+  }
+}

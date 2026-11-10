@@ -1,0 +1,1 @@
+{"target": "STM32F107 Cortex-M3 soft-float", "objects": 5, "flashable": false}

@@ -1,47 +1,65 @@
-# THE ASSET — Prius parking-pawl development
+# THE ASSET — Civic EV capstone
 
-Gen 2 Prius parking-lock actuator reference code for the 1996 Civic DX EV project.
-This first publication contains the parking-pawl package only.
+Code, tests and engineering work for a 1996 Civic DX EV conversion.
 
-**Status: development drafts; actuator outputs disabled by default.** Compilation
-does not establish correct wiring, motion, stopping behavior or vehicle suitability.
-The Civic was originally manual: automatic-shifter inputs in the inherited vehicle
-sketch must be replaced by a reviewed park/release request interface.
+**Version one:** owned 2009 Prius inverter/transaxle, MG2 propulsion only.
+The acceptance target is 75 mph for 20 minutes with hills; physical feasibility
+and vehicle acceptance remain unverified. Independent MG1 propulsion is a later
+upgrade. Simulator results are not hardware ratings or driving evidence.
 
-## Contents
+## Repository map
 
-| Sketch | Purpose |
+| Path | Responsibility |
 |---|---|
-| [Bench controller](arduino_prius_parking_pawl/PriusParkPawlBenchController/PriusParkPawlBenchController.ino) | Serial characterization of phase direction, current, Hall activity and travel |
-| [Vehicle draft](arduino_prius_parking_pawl/PriusParkPawlVehicleController/PriusParkPawlVehicleController.ino) | Prototype hardwired interlocks, position checks and motion-fault handling |
+| [`src/control/`](src/control/) | Portable C++03 supervisor, thermal/fault monitoring and abstract dispatch |
+| [`src/core/`](src/core/) | C11 reference simulator, mock CAN and battery/inverter/charger models |
+| [`src/app/`](src/app/) / [`src/server/`](src/server/) | Host demos and loopback-only simulator UI |
+| [`include/`](include/) | Public interfaces and shared types |
+| [`firmware/`](firmware/) | Mega engine emulator, Teensy EV diagnostics and shared I/O library |
+| [`firmware/parking_pawl/`](firmware/parking_pawl/) | Separate Uno parking-pawl review projects; outputs disabled |
+| [`tools/`](tools/) | Offline analysis, reports, connector exports and review helpers |
+| [`configs/`](configs/) | Study inputs, unverified hardware profiles and dependency locks |
+| [`tests/`](tests/) | Host regressions and recorded-data analysis tests |
+| [`docs/capstone/`](docs/capstone/) | Requirements, commissioning, vehicle studies and presentation guides |
+| [`docs/parking-pawl/`](docs/parking-pawl/) | Pawl research, integration gaps and original compile evidence |
+| [`legacy/`](legacy/) | Isolated automatic-transmission reference; not the manual-Civic baseline |
 
-[Integration review](docs/INTEGRATION_REVIEW.md) distinguishes implemented checks
-from required work. [Inherited actuator notes](docs/LEGACY_ACTUATOR_NOTES.md) and
-[CAN notes](docs/LEGACY_CAN_NOTES.md) retain earlier research; their wiring,
-ratings and automatic-Civic assumptions require verification.
+## Build and test
 
-## Reproduce the builds
+Requires CMake 3.16+, C11/C++ compilers and Python 3.12. Windows uses the
+Visual Studio 2022 build tools for the commands below.
 
-Install PlatformIO Core **6.1.18** in a Python virtual environment. Each sketch has
-its own project so Arduino does not combine multiple `setup()`/`loop()` functions.
-
-```sh
-python -m pip install platformio==6.1.18
-python -m platformio run -d arduino_prius_parking_pawl/PriusParkPawlBenchController
-python -m platformio run -d arduino_prius_parking_pawl/PriusParkPawlVehicleController
+```powershell
+python -m venv .venv-bench
+.venv-bench/Scripts/python.exe -m pip install -r configs/bench-requirements.lock.txt
+cmake -S . -B build -G "Visual Studio 17 2022" -DBUILD_TESTING=ON -DPython3_EXECUTABLE="$PWD/.venv-bench/Scripts/python.exe"
+cmake --build build --config Debug
+ctest --test-dir build -C Debug --output-on-failure
 ```
 
-The pinned Uno/AVR builds verify compilation, not a selected final vehicle MCU.
-Arduino IDE can open each matching sketch folder separately. No upload command is
-part of this review workflow.
+See [development commands](docs/DEVELOPMENT.md) for Unix, C++03 verification,
+firmware builds and offline demo/report commands. Native simulator UI:
+`build/Debug/bench_ev_harness.exe`, then <http://127.0.0.1:8080/>.
 
-## Before any actuator connection
+## Start reading
 
-`ENABLE_ACTUATOR_OUTPUTS` is `false` in both sketches: motor-feed enable and phase
-PWM remain off. Changing that flag is not sufficient to authorize operation.
-Review the exact actuator/harness, external power driver, current sensing,
-inductive protection, independent cutoff and guarded test procedure first.
+- [Current project plan](docs/capstone/TRELLO_REDESIGN.md) and [requirements](docs/capstone/REQUIREMENTS.md)
+- [Code architecture and boundaries](docs/ARCHITECTURE.md)
+- [Controller release and topology](docs/capstone/CONTROLLER_RELEASE.md)
+- [Engine emulator installation](docs/capstone/ENGINE_SIMULATOR_INSTALL.md)
+- [Parking-pawl integration review](docs/parking-pawl/INTEGRATION_REVIEW.md)
+- [Offline bench analysis](docs/capstone/BENCH_TESTING.md)
+- [Publication and validation record](docs/PUBLICATION.md)
 
-Retain the mechanical parking brake. Never command park while moving or infer
-actual pawl position from a request, Hall edge count or loss of electrical power.
-No hardware operation, installation acceptance or full JSF compliance is claimed.
+## Evidence boundaries
+
+The host simulator and analysis tools do not operate traction hardware. The
+STM32F107 target work produces portable objects, not a flashable VCU port. Honda
+profiles remain electrically disabled until verified; the original ECU owns OBD/MIL.
+Parking-pawl builds disable actuator outputs. Archived sketches are outside those
+release guarantees and are not deployment targets.
+
+No measured continuous rating, inspection acceptance or full JSF compliance is
+claimed. Historical 70 mph/Gen 3/dual-MG studies remain explicitly provisional for
+the current Gen 2 MVP. The [JSF review](docs/capstone/JSF_REVIEW.md) includes pending
+manual rules and requires a separately installed checker.

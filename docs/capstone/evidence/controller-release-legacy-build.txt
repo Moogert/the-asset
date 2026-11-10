@@ -1,0 +1,215 @@
+Processing teensy_legacy_obd_demo (platform: teensy@5.0.0; board: teensy41; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/teensy/teensy41.html
+PLATFORM: Teensy (5.0.0) > Teensy 4.1
+HARDWARE: IMXRT1062 600MHz, 512KB RAM, 7.75MB Flash
+DEBUG: Current (jlink) External (jlink)
+PACKAGES:
+ - framework-arduinoteensy @ 1.159.0 (1.59)
+ - tool-teensy @ 1.162.0 (1.62)
+ - toolchain-gccarmnoneeabi-teensy @ 1.110301.0 (11.3.1)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 93 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- CapstoneIO @ 0.1.0
+|-- EEPROM @ 2.0
+|-- FlexCAN_T4
+Building in release mode
+Compiling .pio\build\teensy_legacy_obd_demo\src\legacy_obd_gateway.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\lib83d\CapstoneIO\detail.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\lib83d\CapstoneIO\diagnostics.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\lib83d\CapstoneIO\engine.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\lib83d\CapstoneIO\indication.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\lib83d\CapstoneIO\journal.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\lib83d\CapstoneIO\transport.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\lib434\EEPROM\EEPROM.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\AudioStream.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\CrashReport.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\DMAChannel.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\EventResponder.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\HardwareSerial.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\HardwareSerial1.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\HardwareSerial2.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\HardwareSerial3.cpp.o
+In file included from <USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\DMAChannel.cpp:31:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\DMAChannel.h: In copy constructor 'DMASetting::DMASetting(const DMASetting&)':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\DMAChannel.h:399:25: warning: implicitly-declared 'constexpr DMASetting& DMASetting::operator=(const DMASetting&)' is deprecated [-Wdeprecated-copy]
+  399 |                 *this = c;
+      |                         ^
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\DMAChannel.h:397:9: note: because 'DMASetting' has user-provided 'DMASetting::DMASetting(const DMASetting&)'
+  397 |         DMASetting(const DMASetting &c) {
+      |         ^~~~~~~~~~
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\HardwareSerial4.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\HardwareSerial5.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\HardwareSerial6.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\HardwareSerial7.cpp.o
+Archiving .pio\build\teensy_legacy_obd_demo\lib434\libEEPROM.a
+In file included from src\legacy_obd_gateway.cpp:6:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\EEPROM/EEPROM.h:50:30: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+   50 |     operator const uint8_t() const       { return **this; }
+      |                              ^~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\EEPROM/EEPROM.h:99:26: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+   99 |     operator const int() const          { return index; }
+      |                          ^~~~~
+In file included from src\legacy_obd_gateway.cpp:7:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: In member function 'virtual bool CANListener::frameHandler(CAN_message_t&, int, uint8_t)':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:313:47: warning: unused parameter 'frame' [-Wunused-parameter]
+  313 |     virtual bool frameHandler (CAN_message_t &frame, int mailbox, uint8_t controller) { return false; }
+      |                                ~~~~~~~~~~~~~~~^~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:313:58: warning: unused parameter 'mailbox' [-Wunused-parameter]
+  313 |     virtual bool frameHandler (CAN_message_t &frame, int mailbox, uint8_t controller) { return false; }
+      |                                                      ~~~~^~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:313:75: warning: unused parameter 'controller' [-Wunused-parameter]
+  313 |     virtual bool frameHandler (CAN_message_t &frame, int mailbox, uint8_t controller) { return false; }
+      |                                                                   ~~~~~~~~^~~~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: In member function 'virtual void CANListener::txHandler(int, uint8_t)':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:314:33: warning: unused parameter 'mailbox' [-Wunused-parameter]
+  314 |     virtual void txHandler (int mailbox, uint8_t controller) {;} /* unused in Collin's library */
+      |                             ~~~~^~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:314:50: warning: unused parameter 'controller' [-Wunused-parameter]
+  314 |     virtual void txHandler (int mailbox, uint8_t controller) {;} /* unused in Collin's library */
+      |                                          ~~~~~~~~^~~~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: At global scope:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:531:5: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  531 |     volatile bool fifo_filter_match(uint32_t id);
+      |     ^~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:533:5: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  533 |     volatile void frame_distribution(CAN_message_t &msg);
+      |     ^~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:536:5: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  536 |     volatile bool filter_match(FLEXCAN_MAILBOX mb_num, uint32_t id);
+      |     ^~~~~~~~
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\HardwareSerial8.cpp.o
+In file included from <USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:558,
+                 from src\legacy_obd_gateway.cpp:7:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.tpp:1464:11: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ 1464 | FCTP_FUNC volatile bool FCTP_OPT::fifo_filter_match(uint32_t id) {
+      |           ^~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.tpp:1483:11: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ 1483 | FCTP_FUNC volatile bool FCTP_OPT::filter_match(FLEXCAN_MAILBOX mb_num, uint32_t id) {
+      |           ^~~~~~~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.tpp:1662:11: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ 1662 | FCTP_FUNC volatile void FCTP_OPT::frame_distribution(CAN_message_t &msg) {
+      |           ^~~~~~~~
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\IPAddress.cpp.o
+Archiving .pio\build\teensy_legacy_obd_demo\lib83d\libCapstoneIO.a
+In file included from src\legacy_obd_gateway.cpp:7:
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: In instantiation of 'int FlexCAN_T4<_bus, _rxSize, _txSize>::write(const CANFD_message_t&) [with CAN_DEV_TABLE _bus = CAN2; FLEXCAN_RXQUEUE_TABLE _rxSize = RX_SIZE_256; FLEXCAN_TXQUEUE_TABLE _txSize = TX_SIZE_16; CANFD_message_t = CANFD_message_t]':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:482:9:   required from here
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:482:38: warning: unused parameter 'msg' [-Wunused-parameter]
+  482 |     int write(const CANFD_message_t &msg) { return 0; } /* to satisfy base class for external pointers */
+      |               ~~~~~~~~~~~~~~~~~~~~~~~^~~
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h: In instantiation of 'int FlexCAN_T4<_bus, _rxSize, _txSize>::write(const CANFD_message_t&) [with CAN_DEV_TABLE _bus = CAN1; FLEXCAN_RXQUEUE_TABLE _rxSize = RX_SIZE_256; FLEXCAN_TXQUEUE_TABLE _txSize = TX_SIZE_16; CANFD_message_t = CANFD_message_t]':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:482:9:   required from here
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\libraries\FlexCAN_T4/FlexCAN_T4.h:482:38: warning: unused parameter 'msg' [-Wunused-parameter]
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\IntervalTimer.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\Print.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\Stream.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\Time.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\Tone.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\WMath.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\WString.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\analog.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\bootdata.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\clockspeed.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\debugprintf.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\delay.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\digital.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\eeprom.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\extmem.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\fuse.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\interrupt.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\keylayouts.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\libc.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\main.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\memcpy-armv7m.S.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\memset.S.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\new.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\nonstd.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\pwm.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\rtc.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\serialEvent.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\serialEvent1.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\serialEvent2.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\serialEvent3.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\serialEvent4.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\serialEvent5.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\serialEvent6.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\serialEvent7.cpp.o
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\nonstd.c: In function 'dtostrf':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\nonstd.c:207:53: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  207 |                         if (newDecimalPoint - decpt == precision + 1) decpt++;
+      |                                                     ^~
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\serialEvent8.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\serialEventUSB1.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\serialEventUSB2.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_alloc_valid.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_calloc.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_free.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_hash.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_malloc.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_malloc_stats.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_pool.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_realloc.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_realloc_i.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_realloc_move.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_szalloc.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_util.c.o
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_malloc_stats.c: In function 'sm_malloc_stats_pool':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_malloc_stats.c:27:49: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'unsigned int'} [-Wsign-compare]
+   27 |         while (CHAR_PTR(shdr)-CHAR_PTR(basehdr) < spool->pool_size) {
+      |                                                 ^
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\sm_zalloc.c.o
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_malloc.c: In function 'sm_malloc_pool':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_malloc.c:26:49: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'unsigned int'} [-Wsign-compare]
+   26 |         while (CHAR_PTR(shdr)-CHAR_PTR(basehdr) < spool->pool_size) {
+      |                                                 ^
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_malloc.c:44:65: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'unsigned int'} [-Wsign-compare]
+   44 |                         while (CHAR_PTR(dhdr)-CHAR_PTR(basehdr) < spool->pool_size) {
+      |                                                                 ^
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\startup.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\tempmon.c.o
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_realloc_i.c: In function 'sm_realloc_pool_i':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\sm_realloc_i.c:81:49: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'unsigned int'} [-Wsign-compare]
+   81 |         while (CHAR_PTR(dhdr)-CHAR_PTR(basehdr) < spool->pool_size) {
+      |                                                 ^
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_audio.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_desc.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_flightsim.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_inst.cpp.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_joystick.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_keyboard.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_midi.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_mouse.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_mtp.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_rawhid.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_seremu.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_serial.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_serial2.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_serial3.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\usb_touch.c.o
+Compiling .pio\build\teensy_legacy_obd_demo\FrameworkArduino\yield.cpp.o
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\usb_serial.c: In function 'rx_event':
+<USER_HOME>\.platformio\packages\framework-arduinoteensy\cores\teensy4\usb_serial.c:157:33: warning: comparison of integer expressions of different signedness: 'int' and 'long unsigned int' [-Wsign-compare]
+  157 |                         if (len <= CDC_RX_SIZE_480 - count) {
+      |                                 ^~
+Archiving .pio\build\teensy_legacy_obd_demo\libFrameworkArduino.a
+Linking .pio\build\teensy_legacy_obd_demo\firmware.elf
+Checking size .pio\build\teensy_legacy_obd_demo\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+Calculating size .pio\build\teensy_legacy_obd_demo\firmware.elf
+teensy_size: Memory Usage on Teensy 4.1:
+teensy_size:   FLASH: code:73472, data:35784, headers:8500   free for files:8008708
+teensy_size:    RAM1: variables:62720, code:70776, padding:27528   free for local variables:363264
+teensy_size:    RAM2: variables:12416  free for malloc/new:511872
+Building .pio\build\teensy_legacy_obd_demo\firmware.hex
+========================= [SUCCESS] Took 21.44 seconds =========================
+
+Environment             Status    Duration
+----------------------  --------  ------------
+teensy_legacy_obd_demo  SUCCESS   00:00:21.436
+========================= 1 succeeded in 00:00:21.436 =========================

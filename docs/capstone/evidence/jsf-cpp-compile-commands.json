@@ -1,0 +1,176 @@
+[
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c++03 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -Werror -fno-exceptions -fno-rtti -fno-fast-math -o CMakeFiles\\capstone_control.dir\\src\\control\\dual_supervisor.cpp.obj -c \"<WORKSPACE>\\src\\control\\dual_supervisor.cpp\"",
+  "file": "<WORKSPACE>/src/control/dual_supervisor.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/capstone_control.dir/src/control/dual_supervisor.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c++03 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -Werror -fno-exceptions -fno-rtti -fno-fast-math -o CMakeFiles\\capstone_control.dir\\src\\control\\control_codec.cpp.obj -c \"<WORKSPACE>\\src\\control\\control_codec.cpp\"",
+  "file": "<WORKSPACE>/src/control/control_codec.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/capstone_control.dir/src/control/control_codec.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c++03 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -Werror -fno-exceptions -fno-rtti -fno-fast-math -o CMakeFiles\\capstone_control.dir\\src\\control\\control_runtime.cpp.obj -c \"<WORKSPACE>\\src\\control\\control_runtime.cpp\"",
+  "file": "<WORKSPACE>/src/control/control_runtime.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/capstone_control.dir/src/control/control_runtime.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c++03 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -Werror -fno-exceptions -fno-rtti -fno-fast-math -o CMakeFiles\\capstone_control.dir\\src\\control\\release_monitor.cpp.obj -c \"<WORKSPACE>\\src\\control\\release_monitor.cpp\"",
+  "file": "<WORKSPACE>/src/control/release_monitor.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/capstone_control.dir/src/control/release_monitor.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c++03 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -Werror -fno-exceptions -fno-rtti -fno-fast-math -o CMakeFiles\\capstone_control.dir\\src\\control\\release_runtime.cpp.obj -c \"<WORKSPACE>\\src\\control\\release_runtime.cpp\"",
+  "file": "<WORKSPACE>/src/control/release_runtime.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/capstone_control.dir/src/control/release_runtime.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\dual_control_demo.dir\\src\\app\\dual_control_demo.cpp.obj -c \"<WORKSPACE>\\src\\app\\dual_control_demo.cpp\"",
+  "file": "<WORKSPACE>/src/app/dual_control_demo.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/dual_control_demo.dir/src/app/dual_control_demo.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\controller_revision_demo.dir\\src\\app\\controller_revision_demo.cpp.obj -c \"<WORKSPACE>\\src\\app\\controller_revision_demo.cpp\"",
+  "file": "<WORKSPACE>/src/app/controller_revision_demo.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/controller_revision_demo.dir/src/app/controller_revision_demo.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -o CMakeFiles\\harness_core.dir\\src\\core\\can_bus_model.c.obj -c \"<WORKSPACE>\\src\\core\\can_bus_model.c\"",
+  "file": "<WORKSPACE>/src/core/can_bus_model.c",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/harness_core.dir/src/core/can_bus_model.c.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -o CMakeFiles\\harness_core.dir\\src\\core\\leaf_bms_adapter.c.obj -c \"<WORKSPACE>\\src\\core\\leaf_bms_adapter.c\"",
+  "file": "<WORKSPACE>/src/core/leaf_bms_adapter.c",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/harness_core.dir/src/core/leaf_bms_adapter.c.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -o CMakeFiles\\harness_core.dir\\src\\core\\prius_inverter_adapter.c.obj -c \"<WORKSPACE>\\src\\core\\prius_inverter_adapter.c\"",
+  "file": "<WORKSPACE>/src/core/prius_inverter_adapter.c",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/harness_core.dir/src/core/prius_inverter_adapter.c.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -o CMakeFiles\\harness_core.dir\\src\\core\\dual_drive.c.obj -c \"<WORKSPACE>\\src\\core\\dual_drive.c\"",
+  "file": "<WORKSPACE>/src/core/dual_drive.c",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/harness_core.dir/src/core/dual_drive.c.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -o CMakeFiles\\harness_core.dir\\src\\core\\charger_adapter.c.obj -c \"<WORKSPACE>\\src\\core\\charger_adapter.c\"",
+  "file": "<WORKSPACE>/src/core/charger_adapter.c",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/harness_core.dir/src/core/charger_adapter.c.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -o CMakeFiles\\harness_core.dir\\src\\core\\safety_supervisor.c.obj -c \"<WORKSPACE>\\src\\core\\safety_supervisor.c\"",
+  "file": "<WORKSPACE>/src/core/safety_supervisor.c",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/harness_core.dir/src/core/safety_supervisor.c.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -o CMakeFiles\\harness_core.dir\\src\\core\\harness.c.obj -c \"<WORKSPACE>\\src\\core\\harness.c\"",
+  "file": "<WORKSPACE>/src/core/harness.c",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/harness_core.dir/src/core/harness.c.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wextra -Wpedantic -Wconversion -Wshadow -o CMakeFiles\\harness_core.dir\\src\\core\\json_util.c.obj -c \"<WORKSPACE>\\src\\core\\json_util.c\"",
+  "file": "<WORKSPACE>/src/core/json_util.c",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/harness_core.dir/src/core/json_util.c.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\bench_ev_harness.dir\\src\\app\\main.c.obj -c \"<WORKSPACE>\\src\\app\\main.c\"",
+  "file": "<WORKSPACE>/src/app/main.c",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/bench_ev_harness.dir/src/app/main.c.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\bench_ev_harness.dir\\src\\server\\http_server.c.obj -c \"<WORKSPACE>\\src\\server\\http_server.c\"",
+  "file": "<WORKSPACE>/src/server/http_server.c",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/bench_ev_harness.dir/src/server/http_server.c.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/firmware/lib/CapstoneIO/src\" -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\civic_io.dir\\firmware\\lib\\CapstoneIO\\src\\engine.cpp.obj -c \"<WORKSPACE>\\firmware\\lib\\CapstoneIO\\src\\engine.cpp\"",
+  "file": "<WORKSPACE>/firmware/lib/CapstoneIO/src/engine.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/civic_io.dir/firmware/lib/CapstoneIO/src/engine.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/firmware/lib/CapstoneIO/src\" -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\civic_io.dir\\firmware\\lib\\CapstoneIO\\src\\diagnostics.cpp.obj -c \"<WORKSPACE>\\firmware\\lib\\CapstoneIO\\src\\diagnostics.cpp\"",
+  "file": "<WORKSPACE>/firmware/lib/CapstoneIO/src/diagnostics.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/civic_io.dir/firmware/lib/CapstoneIO/src/diagnostics.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/firmware/lib/CapstoneIO/src\" -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\civic_io.dir\\firmware\\lib\\CapstoneIO\\src\\transport.cpp.obj -c \"<WORKSPACE>\\firmware\\lib\\CapstoneIO\\src\\transport.cpp\"",
+  "file": "<WORKSPACE>/firmware/lib/CapstoneIO/src/transport.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/civic_io.dir/firmware/lib/CapstoneIO/src/transport.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/firmware/lib/CapstoneIO/src\" -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\civic_io.dir\\firmware\\lib\\CapstoneIO\\src\\journal.cpp.obj -c \"<WORKSPACE>\\firmware\\lib\\CapstoneIO\\src\\journal.cpp\"",
+  "file": "<WORKSPACE>/firmware/lib/CapstoneIO/src/journal.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/civic_io.dir/firmware/lib/CapstoneIO/src/journal.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/firmware/lib/CapstoneIO/src\" -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\civic_io.dir\\firmware\\lib\\CapstoneIO\\src\\indication.cpp.obj -c \"<WORKSPACE>\\firmware\\lib\\CapstoneIO\\src\\indication.cpp\"",
+  "file": "<WORKSPACE>/firmware/lib/CapstoneIO/src/indication.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/civic_io.dir/firmware/lib/CapstoneIO/src/indication.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/firmware/lib/CapstoneIO/src\" -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\civic_io.dir\\firmware\\lib\\CapstoneIO\\src\\detail.cpp.obj -c \"<WORKSPACE>\\firmware\\lib\\CapstoneIO\\src\\detail.cpp\"",
+  "file": "<WORKSPACE>/firmware/lib/CapstoneIO/src/detail.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/civic_io.dir/firmware/lib/CapstoneIO/src/detail.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/include\" -I\"<WORKSPACE>/firmware/lib/CapstoneIO/src\" -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\civic_io_tests.dir\\tests\\test_civic_io.cpp.obj -c \"<WORKSPACE>\\tests\\test_civic_io.cpp\"",
+  "file": "<WORKSPACE>/tests/test_civic_io.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/civic_io_tests.dir/tests/test_civic_io.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/firmware/lib/CapstoneIO/src\" -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\civic_io_demo.dir\\src\\app\\civic_io_demo.cpp.obj -c \"<WORKSPACE>\\src\\app\\civic_io_demo.cpp\"",
+  "file": "<WORKSPACE>/src/app/civic_io_demo.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/civic_io_demo.dir/src/app/civic_io_demo.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\harness_tests.dir\\tests\\test_harness.c.obj -c \"<WORKSPACE>\\tests\\test_harness.c\"",
+  "file": "<WORKSPACE>/tests/test_harness.c",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/harness_tests.dir/tests/test_harness.c.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\dual_drive_tests.dir\\tests\\test_dual_drive.c.obj -c \"<WORKSPACE>\\tests\\test_dual_drive.c\"",
+  "file": "<WORKSPACE>/tests/test_dual_drive.c",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/dual_drive_tests.dir/tests/test_dual_drive.c.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/include\" -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\cpp_control_tests.dir\\tests\\test_cpp_control.cpp.obj -c \"<WORKSPACE>\\tests\\test_cpp_control.cpp\"",
+  "file": "<WORKSPACE>/tests/test_cpp_control.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/cpp_control_tests.dir/tests/test_cpp_control.cpp.obj"
+},
+{
+  "directory": "<WORKSPACE>/build-control-clang",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++.exe\" -I\"<WORKSPACE>/include\" -I\"<WORKSPACE>/firmware/lib/CapstoneIO/src\" -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\controller_revision_tests.dir\\tests\\test_controller_revision.cpp.obj -c \"<WORKSPACE>\\tests\\test_controller_revision.cpp\"",
+  "file": "<WORKSPACE>/tests/test_controller_revision.cpp",
+  "output": "<WORKSPACE>/build-control-clang/CMakeFiles/controller_revision_tests.dir/tests/test_controller_revision.cpp.obj"
+}
+]

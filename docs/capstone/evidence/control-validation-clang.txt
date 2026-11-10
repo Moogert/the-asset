@@ -1,0 +1,10 @@
+[1/3] Building CXX object CMakeFiles/capstone_control.dir/src/control/control_runtime.cpp.obj
+[2/3] Linking CXX static library capstone_control.lib
+[3/3] Linking CXX executable cpp_control_tests.exe
+Test project <WORKSPACE>/build-control-clang
+    Start 3: cpp_control_regression
+1/1 Test #3: cpp_control_regression ...........   Passed    5.77 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =   5.86 sec

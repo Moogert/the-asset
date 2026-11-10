@@ -1,0 +1,29 @@
+{
+  "status": "offline_package_verified_no_hardware_operation",
+  "bench_test_count": 35,
+  "full_project_suites_passed": 6,
+  "figure_sets": 7,
+  "evidence_class": "synthetic_demo",
+  "measured_performance_claim": false,
+  "report": "output/bench/final-report/report.md",
+  "report_sha256": "1f78e19765d65a5a6b3863a2dca9fe607c42a5601a8f39812fc0cf1f296ccbc4",
+  "analysis_sha256": "c956069222783b744c6fd64a9e65ab28d5e1e8acb19884402431dc1b0f86a1e4",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "source_sha256": {
+    "tools\\benchkit\\analysis.py": "9a6d06888167756bfd95726c67ad03278343e82641b2dc558400349d19579b9a",
+    "tools\\benchkit\\cli.py": "bd8aec214ed566864407b6156c192768bf3b7daf544373d5559f59b270a0fabb",
+    "tools\\benchkit\\data.py": "aeeedff43b57523ccdb57f8438fae74d65eebe6ba64a721cbd23abf75ae24551",
+    "tools\\benchkit\\demo.py": "5629410b1dca7e6b0cb19b0cf557c37b6a7db248bdac9a0977888470602e72bf",
+    "tools\\benchkit\\fixture.py": "4695c25d48874d87c487a934f5a11f71a25c8f766d061bce0822cc5dd7df3972",
+    "tools\\benchkit\\report.py": "c2db1335d4dac84443fbed5adecd5122e1029a09f6edb7b4d83c74c5e12fa458",
+    "tools\\benchkit\\__init__.py": "121b6305dc5e6121ce03ae05967b0eebf9b680b512696f5ecba5fdef31ab82a7"
+  },
+  "logs": [
+    "docs/capstone/evidence/bench-validation.txt",
+    "docs/capstone/evidence/bench-analysis-validation.txt"
+  ]
+}

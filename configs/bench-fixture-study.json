@@ -1,0 +1,9 @@
+{
+  "status": "concept_study_not_hardware_rating",
+  "speeds_mph": [10, 30, 70],
+  "grades": [0, 0.03, 0.06],
+  "study_margin": 1.25,
+  "absorber_water_rise_k": 10,
+  "peak_combined_motor_torque_nm": null,
+  "equivalent_motor_inertia_kg_m2": null
+}

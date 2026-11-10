@@ -1,0 +1,26 @@
+{
+  "purpose": "Source provenance only; no production deployment or board validation implied",
+  "motor_firmware": {
+    "repository": "https://github.com/jsphuebner/stm32-sine",
+    "tag": "v5.40.R",
+    "commit": "5adabd9fdd382ca8c7076174a390e8977ee9066e",
+    "build": "make get-deps && CONTROL=FOC make",
+    "submodules": {
+      "libopencm3": "5ba1bb5f8b0287a0ccec9def20f3a6185c3a2a8e",
+      "libopeninv": "98efffe827369b7f649fdde5176e21607546b69e"
+    }
+  },
+  "hardware_reference": {
+    "repository": "https://github.com/damienmaguire/Prius-Gen3-Inverter",
+    "commit": "942da4b26a55d3dbe17c72fa78b57bdfa4195737",
+    "required_variant": "V1d dual-motor",
+    "actual_board_revision": null,
+    "can_modification_reviewed": false
+  },
+  "supervisor_reference": {
+    "repository": "https://github.com/damienmaguire/Stm32-vcu",
+    "commit": "b061f840ea05aa3e6c761953e746dabed9d9a375",
+    "integration_status": "Reference inspected; portable policy not ported or flashed to ZombieVerter"
+  },
+  "hardware_profiles_verified": false
+}

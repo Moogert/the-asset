@@ -1,0 +1,10 @@
+[1/10] Building CXX object CMakeFiles/capstone_control.dir/src/control/dual_supervisor.cpp.obj
+[2/10] Building CXX object CMakeFiles/capstone_control.dir/src/control/release_monitor.cpp.obj
+[3/10] Building CXX object CMakeFiles/capstone_control.dir/src/control/release_runtime.cpp.obj
+[4/10] Building CXX object CMakeFiles/civic_io.dir/firmware/lib/CapstoneIO/src/detail.cpp.obj
+[5/10] Building CXX object CMakeFiles/civic_io.dir/firmware/lib/CapstoneIO/src/indication.cpp.obj
+[6/10] Building CXX object CMakeFiles/controller_revision_tests.dir/tests/test_controller_revision.cpp.obj
+[7/10] Linking CXX static library capstone_control.lib
+[8/10] Linking CXX static library civic_io.lib
+[9/10] Linking CXX executable cpp_control_tests.exe
+[10/10] Linking CXX executable controller_revision_tests.exe

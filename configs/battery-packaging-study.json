@@ -1,0 +1,151 @@
+{
+  "status": "first_review_calculated_examples_not_selected_or_approved",
+  "date": "2026-10-28",
+  "currency": "USD",
+  "user_priorities": {
+    "fuel_tank_removed": true,
+    "retain_rear_seats_if_feasible": true,
+    "first_candidate": "removed fuel-tank cavity",
+    "alternative": "split protected enclosures retaining seats"
+  },
+  "baseline": "Tested Leaf donor, intact modules, original 96-series topology; module disassembly not baseline",
+  "unknowns": {
+    "donor_year_capacity_identity": null,
+    "module_dimensions_and_restraint": null,
+    "measured_capacity_kwh": null,
+    "pack_resistance_ohm_by_soc_temperature": null,
+    "tank_cavity_envelope_mm": null,
+    "under_seat_envelope_mm": null,
+    "enclosure_module_allocation": null,
+    "mounting_load_cases": null,
+    "loaded_ground_clearance_mm": null,
+    "vehicle_gvwr_gawr_kg": null,
+    "baseline_axle_masses_kg": null,
+    "installed_mass_and_axle_loads_kg": null,
+    "mission_range_miles": null,
+    "grade_duration_minutes": null,
+    "selected_charger_bms_and_limits": null
+  },
+  "leaf_example": {
+    "architecture": "early 24 kWh, 48 intact 2s2p modules; not universal to all Leaf donors",
+    "series": 96,
+    "parallel": 2,
+    "module_count": 48,
+    "nameplate_kwh": 24,
+    "remaining_capacity_fraction": 0.7,
+    "energy_window_fraction": 0.8,
+    "nominal_v": 360,
+    "full_v": 398.4,
+    "original_complete_assembly_mass_kg_reference": 273,
+    "original_assembly_envelope_mm_reference": [
+      1547,
+      1188,
+      264
+    ],
+    "custom_installed_mass_kg": null
+  },
+  "cylindrical_example": {
+    "cell": "Molicel P28A, illustrative not procurement selection",
+    "nominal_v": 3.6,
+    "charge_v": 4.2,
+    "typical_ah": 2.8,
+    "typical_mass_kg": 0.046,
+    "energy_method": "Vnom*Ah screening; not integrated datasheet discharge energy",
+    "series": 96,
+    "parallel_options": [
+      18,
+      25
+    ],
+    "new_capacity_fraction_assumption": 1.0,
+    "energy_window_fraction": 0.8,
+    "unit_cost_allowance_usd": [
+      3,
+      5
+    ],
+    "installed_mass_kg": null
+  },
+  "duty_example": {
+    "battery_power_kw": 47.72,
+    "loaded_voltage_v": 300,
+    "climb_minutes": 15,
+    "pack_resistance_ohm_heat_example_assumed": 0.1,
+    "basis": "existing 1300 kg model, 70 mph at 6 percent grade; not verified continuous operation"
+  },
+  "cost_allowances": {
+    "basis": "engineering allowances only, not quotes; excludes labor, charger/DC-DC, freight/tax, dedicated joining/test equipment, extensive structure and certification",
+    "common": [
+      {
+        "item": "enclosure_mounts",
+        "low_usd": 600,
+        "high_usd": 1600
+      },
+      {
+        "item": "restraint_insulation",
+        "low_usd": 250,
+        "high_usd": 650
+      },
+      {
+        "item": "bms_sensing",
+        "low_usd": 500,
+        "high_usd": 1000
+      },
+      {
+        "item": "hv_protection",
+        "low_usd": 500,
+        "high_usd": 1000
+      },
+      {
+        "item": "harnesses",
+        "low_usd": 250,
+        "high_usd": 650
+      },
+      {
+        "item": "thermal_provisions",
+        "low_usd": 200,
+        "high_usd": 700
+      },
+      {
+        "item": "commissioning_supplies",
+        "low_usd": 200,
+        "high_usd": 600
+      }
+    ],
+    "leaf_donor_usd": [
+      1000,
+      3000
+    ],
+    "leaf_busbars_extra_usd": [
+      150,
+      400
+    ],
+    "cylindrical_joining_carriers_extra_usd": [
+      500,
+      1500
+    ],
+    "contingency_fraction": 0.25
+  },
+  "sources": [
+    "https://owners.nissanusa.com/content/techpub/ManualsAndGuides/LEAF/2016/2016_LEAF-first-responders-guide.pdf",
+    "https://www.molicel.com/wp-content/uploads/INR18650P28A-V2-80093.pdf",
+    "https://www.nissan-cdn.net/content/dam/Nissan/za/brochures/LEAF.pdf"
+  ],
+  "release_gates": [
+    "seat-retaining full-size mock-up with electrical/service clearances",
+    "structural mount/enclosure review and loaded suspension/ground clearance",
+    "GVWR/GAWR and axle distribution with occupants/cargo",
+    "donor health, insulation, current/regen and thermal validation",
+    "defined BMS, fuse/contactors/precharge/disconnect/interlock and venting design",
+    "charger/inverter/DC-DC voltage and transient compatibility",
+    "mission energy and field-weakening/continuous-power verification"
+  ],
+  "current_mission_update": {
+    "target_mph": 75,
+    "minutes": 20,
+    "hills_required": true,
+    "course_grade_unknown": true,
+    "conservative_6percent_mission_energy_kwh": 21.329356834814554,
+    "candidate_capacity_class_kwh": 40,
+    "candidate_usable_energy_example_kwh": 22.4,
+    "note": "Earlier 24 kWh and cylindrical tables are comparison examples, not selection for the updated hill mission. Reprice and validate all architectures at common requirements."
+  }
+}

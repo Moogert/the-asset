@@ -1,0 +1,2 @@
+# Developer formatting tool only; separate from firmware and analysis runtimes.
+black==25.1.0

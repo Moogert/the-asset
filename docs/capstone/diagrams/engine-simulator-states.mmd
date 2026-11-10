@@ -1,0 +1,11 @@
+stateDiagram-v2
+    [*] --> Disabled
+    Disabled --> Checked: waveform and output profiles valid
+    Checked --> Armed: explicit ARM and physical permissions
+    Armed --> Cranking: STATE CRANK
+    Cranking --> Running: STATE RUN or WARM
+    Armed --> Disabled: fault / contact loss / timeout
+    Cranking --> Disabled: fault / contact loss / timeout
+    Running --> Disabled: DISARM / contact loss / heartbeat expiry
+    Running --> Disabled: timing or output-profile fault
+    Disabled --> Checked: inspect and deliberately rearm

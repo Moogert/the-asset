@@ -1,0 +1,24 @@
+MSBuild version 17.14.51+25f168cee for .NET Framework
+
+  charger_adapter.c
+  harness_core.vcxproj -> <WORKSPACE>\build-capstone\Debug\harness_core.lib
+  bench_ev_harness.vcxproj -> <WORKSPACE>\build-capstone\Debug\bench_ev_harness.exe
+  control_codec.cpp
+  control_runtime.cpp
+  Generating Code...
+  capstone_control.vcxproj -> <WORKSPACE>\build-capstone\Debug\capstone_control.lib
+  diagnostics.cpp
+  journal.cpp
+  transport.cpp
+  Generating Code...
+  civic_io.vcxproj -> <WORKSPACE>\build-capstone\Debug\civic_io.lib
+  civic_io_demo.cpp
+  civic_io_demo.vcxproj -> <WORKSPACE>\build-capstone\Debug\civic_io_demo.exe
+  test_civic_io.cpp
+  civic_io_tests.vcxproj -> <WORKSPACE>\build-capstone\Debug\civic_io_tests.exe
+  test_cpp_control.cpp
+  cpp_control_tests.vcxproj -> <WORKSPACE>\build-capstone\Debug\cpp_control_tests.exe
+  dual_control_demo.cpp
+  dual_control_demo.vcxproj -> <WORKSPACE>\build-capstone\Debug\dual_control_demo.exe
+  dual_drive_tests.vcxproj -> <WORKSPACE>\build-capstone\Debug\dual_drive_tests.exe
+  harness_tests.vcxproj -> <WORKSPACE>\build-capstone\Debug\harness_tests.exe

@@ -1,0 +1,7 @@
+Test project <WORKSPACE>/build-capstone
+    Start 6: bench_analysis_regression
+1/1 Test #6: bench_analysis_regression ........   Passed   56.45 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =  56.50 sec

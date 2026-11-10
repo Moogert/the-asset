@@ -1,0 +1,35 @@
+{
+  "status": "JSF review scope; compliance not established",
+  "standard": "Joint Strike Fighter Air Vehicle C++ Coding Standards, 2RDU00001 revision C, December 2005",
+  "profile": "literal",
+  "implementation_language_parser": "C++03, verified with Clang; MSVC has no C++03 switch",
+  "files": [
+    "include/control/dual_supervisor.h",
+    "include/control/control_runtime.h",
+    "src/control/dual_supervisor.cpp",
+    "src/control/control_codec.cpp",
+    "src/control/control_runtime.cpp",
+    "include/control/release_control.h",
+    "src/control/release_monitor.cpp",
+    "src/control/release_runtime.cpp"
+  ],
+  "excluded": [
+    "C11 host harness and legacy policy used as comparison oracle",
+    "host-only tests and browser UI",
+    "host-only console demonstration",
+    "Python engineering models and analysis scripts",
+    "upstream OpenInverter FOC, bootloader and ZombieVerter source",
+    "compiler runtime and platform headers, which require dependency/toolchain review",
+    "Separate Arduino Honda emulator/OBD gateway, portable C++11 core, board frameworks and diagnostic bridge; no JSF claim"
+  ],
+  "platform_assumptions": [
+    "stdint.h supplies exact-width types; this C99 header needs an explicit language/toolchain disposition",
+    "8-bit bytes, 32-bit uint32_t, 64-bit Timestamp and 32-bit Real are compile-time checked",
+    "floating-point encoding and execution timing require target-specific verification",
+    "no fast-math, exceptions or RTTI enabled for the control library",
+    "Hardwareport calls must be bounded and fail-off behavior must be measured",
+    "snapshot acquisition validates transport CRC, counters, source and physical units before updating timestamps",
+    "Release target STM32F107/ZombieVerter; board revision, physical port and production profile pending. TX completion is not remote controller acceptance."
+  ],
+  "scope_acceptance": "Professor acceptance pending; no deviation approved"
+}

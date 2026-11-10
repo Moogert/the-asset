@@ -1,0 +1,16 @@
+flowchart LR
+    Car[Original Civic harness] <--> X0[X0: removable ECU interposer]
+    X0 <--> ECU[Original Honda ECU]
+    X0 <--> Body[Retained body circuits, original MIL and OBD socket]
+    Mega[Mega 2560] --> Condition[Protected voltage, resistance and position interfaces]
+    Condition --> X2[X2: position and speed]
+    Condition --> X3[X3: analog and temperature]
+    X2 --> X0
+    X3 --> X0
+    ECU --> Loads[Characterized external actuator-load box]
+    Loads --> X5[X5: conditioned observations only]
+    X5 --> Mega
+    Teensy[Teensy: EV fault coordinator] <--> X4[X4: translated serial and enable loop]
+    X4 <--> Mega
+    Power[Fused 12 V branch] --> X1[X1: protected power conversion]
+    X1 --> Mega

@@ -1,0 +1,39 @@
+connector,cavity,net,internal,honda_connector,honda_cavity,wire_gauge,terminal_part_number,verification
+X1,1,protected battery 12V,protected regulator,,,,,pending
+X1,2,ignition 12V,protected hardware regulator/output enable,,,,,pending
+X1,3,electronics power return,reviewed power ground,,,,,pending
+X1,4,unused,seal,,,,,pending
+X2,1,CKP+,D22 via matched driver,,,,,pending
+X2,2,CKP-,matched driver return,,,,,pending
+X2,3,TDC+,D23 via matched driver,,,,,pending
+X2,4,TDC-,matched driver return,,,,,pending
+X2,5,CYP+,D24 via matched driver,,,,,pending
+X2,6,CYP-,matched driver return,,,,,pending
+X2,7,extra position+,D25 reserved,,,,,pending
+X2,8,extra position-,reserved driver return,,,,,pending
+X2,9,VSS signal,D26 via matched driver,,,,,pending
+X2,10,VSS return,verified circuit return,,,,,pending
+X2,11,unused,seal,,,,,pending
+X2,12,unused,seal,,,,,pending
+X3,1,TPS signal,DAC0; connect D34,,,,,pending
+X3,2,TPS return,verified ECU reference,,,,,pending
+X3,3,MAP signal,DAC1; connect D35,,,,,pending
+X3,4,MAP return,verified ECU reference,,,,,pending
+X3,5,upstream O2 signal,DAC2; connect D36,,,,,pending
+X3,6,upstream O2 return,verified ECU reference,,,,,pending
+X3,7,downstream O2 signal,DAC3; connect D37,,,,,pending
+X3,8,downstream O2 return,verified ECU reference,,,,,pending
+X3,9,ECT signal,ladder D42/43/44; connect D38,,,,,pending
+X3,10,ECT return,verified ECU reference,,,,,pending
+X3,11,IAT signal,ladder D45/46/47; connect D39,,,,,pending
+X3,12,IAT return,verified ECU reference,,,,,pending
+X4,1,Mega TX to Teensy,TX18 via translation to Teensy RX7,,,,,pending
+X4,2,Teensy TX to Mega,Teensy TX8 via translation to RX19,,,,,pending
+X4,3,logic return,reviewed logic return,,,,,pending
+X4,4,emulator enable contact,protected input D9 active LOW,,,,,pending
+X4,5,enable contact return,dry-contact return,,,,,pending
+X4,6,unused,seal,,,,,pending
+X5,1,conditioned injector observation,D2; no ECU power wire,,,,,pending
+X5,2,conditioned heater observation,D3; no ECU power wire,,,,,pending
+X5,3,observation logic return,reviewed logic return,,,,,pending
+X5,4,unused,seal,,,,,pending
