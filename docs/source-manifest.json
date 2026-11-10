@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-10",
+  "actuator_outputs_enabled": false,
+  "physical_acceptance": false,
+  "files": {
+    "README.md": "82db9cc94c643e5917aafa89994e92208924d4c251803baa31825d0487e07b75",
+    "docs/INTEGRATION_REVIEW.md": "a202f92751235d7036798e4f391868ba351beb5a484386d671b7c873bc53a8ba",
+    "docs/BUILD_EVIDENCE.md": "8a868a23bb0f6749ca7a02a4c3c707baa78b1d700f9a967efc459e0b35400e09",
+    "docs/LEGACY_ACTUATOR_NOTES.md": "5b0f27e9bdcf50c2599ffaff1ed8910cda6734c3b2970f6d52bb2a84f0823143",
+    "docs/LEGACY_CAN_NOTES.md": "6e5cd98957e0b2747798062b212522317963f9da5470007d9a23aecc998aec49",
+    "arduino_prius_parking_pawl/PriusParkPawlBenchController/PriusParkPawlBenchController.ino": "149b60b227fbdd9025fb57ea1f9ed14d37a7da552427c718c07d71f0cd9df3a7",
+    "arduino_prius_parking_pawl/PriusParkPawlBenchController/platformio.ini": "fc63360d77fc6dbf61792bbb6b526be7c139951b6ee5b828bfbbb60d982d21e8",
+    "arduino_prius_parking_pawl/PriusParkPawlVehicleController/PriusParkPawlVehicleController.ino": "cceb97a3a5fad5b0ddcaeb2ebaf8671393bf274c85ba82a6ac8c34b6581d2959",
+    "arduino_prius_parking_pawl/PriusParkPawlVehicleController/platformio.ini": "fc63360d77fc6dbf61792bbb6b526be7c139951b6ee5b828bfbbb60d982d21e8",
+    ".gitignore": "aac80858083bd1fe46b355f908a1516f1083513ea5d63f7fcbecde84dee8b252",
+    ".gitattributes": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+  }
+}
